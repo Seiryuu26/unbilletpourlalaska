@@ -22,7 +22,7 @@ try {
             if ($_GET['action'] == 'login') {
 
                 if (!empty($_POST['pseudo']) && !empty($_POST['motdepasse'])) {
-                    login($_POST['pseudo'], $_POST['motdepasse']);
+                    login($_GET['pseudo'], $_GET['motdepasse']);
                 } else {
                     throw new Exception (' Tous les champs ne sont pas complets !');
                 }
