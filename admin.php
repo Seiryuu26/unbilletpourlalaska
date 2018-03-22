@@ -18,7 +18,6 @@ try {
 
         }
 
-        if (isset($_GET['action']))
 
             if ($_GET['action'] == 'login') {
 
