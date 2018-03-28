@@ -9,7 +9,9 @@ class AdminController{
     function connexion($pseudo,$motdepasse) {
 $adminManager = new \www/p3/AdminManager();
 $resultat = $adminManager->connected($pseudo,$motdepasse);
- 
+
+
+
                     
 if (!$resultat)
 {
@@ -21,6 +23,7 @@ else
         session_start();
         $_SESSION['id'] = $resultat('id');
         $_SESSION['pseudo'] = $pseudo;
+        $_SESSION ['motdepasse'] = $motdepasse;
        header('Location: index.php?action=board');
         echo 'Vous êtes connecté !';
 
