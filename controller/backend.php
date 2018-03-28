@@ -4,8 +4,7 @@
 require_once('model/PostManager.php');
 require_once('model/CommentManager.php');
 require_once('model/AdminManager.php');
-
-
+//use \wwww\p3\model\AdminManager;
 
 function login()
 {
@@ -14,8 +13,11 @@ function login()
 
 function connexion($pseudo,$motdepasse)
 {
-        $adminManager = new \www/p3/AdminManager();
+        //$postManager = new www\p3\model\PostManager(); // Création d'un objet
+        $adminManager = new www\p3\model\AdminManager();
+        //$adminManager = new AdminManager();
         $resultat = $adminManager->connected($pseudo,$motdepasse);
+    
 
 
         if (!$resultat)
