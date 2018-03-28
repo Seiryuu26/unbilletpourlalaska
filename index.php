@@ -2,6 +2,8 @@
 require('controller/frontend.php');
 require('controller/backend.php');
 
+
+
 try {
     if (isset($_GET['action'])) {
         if ($_GET['action'] == 'listPosts') {
@@ -22,15 +24,28 @@ try {
             } else {
                 throw new Exception (' Aucun identifiant de billet envoyé');
             }
-        } elseif ($_GET['action'] == 'login') {
-            login();
-        }
-     elseif ($_GET['action'] == 'connexion') {
-        connexion();
-        }
-        }
+        } 
+      elseif ($_GET['action'] == 'login') {
+            
 
+                login();
+          
+             
+              }
 
+       else if ($_GET['action'] == 'connexion') {
+
+                    if (!empty($_POST['pseudo']) && !empty($_POST['motdepasse'])) {
+                        connexion($_POST['pseudo'], $_POST['motdepasse']);
+                    } else {
+                        throw new Exception (' Tous les champs ne sont pas complets !');
+                    }
+                }
+
+            
+        
+
+}
 
 else {
     listPosts();
