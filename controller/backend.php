@@ -22,16 +22,18 @@ function connexion($pseudo,$motdepasse)
 
         if (!$resultat)
         {
-            echo 'Mauvais identifiant ou mot de passe !';
+             echo 'Mauvais identifiant ou mot de passe !';
         }
         else
         {
-
-            session_start();
-            $_SESSION['id'] = $resultat('id');
-            $_SESSION['pseudo'] = $pseudo;
+            
+             session_start();
+            $_SESSION['id'] = $resultat['id'];
+            $_SESSION['pseudo'] = $resultat['pseudo'];
             header('Location: index.php?action=board');
-            echo 'Vous êtes connecté !';
+            echo 'Vous êtes connecté !'; 
+
+          
 
 
 
