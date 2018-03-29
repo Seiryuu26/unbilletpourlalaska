@@ -17,7 +17,7 @@
                     </textarea><span class="help-inline"></span></div>
                 <br>
                 <div class="form-actions"> <a class="btn btn-primary" href="index.php?action=board"><span class="glyphicon glyphicon-arrow-left"> Retour</span></a><a class="btn btn-danger" href="index.php?action=eraseComment&amp;id=
-<?= $comment['id']?>"><span class="glyphicon glyphicon-remove"> Suprimer</span></a><a href="index.php?action=board" type="submit" class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Valider</a> </div>
+<?= $comment['id']?>"><span class="glyphicon glyphicon-remove"> Supprimer</span></a><a href="index.php?action=board" type="submit" class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Valider</a> </div>
             </form>
         </div>
     </div>
