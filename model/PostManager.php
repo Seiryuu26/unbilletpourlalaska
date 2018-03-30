@@ -6,7 +6,7 @@ require_once("model/Manager.php");
 
 class PostManager extends Manager
 {
-    public function getArticles()
+    public function getPosts()
     {
         $db = $this->dbConnect();
         $req = $db->query('SELECT id, titre, contenu, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM article ORDER BY date DESC LIMIT 0, 5');
@@ -14,16 +14,16 @@ class PostManager extends Manager
         return $req;
     }
 
-    public function getArticle($articleId)
+    public function getPost($articleId)
     {
         $db = $this->dbConnect();
         $req = $db->prepare('SELECT id, titre, contenu, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM article WHERE id = ?');
         $req->execute(array($articleId));
         $post = $req->fetch();
 
-        return $article;
+        return $post;
     }
-    public function updateArticle($articleId,$contenu,$titre,$chapitre)
+    public function updatePost($articleId,$contenu,$titre,$chapitre)
     {
         $db = $this->dbConnect();
         $req = $db->prepare('UPDATE articles SET contenu = ?,titre = ?,chapitre = ?  WHERE id = ?');
@@ -31,18 +31,18 @@ class PostManager extends Manager
        return $reaffectedLines;
 
     }
-    public function deleteArticle($articleId)
+    public function deletePost($articleId)
     {
       $db = $this->dbConnect();
         $req = $db->prepare('DELETE FROM articles  WHERE id = ?'); 
         $deleteLines= $req->execute(array($articleId));
         return $deleteLines;
     }
-    public function newArticle($chapitre,$titre,$contenu)
+    public function newPost($chapitre,$titre,$contenu)
     {
       $db = $this->dbConnect();
-        $article = $db->prepare('INSERT INTO articles(chapitre, titre, contenu, creationDate) VALUES(?, ?, ?, NOW())');
-        $newLines = $articles->execute(array($chapitre,$titre,$contenu));
+        $posts = $db->prepare('INSERT INTO articles(chapitre, titre, contenu, creationDate) VALUES(?, ?, ?, NOW())');
+        $newLines = $posts->execute(array($chapitre,$titre,$contenu));
         return $newLines;
     }
 

@@ -6,7 +6,7 @@ require_once('model/CommentManager.php');
 
 
 
-function listArticles()
+function listPosts()
 {
     $postManager = new www\p3\model\PostManager(); // Création d'un objet
     $posts = $postManager->getPosts(); // Appel d'une fonction de cet objet
@@ -19,17 +19,17 @@ function post()
     $postManager = new www\p3\model\PostManager();
     $commentManager = new www\p3\model\CommentManager();
 
-    $post = $postManager->getArticle($_GET['id']);
-    $comments = $commentManager->getCommentaires($_GET['id']);
+    $post = $postManager->getPost($_GET['id']);
+    $comments = $commentManager->getComments($_GET['id']);
 
     require('view/frontend/postView.php');
 }
 
-function addCommentaire($postId, $auteur, $commentaire)
+function addComment($postId, $auteur, $comment)
 {
     $commentManager = new www\p3\model\CommentManager();
 
-    $affectedLines = $commentManager->postCommentaire($postId, $auteur, $commentaire);
+    $affectedLines = $commentManager->postComment($postId, $auteur, $comment);
 
     if ($affectedLines === false) {
         throw new Exception('Impossible d\'ajouter le commentaire !');
@@ -39,11 +39,11 @@ function addCommentaire($postId, $auteur, $commentaire)
     }
 }
 
-function addArticle($articleId, $titre, $contenu, $date)
+function addPost($postId, $titre, $contenu, $date)
 {
     $commentManager = new www\p3\model\CommentManager();
 
-    $affectedLines = $commentManager->postCommentaire($postId, $titre, $contenu, $date);
+    $affectedLines = $commentManager->postComment($postId, $titre, $contenu, $date);
 
     if ($affectedLines === false) {
         throw new Exception('Impossible d\'ajouter le commentaire !');

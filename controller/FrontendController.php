@@ -20,7 +20,7 @@ class FrontendController{
 public function addCommentaire($postId, $auteur,$commentaire)
 {
     $commentManager = new \www\p3\model\CommentManager();
-    $affectedLines = $commentManager->postCommentaire($postId,$auteur,$commentaire);
+    $affectedLines = $commentManager->postComment($postId,$auteur,$commentaire);
      
     header('Location: index.php?action=post&id=' . $postId);
     

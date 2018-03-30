@@ -8,34 +8,34 @@ require_once('view/frontend/view.php');
 class BackendController{
   
 
-    public function changeCommentaire($commentaireId) 
+    public function changeComment($commentId) 
 { 
     $commentManager = new \www\p3\model\CommentManager();
     $comment = $commentManager->getComment($_GET['id']);
     $view = new View('changePostView'); 
-    $view->generer(array('commentaire' => $commentaire));
+    $view->generer(array('comment' => $comment));
 }
     
-public function newCommentaire($commentaireId,$commentaire)
+public function newComment($commentId,$comment)
 {
     $commentManager = new \www\p3\model\CommentManager();
 
-    $reaffectedLines = $commentManager->updateCommentaire($commentaireId,$commentaire);
+    $reaffectedLines = $commentManager->updateComment($commentId,$comment);
 
    
         header('Location: index.php?action=editCommentaire&id=' . $commentaire . '&particleId='. $articleId);
     
 }
     
-   public function changeArticle($articleId) 
+   public function changePost($postId) 
 { 
     $postManager = new \www\p3\model\PostManager();
     $article = $postManager->getPost($_GET['id']);
     $view = new View('updatePostView'); 
-    $view->generer(array('article' => $article));
+    $view->generer(array('post' => $post));
 }
     
-   public function modifArticle($articleId,$contenu,$titre,$chapitre)
+   public function modifPost($postId,$content,$title,$chapter)
 {
     $articleManager = new \www\p3\model\PostManager();
 
