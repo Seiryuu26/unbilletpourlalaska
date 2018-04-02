@@ -39,6 +39,20 @@ function connexion($pseudo,$motdepasse)
 
 
         }
+    -------------------------------------------
+    {
+    
+    session_start();
+   $_SESSION['Titre']=$titre;
+   $_SESSION['Chapitre']=$chapitre;
+   $_SESSION['Contenu']=$contenu;
+    }
+   require frontend/addPostView.php
+   require frontend/changePostView.php
+   require frontend/deletePostView.php
+    
+    
+    
 }
 function deleteSession()
 {
