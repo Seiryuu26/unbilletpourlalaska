@@ -25,7 +25,7 @@ else
         $_SESSION['pseudo'] = $pseudo;
         $_SESSION ['motdepasse'] = $motdepasse;
        header('Location: index.php?action=board');
-        echo 'Vous êtes connecté !';
+        echo ('Vous êtes connecté !');
 
 
 
