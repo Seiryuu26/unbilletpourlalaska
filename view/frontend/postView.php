@@ -30,13 +30,16 @@
         <input type="submit" />
     </div>
 </form>
-
 <?php
 while ($comment = $comments->fetch())
     {
 ?>
     <p><strong><?= htmlspecialchars($comment['auteur']) ?></strong>  <?= $comment['comment_date_fr'] ?></p>
     <p><?= nl2br(htmlspecialchars($comment['contenu'])) ?></p>
+
+<em><a href="index.php?action=signalComment&amp;id=<?= $comment['id'] ?>">Signaler</a></em>
+
+
 <?php
     }
 ?>
