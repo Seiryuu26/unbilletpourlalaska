@@ -27,44 +27,49 @@ class CommentManager extends Manager
     public function updateComment($commentaireid,$commentaire)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('UPDATE commentaires SET commentaire = ? WHERE id = ?');
+        $req = $db->prepare('UPDATE commentaire SET commentaire = ? WHERE id = ?');
         $Lines =$req->execute(array($commentaireId,$commentaire));
        return $Lines;
 
     }
     
-     public function boolean($commentaireId){
+     public function signal($commentaireId){
         $db = $this->dbConnect();
-        $req = $db->prepare('UPDATE commentaires SET moderate = 1 WHERE id = ?');
+        $req = $db->prepare('UPDATE commentaire SET signaler = 1 WHERE id = ?');
          $comment =$req->execute(array($commentaireId));
-       return $commentaire;
+       return $comment;
     }
-    
-    public function thisModerate($moderate){
+    public function thisSignal($signal){
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT  moderate FROM commentaires');
-         $comments =$req->execute(array($moderate));
-       return $commentaires;
+        $req = $db->prepare('SELECT  signaler FROM commentaire');
+         $comments =$req->execute(array($signal));
+       return $comment;
     }
-    
-     public function demoderate($commentaireId){
+    public function designal($commentaireId){
         $db = $this->dbConnect();
-        $req = $db->prepare('UPDATE commentaires SET moderate = 0 WHERE id = ?');
+        $req = $db->prepare('UPDATE commentaire SET signaler = 0 WHERE id = ?');
          $comment =$req->execute(array($commentaireId));
-       return $commentaires;
+       return $comment;
     }
-    
-    public function commentaireModerate(){
+    public function commentaireSignal(){
         $db = $this->dbConnect();
-        $req = $db->query('SELECT id, auteur, contenu, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM commentaires WHERE moderate=1');
+        $req = $db->query('SELECT id, auteur, contenu, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM commentaire WHERE signaler=1');
          
        return $req;
+    }
+    
+    public function modifyCommentaire($commentaireId)
+    {
+      $db = $this->dbConnect();
+        $req = $db->prepare('MODIFY FROM commentaire  WHERE id = ?'); 
+        $modifyComment=$req->execute(array($commentaireId));
+        return $modifyCommentaire;
     }
     
     public function deleteCommentaire($commentaireId)
     {
       $db = $this->dbConnect();
-        $req = $db->prepare('DELETE FROM commentaires  WHERE id = ?'); 
+        $req = $db->prepare('DELETE FROM commentaire  WHERE id = ?'); 
         $deleteComment=$req->execute(array($commentaireId));
         return $deleteCommentaire;
     }
