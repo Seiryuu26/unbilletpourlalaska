@@ -1,10 +1,14 @@
 <?php
+ session_start();
 require('controller/frontend.php');
 require('controller/backend.php');
 
 
-
 try {
+    /**
+    *partfrontend.php
+    *
+    */
     if (isset($_GET['action'])) {
         if ($_GET['action'] == 'listPosts') {
             listPosts();
@@ -27,9 +31,11 @@ try {
         } 
       elseif ($_GET['action'] == 'login') {
             
-
+          if (empty($_SESSION['pseudo']) OR empty($_SESSION['id'])) 
                 login();
-          
+          else header('Location: index.php?action=board');
+
+
              
               }
 
@@ -41,10 +47,32 @@ try {
                         throw new Exception (' Tous les champs ne sont pas complets !');
                     }
                 }
-
+        /**
+        *partBackend
+        *
+        */
+        elseif ($_GET['action'] == 'board') {  
+            if (!empty($_SESSION['pseudo']) && !empty($_SESSION['id'])) 
+                       
             
+             board();
+            else header('Location: index.php?action=login');
+             }
+         elseif ($_GET['action'] == 'logout') {  
+            
+                       
+            
+             logout();
+            
+             }
+        elseif ($_GET['action'] == 'signalComment') {  
+            
+                       
+            
+             signalComment($_GET['id']);
+            
+             }
         
-
 }
 
 else {
