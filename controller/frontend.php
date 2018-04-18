@@ -53,3 +53,44 @@ function addPost($postId, $titre, $contenu, $date)
     }
 }
 
+function modifyComment($commentId)
+{
+    $commentManager = new www\p3\model\CommentManager();
+
+    $affectedLines = $commentManager->modify($commentId);
+
+    if ($affectedLines === false) {
+        throw new Exception('commentaire déja modifié !');
+    }
+    else {
+        header('Location: index.php');
+    }
+}
+
+function deleteComment($commentId)
+{
+    $commentManager = new www\p3\model\CommentManager();
+
+    $affectedLines = $commentManager->delete($commentId);
+
+    if ($affectedLines === false) {
+        throw new Exception('commentaire déja supprimé !');
+    }
+    else {
+        header('Location: index.php');
+    }
+}
+
+function signalComment($commentId)
+{
+    $commentManager = new www\p3\model\CommentManager();
+
+    $affectedLines = $commentManager->signal($commentId);
+
+    if ($affectedLines === false) {
+        throw new Exception('commentaire déja signalé !');
+    }
+    else {
+        header('Location: index.php');
+    }
+}
