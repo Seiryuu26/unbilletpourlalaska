@@ -16,6 +16,20 @@
                     <textarea type="textarea" class="form-control" id="content" name="content" value="
            
         ">
+ <TABLE BORDER="1">
+<TR>
+<TH> Commentaires signal&eacute;s</TH>
+<TH> Modifier </TH>
+<TH> Signaler </TH>
+<TH> Supprimer </TH>
+</TR>
+<TR>
+<TH> Liste des commentaires signal&eacute;s </TH>
+<TD> Commentaire 1 </TD>
+<TD> Commentaire 2 </TD>
+<TD> Commentaire 3 </TD>
+</TR>
+</TABLE> 
                         <?= nl2br(htmlspecialchars($post['content']))?>
                     </textarea> <span class="help-inline"></span> </div>
                 <br>
