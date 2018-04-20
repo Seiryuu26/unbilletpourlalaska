@@ -19,9 +19,8 @@
  <TABLE BORDER="1">
 <TR>
 <TH> Commentaires signal&eacute;s</TH>
-<TH> Modifier </TH>
-<TH> Signaler </TH>
-<TH> Supprimer </TH>
+<TH> Effacer </TH>
+<TH> Mod&eacute;srer </TH>
 </TR>
 <TR>
 <TH> Liste des commentaires signal&eacute;s </TH>
