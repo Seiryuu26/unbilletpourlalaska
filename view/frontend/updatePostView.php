@@ -16,19 +16,35 @@
                     <textarea type="textarea" class="form-control" id="content" name="content" value="
            
         ">
- <TABLE BORDER="1">
-<TR>
-<TH> Commentaires signal&eacute;s</TH>
-<TH> Effacer </TH>
-<TH> Mod&eacute;srer </TH>
-</TR>
-<TR>
-<TH> Liste des commentaires signal&eacute;s </TH>
-<TD> Commentaire 1 </TD>
-<TD> Commentaire 2 </TD>
-<TD> Commentaire 3 </TD>
-</TR>
-</TABLE> 
+       <table>
+        <h1><strong>Modifier les commentaires </strong></h1>
+        <TABLE BORDER="1">
+        <tr>
+        <th>num&eacute;ros commentaires signal&eacute;s</th>
+        <th>liste commentaires signal&eacute;s</th>
+        <th>effacer</th>
+        <th>mod&eacute;rer</th>
+        </tr>
+        <tr>
+        <th>commentaire1</th>
+        <td>commentaire1</td>
+        <td>effacer</td>
+        <td>mod&eacute;rer</td>
+        </tr>
+        <tr>  
+        <th>commentaire2</th> 
+        <td>commentaire2</td>
+        <td>effacer</td>
+        <td>mod&eacute;rer</td>
+        </tr>
+        <tr>  
+        <th>commentaire3</th> 
+        <td>commentaire3</td>
+        <td>effacer</td>
+        <td>mod&eacute;rer</td>
+        </tr>
+          
+        </table>
                         <?= nl2br(htmlspecialchars($post['content']))?>
                     </textarea> <span class="help-inline"></span> </div>
                 <br>
