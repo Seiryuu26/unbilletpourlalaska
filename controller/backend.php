@@ -57,6 +57,22 @@ function connexion($pseudo,$motdepasse)
 function deleteSession()
 {
         session_start();
+function board()
+{
+ $comments= array("commentaire1","commentaire2","commentaire3");
+    // calling  the view
+    require('view/backend/addPostView.php');
+}
+
+function logout() {
+   
+// Suppression des variables de session et de la session
+//$_SESSION = array();
+session_destroy();
+
+// Suppression des cookies de connexion automatique
+      header('Location: index.php');
+    }
 
 // Suppression des variables de session et de la session
         $_SESSION = array();
