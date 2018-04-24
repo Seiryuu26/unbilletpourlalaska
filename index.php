@@ -49,7 +49,8 @@ try {
                 }
         /**
         *partBackend
-        *
+        *the following part lead to the controller backend backend.php
+        look for the method name to match the action (method board)
         */
         elseif ($_GET['action'] == 'board') {  
             if (!empty($_SESSION['pseudo']) && !empty($_SESSION['id'])) 
