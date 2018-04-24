@@ -16,6 +16,38 @@
             <div class="form-actions">
                 <input href="" type="submit" class="btn btn-success " value=" Ajouter"><a class="btn btn-primary" href="index.php?action=board"><span class="glyphicon glyphicon-arrow-left"> Retour</span></a> </div>
             <p>
+                <table>
+<h1><strong>Modifier les commentaires </strong></h1>
+       
+<table BORDER="1">
+<tr>
+<th>num&eacute;ros commentaires signal&eacute;s</th>
+        
+<th>liste commentaires signal&eacute;s</th>
+        
+<th>effacer</th>
+        
+<th>mod&eacute;rer</th>
+        </tr>
+  
+<?php
+         foreach($comments as $value) {
+            
+             echo '
+             <tr>
+        <th>'.$value.'</th>
+    
+<td></td>
+        <td><a class="btn btn-primary" href="index.php?action=erasePost&amp">effacer</a></td>
+       
+<td><a class="btn btn-primary" href="index.php?action=moderateComment&amp">mod&eacute;rer</a></td>
+        </tr>
+        ';
+         }
+        ?>
+        </table>
+         
+         
                 <?php $error1 ?>
             </p>
         </form>
