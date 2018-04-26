@@ -59,7 +59,12 @@ function deleteSession()
         session_start();
 function board()
 {
- $comments= array("commentaire1","commentaire2","commentaire3");
+ $comments= array("'commentaire1' =>'ah oui..'","'commentaire2'=>'Ce voyage a l'air dangereux...'","'commentaire3' =>'a quand la suite..'","'commentaire4' =>'interessant..'");
+    
+foreach($comments as $element)
+{ 
+    echo $element.'<br/>';
+}
     // calling  the view
     require('view/backend/addPostView.php');
 }
