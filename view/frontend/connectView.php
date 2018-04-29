@@ -1,6 +1,4 @@
-<?php 
-session_start();?>
-    <div id="espace d'administration" class="span3 well well-large offset4">
+ <div id="espace d'administration" class="span3 well well-large offset4">
         <div class="centreConnect">
             <h4>Connexion</h4>
             <br>

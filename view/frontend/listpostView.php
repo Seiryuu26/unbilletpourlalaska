@@ -1,7 +1,7 @@
 <?php $title = 'Mon blog'; ?>
 
 <?php ob_start(); ?>
-<h1>Mon super blog !</h1>
+<h1>Un billet pour l'alaska !</h1>
 <p>Derniers billets du blog :</p>
 
 <?php
@@ -18,6 +18,7 @@ while ($data = $posts->fetch())
             <?= nl2br(htmlspecialchars($data['contenu'])) ?>
             <br />
             <em><a href="index.php?action=post&amp;id=<?= $data['id'] ?>">Commentaires</a></em>
+            
         </p>
     </div>
 <?php

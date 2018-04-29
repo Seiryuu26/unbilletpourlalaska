@@ -8,6 +8,18 @@
         
     <body>
         <?= $content ?>
-    <p><a href="/p3/?action=login">login</a></p>
+        <?php
+        if (!empty($_SESSION['pseudo']) && !empty($_SESSION['id'])) 
+        
+       {               
+       echo '<p><a href="/p3/?action=logout">Déconnexion</a></p>';  
+        }
+        else
+        {
+        echo '<p><a href="/p3/?action=login">Accéder à l\'espace d\'administration</a></p>';
+        }
+          
+        ?>
     </body>
 </html>
+
