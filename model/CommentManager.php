@@ -53,8 +53,8 @@ class CommentManager extends Manager
     }
     public function commentaireSignal(){
         $db = $this->dbConnect();
-        $req = $db->query('SELECT id, auteur, contenu, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM commentaire WHERE signaler=1');
-         
+        $req = $db->prepare('SELECT id, auteur, contenu, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM commentaire WHERE signaler=1');
+        $req->execute(array());
        return $req;
     }
     

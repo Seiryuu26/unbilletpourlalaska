@@ -26,11 +26,14 @@
         <th>mod&eacute;rer</th>
         </tr>
         <?php
-         foreach($comments as $value) {
+        var_dump ($comments);
+        while ($comment = $comments->fetch()){
             
              echo '
              <tr>
-        <th>'.$value.'</th>
+        <th>'.$comment['id'].'</th>
+        <th>'.$comment['contenu'].'</th>
+        
         <td></td>
         <td><a class="btn btn-primary" href="index.php?action=erasePost&amp">effacer</a></td>
         <td><a class="btn btn-primary" href="index.php?action=moderateComment&amp">mod&eacute;rer</a></td>
