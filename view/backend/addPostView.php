@@ -18,7 +18,7 @@
                 <input href="" type="submit" class="btn btn-success " value=" Ajouter"><a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left" > Retour</span></a> </div>
         <table>
         <h1><strong>Modifier les commentaires </strong></h1>
-        <table BORDER="1">
+        <table BORDER="2">
         <tr>
         <th>num&eacute;ros commentaires signal&eacute;s</th>
         <th>liste commentaires signal&eacute;s</th>
@@ -30,12 +30,11 @@
         while ($comment = $comments->fetch()){
             
              echo '
-             <tr>
+        <tr>
         <th>'.$comment['id'].'</th>
         <th>'.$comment['contenu'].'</th>
         
-        <td></td>
-        <td><a class="btn btn-primary" href="index.php?action=erasePost&amp">effacer</a></td>
+        <td><a class="btn btn-primary" href="index.php?action=eraseComment&amp">effacer</a></td>
         <td><a class="btn btn-primary" href="index.php?action=moderateComment&amp">mod&eacute;rer</a></td>
         </tr>
         ';
