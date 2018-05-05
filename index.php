@@ -73,6 +73,20 @@ try {
              signalComment($_GET['id']);
             
              }
+         elseif ($_GET['action'] == 'eraseComment') {  
+            
+                       
+            
+             eraseComment($_GET['id']);
+            
+             }
+        elseif ($_GET['action'] == 'moderateComment') {  
+            
+                       
+            
+             moderateComment($_GET['id']);
+            
+             }
         
 }
 
