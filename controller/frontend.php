@@ -88,9 +88,12 @@ function signalComment($commentId)
     $affectedLines = $commentManager->signal($commentId);
 
     if ($affectedLines === false) {
-        throw new Exception('commentaire déja signalé !');
+        throw new Exception('commentaire d&eacute;ja signal&eacute; !');
     }
     else {
         header('Location: index.php');
     }
 }
+
+
+

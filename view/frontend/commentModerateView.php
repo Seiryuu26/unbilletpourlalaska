@@ -32,19 +32,19 @@ while ($comment = $comments->fetch())
         <tr>
         <th>commentaire1</th>
         <td>commentaire1</td>
-        <td><a class="btn btn-primary" href="index.php?action=erasePost&amp">effacer</a></td>
+        <td><a class="btn btn-primary" href="index.php?action=eraseComment&amp">effacer</a></td>
         <td><a class="btn btn-primary" href="index.php?action=moderateComment&amp">mod&eacute;rer</a></td>
         </tr>
         <tr>  
         <th>commentaire2</th> 
         <td>commentaire2</td>
-        <td><a class="btn btn-primary" href="index.php?action=erasePost&amp">effacer</a></td>
+        <td><a class="btn btn-primary" href="index.php?action=eraseComment&amp">effacer</a></td>
         <td><a class="btn btn-primary" href="index.php?action=moderateComment&amp">mod&eacute;rer</a></td>
         </tr>
         <tr>  
         <th>commentaire3</th> 
         <td>commentaire3</td>
-        <td><a class="btn btn-primary" href="index.php?action=erasePost&amp">effacer</a></td>
+        <td><a class="btn btn-primary" href="index.php?action=eraseComment&amp">effacer</a></td>
         <td><a class="btn btn-primary" href="index.php?action=moderateComment&amp">mod&eacute;rer</a></td>
         </tr>
         </table>

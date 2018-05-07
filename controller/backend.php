@@ -57,7 +57,32 @@ function connexion($pseudo,$motdepasse)
     // calling  the view
     require('view/backend/addPostView.php');
 }
+function eraseComment($commentId)
+{
+    $commentManager = new www\p3\model\CommentManager();
 
+    $affectedLines = $commentManager->erase($commentId);
+
+    if ($affectedLines === false) {
+        throw new Exception('commentaire d&eacute;ja effac&eacute; !');
+    }
+    else {
+        header('Location: index.php');
+    }
+}
+function moderateComment($commentId)
+{
+    $commentManager = new www\p3\model\CommentManager();
+
+    $affectedLines = $commentManager->moderate($commentId);
+
+    if ($affectedLines === false) {
+        throw new Exception('commentaire d&eacute;ja mod&eacute;r&eacute; !');
+    }
+    else {
+        header('Location: index.php');
+    }
+}
 function logout() {
    
 // Suppression des variables de session et de la session
