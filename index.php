@@ -69,6 +69,13 @@ try {
              signalComment($_GET['id']);
             
              }
+        elseif ($_GET['action'] == 'addPost') {  
+            
+                       
+            // $postchapitre, $titre, $contenu
+             addPost($_POST['chapitre'],$_POST['titre'],$_POST['contenu']);
+            
+             }    
         elseif ($_GET['action'] == 'eraseComment') {  
             
                        

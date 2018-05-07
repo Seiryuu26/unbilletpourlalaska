@@ -92,5 +92,18 @@ session_destroy();
 // Suppression des cookies de connexion automatique
       header('Location: index.php');
     }
+function addPost($postChapitre, $titre, $contenu)
+{
+    $commentManager = new www\p3\model\CommentManager();
+
+    $affectedLines = $commentManager->postComment($postcHPAITRE, $titre, $contenu );
+
+    if ($affectedLines === false) {
+        throw new Exception('Impossible d\'ajouter le commentaire !');
+    }
+    else {
+        header('Location: index.php?action=post&id=' . $postId);
+    }
+}
 
 
