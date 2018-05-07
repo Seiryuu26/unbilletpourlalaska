@@ -2,7 +2,7 @@
     <div class="row ">
         <h1><strong>Ajouter un chapitre </strong></h1>
         <br>
-        <form action='index.php?action=otherPost' method="post">
+        <form action='index.php?action=addPost' method="post">
             <div class="form-group">
                 <label for="name">Chapitre:</label>
                 <input type="text" class="form-control" name='chapitre' placeholder="Chapitre"> <span class="help-inline"></span> </div>
@@ -23,10 +23,9 @@
         <th>num&eacute;ros commentaires signal&eacute;s</th>
         <th>liste commentaires signal&eacute;s</th>
         <th>effacer</th>
-        <th>mod&eacute;rer</th>
         </tr>
         <?php
-        var_dump ($comments);
+
         while ($comment = $comments->fetch()){
             
              echo '
@@ -35,7 +34,6 @@
         <th>'.$comment['contenu'].'</th>
         
         <td><a class="btn btn-primary" href="index.php?action=eraseComment&id='.$comment['id'].'">effacer</a></td>
-        <td><a class="btn btn-primary"href="index.php?action=moderateComment&id='.$comment['id'].'">mod&eacute;rer</a></td>
         </tr>
         ';
          }

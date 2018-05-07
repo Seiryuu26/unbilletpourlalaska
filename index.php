@@ -52,12 +52,38 @@ try {
         *the following part lead to the controller backend backend.php
         look for the method name to match the action (method board)
         */
+         elseif (!empty($_SESSION['pseudo']) && !empty($_SESSION['id'])){
+             
+            if ($_GET['action'] == 'logout') {  
+            
+                       
+            
+             logout();
+            
+             }
+         elseif ($_GET['action'] == 'signalComment') 
+            {  
+            
+                       
+            
+             signalComment($_GET['id']);
+            
+             }
+        elseif ($_GET['action'] == 'eraseComment') {  
+            
+                       
+            
+             eraseComment($_GET['id']);
+            
+             }
+        
+             
         elseif ($_GET['action'] == 'board') {  
-            if (!empty($_SESSION['pseudo']) && !empty($_SESSION['id'])) 
+             
                        
             
              board();
-            else header('Location: index.php?action=login');
+           
              }
          elseif ($_GET['action'] == 'logout') {  
             
@@ -80,13 +106,13 @@ try {
              eraseComment($_GET['id']);
             
              }
-        elseif ($_GET['action'] == 'moderateComment') {  
-            
-                       
-            
-             moderateComment($_GET['id']);
-            
-             }
+         }
+        
+       
+        elseif ($_GET['action'] == 'board')
+    
+    header('Location: index.php?action=login');
+        
         
 }
 
