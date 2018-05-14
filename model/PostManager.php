@@ -38,11 +38,11 @@ class PostManager extends Manager
         $deleteLines= $req->execute(array($articleId));
         return $deleteLines;
     }
-    public function addPost($articleId,$titre,$contenu)
+    public function addPost($titre,$contenu)
     {
       $db = $this->dbConnect();
-        $posts = $db->prepare('INSERT INTO articles(titre, contenu,date) VALUES(?, ?, NOW())');
-        $newLines = $posts->execute(array($articleId,$titre,$contenu));
+        $posts = $db->prepare('INSERT INTO article(titre, contenu,date) VALUES(?, ?, NOW())');
+        $newLines = $posts->execute(array($titre,$contenu));
         return $newLines;
     }
 

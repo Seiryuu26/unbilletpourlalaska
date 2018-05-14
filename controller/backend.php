@@ -92,6 +92,23 @@ session_destroy();
 // Suppression des cookies de connexion automatique
       header('Location: index.php');
     }
+/**
+* method in call from the rounting page under action addPost 
+* @param $titre
+* @param $contenu
+*/
+function addPost($titre, $contenu)
+{
+    $PostManager = new www\p3\model\PostManager();
 
+    $affectedLines = $PostManager->addPost($titre, $contenu);
+
+    if ($affectedLines === false) {
+        throw new Exception('Impossible d\'ajouter le chapitre !');
+    }
+    else {
+        header('Location: index.php?action=post&id=' . $postId);
+    }
+}
 
 

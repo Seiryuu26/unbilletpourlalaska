@@ -73,10 +73,12 @@ try {
             
                        
             // $postchapitre, $titre, $contenu
-             addPost($_POST['chapitre'],$_POST['titre'],$_POST['contenu']);
-            if (isset($_POST['chapitre'])) { $chapitre = $_POST['chapitre']; }
-            
-             }    
+                if (!empty($_POST['titre']) && !empty($_POST['contenu'])) {
+                addPost($_POST['titre'],$_POST['contenu']);   
+                } else {
+                    throw new Exception (' Erreur de soumission !');
+                }
+        }
         elseif ($_GET['action'] == 'eraseComment') {  
             
                        

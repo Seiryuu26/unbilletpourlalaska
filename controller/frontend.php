@@ -39,19 +39,6 @@ function addComment($postId, $auteur, $comment)
     }
 }
 
-function addPost($chapitre, $titre, $contenu)
-{
-    $PostManager = new www\p3\model\PostManager();
-
-    $affectedLines = $PostManager->addPost($chapitre, $titre, $contenu);
-
-    if ($affectedLines === false) {
-        throw new Exception('Impossible d\'ajouter le chapitre !');
-    }
-    else {
-        header('Location: index.php?action=post&id=' . $postId);
-    }
-}
 
 function modifyComment($commentId)
 {
