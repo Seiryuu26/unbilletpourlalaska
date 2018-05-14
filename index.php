@@ -74,6 +74,7 @@ try {
                        
             // $postchapitre, $titre, $contenu
              addPost($_POST['chapitre'],$_POST['titre'],$_POST['contenu']);
+            if (isset($_POST['chapitre'])) { $chapitre = $_POST['chapitre']; }
             
              }    
         elseif ($_GET['action'] == 'eraseComment') {  

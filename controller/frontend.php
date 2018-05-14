@@ -39,14 +39,14 @@ function addComment($postId, $auteur, $comment)
     }
 }
 
-function addPost($postId, $titre, $contenu, $date)
+function addPost($chapitre, $titre, $contenu)
 {
-    $commentManager = new www\p3\model\CommentManager();
+    $PostManager = new www\p3\model\PostManager();
 
-    $affectedLines = $commentManager->postComment($postId, $titre, $contenu, $date);
+    $affectedLines = $PostManager->addPost($chapitre, $titre, $contenu);
 
     if ($affectedLines === false) {
-        throw new Exception('Impossible d\'ajouter le commentaire !');
+        throw new Exception('Impossible d\'ajouter le chapitre !');
     }
     else {
         header('Location: index.php?action=post&id=' . $postId);
