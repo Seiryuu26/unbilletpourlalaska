@@ -35,25 +35,25 @@ class CommentManager extends Manager
     
      public function signal($commentaireId){
         $db = $this->dbConnect();
-        $req = $db->prepare('UPDATE commentaire SET signaler = 1 WHERE id = ?');
+        $req = $db->prepare('UPDATE commentaire SET signaled = 1 WHERE id = ?');
          $comment =$req->execute(array($commentaireId));
        return $comment;
     }
     public function thisSignal($signal){
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT  signaler FROM commentaire');
+        $req = $db->prepare('SELECT  signaled FROM commentaire');
          $comments =$req->execute(array($signal));
        return $comment;
     }
     public function designal($commentaireId){
         $db = $this->dbConnect();
-        $req = $db->prepare('UPDATE commentaire SET signaler = 0 WHERE id = ?');
+        $req = $db->prepare('UPDATE commentaire SET signaled = 0 WHERE id = ?');
          $comment =$req->execute(array($commentaireId));
        return $comment;
     }
     public function commentaireSignal(){
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT id, auteur, contenu, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM commentaire WHERE signaler=1');
+        $req = $db->prepare('SELECT id, auteur, contenu, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM commentaire WHERE signaled=1 ');
         $req->execute(array());
        return $req;
     }

@@ -16,7 +16,7 @@
                     </textarea> <span class="help-inline"></span> </div>
                 <br>
                 <div class="form-actions">
-                    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Modifier</button> <a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left"> Retour</span></a> </div>
+                <input href="" type="submit" class="btn btn-success " value=" Modifier"><a class="btn btn-primary" href="index.php?modifyPost"><span class="glyphicon glyphicon-arrow-left" > Retour</span></a> </div>
             </form>
         </div>
     </div>

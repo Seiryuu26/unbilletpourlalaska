@@ -37,12 +37,7 @@
         <td>effacer</td>
         <td>mod&eacute;rer</td>
         </tr>
-        <tr>  
-        <th>commentaire3</th> 
-        <td>commentaire3</td>
-        <td>effacer</td>
-        <td>mod&eacute;rer</td>
-        </tr>
+        
           
         </table>
                         <?= nl2br(htmlspecialchars($post['content']))?>
