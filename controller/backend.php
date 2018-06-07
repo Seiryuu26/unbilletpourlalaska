@@ -53,6 +53,9 @@ function connexion($pseudo,$motdepasse)
      $commentManager = new www\p3\model\CommentManager();
      $comments = $commentManager->commentaireSignal();
      
+     $postManager = new www\p3\model\PostManager();
+     $posts = $postManager->getPosts();
+     
 
     // calling  the view
     require('view/backend/addPostView.php');
@@ -110,5 +113,25 @@ function addPost($titre, $contenu)
         header('Location: index.php?action=post&id=' . $postId);
     }
 }
+function erasePost($postId)
+{
+    $postManager = new www\p3\model\PostManager();
 
+    $affectedLines = $postManager->deletePost($postId);
+
+    if ($affectedLines === false) {
+        throw new Exception('article d&eacute;ja effac&eacute; !');
+    }
+    else {
+        header('Location: index.php');
+    }
+}
+function modifyPost($postId)
+{
+    $postManager = new www\p3\model\PostManager();
+
+    $post = $postManager->getPost($postId);
+    
+    require('view/backend/updatePostView.php');
+}
 

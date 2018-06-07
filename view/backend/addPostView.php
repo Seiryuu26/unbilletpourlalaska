@@ -16,6 +16,7 @@
             <br>
             <div class="form-actions">
                 <input href="" type="submit" class="btn btn-success " value=" Ajouter"><a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left" > Retour</span></a> </div>
+        
         <table>
         <h1><strong>Modifier les commentaires </strong></h1>
         <table BORDER="2">
@@ -34,6 +35,32 @@
         <th>'.$comment['contenu'].'</th>
         
         <td><a class="btn btn-primary" href="index.php?action=eraseComment&id='.$comment['id'].'">effacer</a></td>
+        </tr>
+        ';
+         }
+        ?>
+        </table>
+        
+        <table>
+        <h1><strong>Modifier les articles </strong></h1>
+        <table BORDER="2">
+        <tr>
+        <th>num&eacute;ros articles </th>
+        <th>liste  des articles </th>
+        <th>modifier</th>  
+        <th>effacer</th>
+        </tr>
+        <?php
+
+        while ($post = $posts->fetch()){
+            
+             echo '
+        <tr>
+        <th>'.$post['id'].'</th>
+        <th>'.$post['contenu'].'</th>
+        
+        <td><a class="btn btn-primary" href="index.php?action=modifyPost&id='.$post['id'].'">modifier</a></td>
+        <td><a class="btn btn-primary" href="index.php?action=erasePost&id='.$post['id'].'">effacer</a></td>
         </tr>
         ';
          }

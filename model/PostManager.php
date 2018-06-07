@@ -26,7 +26,7 @@ class PostManager extends Manager
     public function updatePost($articleId,$contenu,$titre,$chapitre)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('UPDATE articles SET contenu = ?,titre = ?,chapitre = ?  WHERE id = ?');
+        $req = $db->prepare('UPDATE article SET contenu = ?,titre = ?,chapitre = ?  WHERE id = ?');
         $reaffectedLines =$req->execute(array($articleId,$contenu,$titre,$chapitre));
        return $reaffectedLines;
 
@@ -34,7 +34,7 @@ class PostManager extends Manager
     public function deletePost($articleId)
     {
       $db = $this->dbConnect();
-        $req = $db->prepare('DELETE FROM articles  WHERE id = ?'); 
+        $req = $db->prepare('DELETE FROM article  WHERE id = ?'); 
         $deleteLines= $req->execute(array($articleId));
         return $deleteLines;
     }

@@ -79,6 +79,22 @@ try {
                     throw new Exception (' Erreur de soumission !');
                 }
         }
+        elseif ($_GET['action'] == 'erasePost') {  
+            
+                       
+            
+             erasePost($_GET['id']);
+            
+             }
+        elseif ($_GET['action'] == 'modifyPost') {  
+            
+                       
+             modifyPost($_GET['id']);
+                 
+            
+            
+             }
+             
         elseif ($_GET['action'] == 'eraseComment') {  
             
                        
