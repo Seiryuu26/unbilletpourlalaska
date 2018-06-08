@@ -14,7 +14,7 @@
                 <textarea type="text" class="form-control" name='contenu' placeholder="Contenu"></textarea> <span class="help-inline"></span> </div>
             <br>
             <div class="form-actions">
-                <input href="" type="submit" class="btn btn-success " value=" Ajouter"><a class="btn btn-primary" href="index.php?action=board"><span class="glyphicon glyphicon-arrow-left"> Retour</span></a> </div>
+                <input type="submit" class="btn btn-success " value=" Ajouter"><a class="btn btn-primary" href="index.php?action=board"><span class="glyphicon glyphicon-arrow-left"> Retour</span></a> </div>
             <p>
                 <table>
 <h1><strong>Modifier les commentaires </strong></h1>

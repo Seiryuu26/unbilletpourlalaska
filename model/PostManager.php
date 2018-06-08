@@ -23,11 +23,11 @@ class PostManager extends Manager
 
         return $post;
     }
-    public function updatePost($articleId,$contenu,$titre,$chapitre)
+    public function modifyPost($articleId,$titre,$contenu)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('UPDATE article SET contenu = ?,titre = ?,chapitre = ?  WHERE id = ?');
-        $reaffectedLines =$req->execute(array($articleId,$contenu,$titre,$chapitre));
+        $req = $db->prepare('UPDATE article SET contenu = ?,titre = ?  WHERE id = ?');
+        $reaffectedLines =$req->execute(array($contenu,$titre,$articleId));
        return $reaffectedLines;
 
     }

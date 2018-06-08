@@ -133,5 +133,18 @@ function modifyPost($postId)
     $post = $postManager->getPost($postId);
     
     require('view/backend/updatePostView.php');
+    
 }
+function domodifyPost($id,$titre,$contenu)
+{
+    $PostManager = new www\p3\model\PostManager();
 
+    $affectedLines = $PostManager->modifyPost($id,$titre,$contenu);
+
+    if ($affectedLines === false) {
+        throw new Exception('Impossible d\'ajourner le chapitre !');
+    }
+    else {
+        header('Location: index.php?action=board' );
+    }
+}

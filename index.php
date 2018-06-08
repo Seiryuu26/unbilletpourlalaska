@@ -86,12 +86,17 @@ try {
              erasePost($_GET['id']);
             
              }
-        elseif ($_GET['action'] == 'modifyPost') {  
+        elseif ($_GET['action'] == 'modifyPost') {
+            
+             if (!empty($_POST['titre']) && !empty($_POST['contenu'])) {
+                domodifyPost($_POST['id'],$_POST['titre'],$_POST['contenu']);
+                } else {
+                 //Call to function to display the form 
+                     modifyPost($_GET['id']);
+                }
+            
             
                        
-             modifyPost($_GET['id']);
-                 
-            
             
              }
              
