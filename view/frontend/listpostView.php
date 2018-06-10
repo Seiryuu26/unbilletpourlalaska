@@ -1,7 +1,7 @@
 <?php $title = 'Mon blog'; ?>
 
 <?php ob_start(); ?>
-<h1>Un billet pour l'alaska !</h1>
+<h1>Par Jean Rocheforte</h1>
 <p>Derniers billets du blog :</p>
 
 <?php
@@ -9,6 +9,7 @@ while ($data = $posts->fetch())
 {
 ?>
     <div class="news">
+        
         <h3>
             <?= htmlspecialchars($data['titre']) ?>
             <em><?= $data['creation_date_fr'] ?></em>

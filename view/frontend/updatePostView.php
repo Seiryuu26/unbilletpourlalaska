@@ -31,12 +31,7 @@
         <td>effacer</td>
         <td>mod&eacute;rer</td>
         </tr>
-        <tr>  
-        <th>commentaire2</th> 
-        <td>commentaire2</td>
-        <td>effacer</td>
-        <td>mod&eacute;rer</td>
-        </tr>
+       
         
           
         </table>
