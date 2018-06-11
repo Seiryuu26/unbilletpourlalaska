@@ -43,3 +43,5 @@
             </form>
         </div>
     </div>
+        
+    <?php require('template.php'); ?>

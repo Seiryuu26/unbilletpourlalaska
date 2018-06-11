@@ -7,7 +7,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
         <title><?=$title ?></title>
         <link href="style.css" rel="stylesheet" /> 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -25,24 +25,17 @@
         
     <body>
         
+     <div class='container'>
         
-<div class="card__group">
-<div id="contenu" class="row">
-<div class="card__container card__container--3">
-  
-    
-
-    </div>
-    
          
-
     <h1>Billet simple pour l'Alaska</h1>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <script src="bootstrap/js/bootstrap.min.js"></script>
         <?=$content
 ?>
+    
+    </div> 
+        <div class="alert alert-secondary" role="alert">
+        
         <?php
 if (!empty($_SESSION['pseudo']) && !empty($_SESSION['id']))
 
@@ -57,5 +50,9 @@ else
 }
 
 ?>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     </body>
 </html>
