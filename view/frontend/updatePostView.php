@@ -1,4 +1,7 @@
 <?php $this->title = 'Editer le chapitre' ?>
+
+<?php ob_start(); ?>
+
     <div class="container admin add">
         <div class="row ">
             <h1><strong>Modifier ce chapitre </strong></h1>
@@ -44,4 +47,6 @@
         </div>
     </div>
         
-    <?php require('template.php'); ?>
+<?php $content = ob_get_clean(); ?>
+              
+<?php require('template.php'); ?>

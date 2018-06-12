@@ -1,3 +1,5 @@
+<?php ob_start(); ?>
+
 <div class="container admin add">
     <div class="row ">
         <h1><strong>Ajouter un chapitre </strong></h1>
@@ -53,3 +55,7 @@
         </form>
     </div>
 </div>
+
+<?php $content = ob_get_clean(); ?>
+        
+<?php require('template.php'); ?>

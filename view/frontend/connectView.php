@@ -1,4 +1,6 @@
- <div id="espace d'administration" class="span3 well well-large offset4">
+<?php ob_start(); ?>
+
+<div id="espace d'administration" class="span3 well well-large offset4">
         <div class="centreConnect">
             <h4>Connexion</h4>
             <br>
@@ -13,3 +15,7 @@
                 <input class="btn btn-success" type="submit" value="Login" required /></p> </form>
         </div>
     </div>
+
+<?php $content = ob_get_clean(); ?>
+
+<?php require('template.php'); ?>

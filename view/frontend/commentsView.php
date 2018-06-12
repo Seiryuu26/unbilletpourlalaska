@@ -1,3 +1,5 @@
+<?php ob_start(); ?>
+
 <div class="container admin add">
     <div class="row ">
         <br>
@@ -28,3 +30,7 @@ while ($comment = $comments->fetch())
 ?>
     </div>
 </div>
+
+<?php $content = ob_get_clean(); ?>
+
+<?php require('template.php'); ?>
