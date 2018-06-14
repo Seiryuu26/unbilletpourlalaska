@@ -30,6 +30,8 @@ while ($comment = $comments->fetch())
 ?>
     </div>
 </div>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<div class="g-recaptcha" data-sitekey="6Ld32l4UAAAAADM4l879y-fNZ8br4c_I03InyQmH"></div>
 
 <?php $content = ob_get_clean(); ?>
 

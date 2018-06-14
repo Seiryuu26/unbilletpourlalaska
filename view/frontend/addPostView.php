@@ -35,7 +35,7 @@
 <?php
          foreach($comments as $value) {
             
-             echo '
+             echo  htmlspecialchars '
              <tr>
         <th>'.$value.'</th>
     

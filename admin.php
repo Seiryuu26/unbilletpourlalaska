@@ -30,7 +30,9 @@ try {
 
     }
 }
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<div class="g-recaptcha" data-sitekey="6Ld32l4UAAAAADM4l879y-fNZ8br4c_I03InyQmH"></div>
+    
   catch(Exception $e) {
     $errorMessage = $e->getMessage();
     //require('view/errorView.php');

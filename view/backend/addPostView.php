@@ -33,7 +33,7 @@
 
         while ($comment = $comments->fetch()){
             
-             echo '
+             echo htmlspecialchars '
         <tr>
         <th>'.$comment['id'].'</th>
         <th>'.$comment['contenu'].'</th>
@@ -58,7 +58,7 @@
 
         while ($post = $posts->fetch()){
             
-             echo '
+             echo htmlspecialchars '
         <tr>
         <th>'.$post['id'].'</th>
         <th>'.$post['contenu'].'</th>
