@@ -22,7 +22,7 @@ function connexion($pseudo,$motdepasse)
 
         if (!$resultat)
         {
-             echo  htmlspecialchars'Mauvais identifiant ou mot de passe !';
+             echo  'Mauvais identifiant ou mot de passe !';
         }
         else
         {

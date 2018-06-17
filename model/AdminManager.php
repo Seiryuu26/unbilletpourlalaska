@@ -10,7 +10,7 @@ class AdminManager extends Manager
      $db= $this->dbConnect();
      $req = $db->prepare('SELECT id,nom,prenom,pseudo,motdepasse FROM auteur WHERE pseudo=:pseudo AND motdepasse=:motdepasse');
      $req->execute(array('pseudo' => $pseudo,'motdepasse' => $motdepasse));
-     $resultat = $req->fetch();
+     $resultat = mysql_query($req->fetch());
        return $resultat;
    }
  

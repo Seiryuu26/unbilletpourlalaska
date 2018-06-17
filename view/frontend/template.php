@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+  <script>tinymce.init({ selector:'textarea' });</script>
+</head>
+<body>
+  <textarea>Next, get a free Cloud API key!</textarea>
+</body>
+</html>
+<html>
 <html lang="fr">
     
     <head>
@@ -40,13 +49,13 @@
 if (!empty($_SESSION['pseudo']) && !empty($_SESSION['id']))
 
 {
-    echo htmlspecialchars'<p><a href="/p3/?action=logout">Déconnexion</a></p>';
+    echo '<p><a href="/p3/?action=logout">Déconnexion</a></p>';
 
-    echo  htmlspecialchars'<p><a href="/p3/?action=board">Accéder à l\'espace d\'administration</a></p>';
+    echo '<p><a href="/p3/?action=board">Accéder à l\'espace d\'administration</a></p>';
 }
 else
 {
-    echo  htmlspecialchars'<p><a href="/p3/?action=login">Accéder à l\'espace d\'administration</a></p>';
+    echo '<p><a href="/p3/?action=login">Accéder à l\'espace d\'administration</a></p>';
 }
 
 ?>

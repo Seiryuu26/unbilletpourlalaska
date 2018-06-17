@@ -15,11 +15,11 @@ class Manager
         $texte = substr( $texte, 0, $longueur_max );
         $dernier_espace = strrpos( $texte, ' ' );
         $texte = substr( $texte, 0, $dernier_espace);
-        echo   htmlspecialchars$texte . ' ' . $separateur;
+        echo   $texte . ' ' . $separateur;
     }
         
      
-    else echo   htmlspecialchars$texte; }
+    else echo   $texte; }
     
     public function chapterList() {
     $postManager = new \www\p3\model\PostManager();
