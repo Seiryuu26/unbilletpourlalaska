@@ -33,10 +33,10 @@
 
         while ($comment = $comments->fetch()){
             
-             echo htmlspecialchars '
+             echo '
         <tr>
         <th>'.$comment['id'].'</th>
-        <th>'.$comment['contenu'].'</th>
+        <th>'.htmlspecialchars($comment['contenu']).'</th>
         
         <td><a class="btn btn-primary" href="index.php?action=eraseComment&id='.$comment['id'].'">effacer</a></td>
         </tr>
@@ -58,10 +58,10 @@
 
         while ($post = $posts->fetch()){
             
-             echo htmlspecialchars '
+             echo  '
         <tr>
         <th>'.$post['id'].'</th>
-        <th>'.$post['contenu'].'</th>
+        <th>'.htmlspecialchars($post['contenu']).'</th>
         
         <td><a class="btn btn-primary" href="index.php?action=modifyPost&id='.$post['id'].'">modifier</a></td>
         <td><a class="btn btn-primary" href="index.php?action=erasePost&id='.$post['id'].'">effacer</a></td>

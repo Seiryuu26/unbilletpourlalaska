@@ -28,8 +28,8 @@ function connexion($pseudo,$motdepasse)
         {
             
            
-            $_SESSION['id'] = $resultat['id'];
-            $_SESSION['pseudo'] = $resultat['pseudo'];
+            $_SESSION['id'] = $resultat->getId();
+            $_SESSION['pseudo'] = $resultat->getPseudo();
             header('Location: index.php?action=board');
             echo 'Vous êtes connecté !'; 
 
