@@ -19,6 +19,7 @@ class PostManager extends Manager
         $db = $this->dbConnect();
         $req = $db->prepare('SELECT id, titre, contenu, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM article WHERE id = ?');
         $req->execute(array($articleId));
+        $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, "Post");
         $post = $req->fetch();
 
         return $post;
