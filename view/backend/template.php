@@ -9,6 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
         <title><?=$title ?></title>
+        <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+        
         <link href="style.css" rel="stylesheet" /> 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 

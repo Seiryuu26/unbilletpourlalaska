@@ -20,7 +20,32 @@
             <br>
             <div class="form-actions">
                 <input href="" type="submit" class="btn btn-success " value=" Ajouter"><a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left" > Retour</span></a> </div>
+            
+        </form>
         
+        <script>
+tinymce.init({
+    selector:   "textarea",
+    width:      '100%',
+    height:     270,
+});
+
+// Prevent bootstrap dialog from blocking focusin
+$(document).on('focusin', function(e) {
+    if ($(e.target).closest(".mce-window").length) {
+		e.stopImmediatePropagation();
+	}
+});
+
+$('#open').click(function() {
+	$("#dialog").dialog({
+		width: 800,
+		modal: true
+	});
+});
+</script>
+
+
         <table>
         <h1><strong>Modifier les commentaires </strong></h1>
         <table BORDER="2">
@@ -74,7 +99,7 @@
             
                 <?php $error1; ?>
             
-        </form>
+       
     </div>
 
 </div>

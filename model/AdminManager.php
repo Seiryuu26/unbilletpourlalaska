@@ -6,12 +6,12 @@ require_once("model/Author.php");
 class AdminManager extends Manager
  {
  
-   public function connected ($pseudo,$motdepasse)
+   public function connected ($pseudo)
    {
      $db= $this->dbConnect();
-     $req = $db->prepare('SELECT id,nom,prenom,pseudo,motdepasse FROM auteur WHERE pseudo=:pseudo AND motdepasse=:motdepasse');
-     $req->execute(array('pseudo' => $pseudo,'motdepasse' => $motdepasse));
-     $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, "Author");
+     $req = $db->prepare('SELECT id,firstname,lastname,pseudo,password FROM author WHERE pseudo=:pseudo ');
+     $req->execute(array('pseudo' => $pseudo ));
+     $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Author::class);
      $resultat = $req->fetch();
        return $resultat;
    }

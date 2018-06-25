@@ -11,12 +11,12 @@ function login()
     require('view/frontend/connectView.php');
 }
 
-function connexion($pseudo,$motdepasse)
+function connexion($pseudo,$password)
 {
         //$postManager = new www\p3\model\PostManager(); // Création d'un objet
         $adminManager = new www\p3\model\AdminManager();
         //$adminManager = new AdminManager();
-        $resultat = $adminManager->connected($pseudo,$motdepasse);
+        $resultat = $adminManager->connected($pseudo);
     
 
 
@@ -26,19 +26,21 @@ function connexion($pseudo,$motdepasse)
         }
         else
         {
-            
+            if(password_verify($password,$resultat->getPassword()))
+            {
            
-            $_SESSION['id'] = $resultat->getId();
-            $_SESSION['pseudo'] = $resultat->getPseudo();
-            header('Location: index.php?action=board');
-            echo 'Vous êtes connecté !'; 
+                $_SESSION['id'] = $resultat->getId();
+                $_SESSION['pseudo'] = $resultat->getPseudo();
+                header('Location: index.php?action=board');
+                echo 'Vous êtes connecté !'; 
 
           
 
 
 
 
-        }
+            }else echo 'Mauvais identifiant ou mot de passe !';
+        }  
     
     
     
