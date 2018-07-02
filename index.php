@@ -73,8 +73,8 @@ try {
             
                        
             // $postchapitre, $titre, $contenu
-                if (!empty($_POST['titre']) && !empty($_POST['contenu'])) {
-                addPost($_POST['titre'],$_POST['contenu']);   
+                if (!empty($_POST['title']) && !empty($_POST['content'])) {
+                addPost($_POST['title'],$_POST['content']);   
                 } else {
                     throw new Exception (' Erreur de soumission !');
                 }
@@ -88,8 +88,8 @@ try {
              }
         elseif ($_GET['action'] == 'modifyPost') {
             
-             if (!empty($_POST['titre']) && !empty($_POST['contenu'])) {
-                domodifyPost($_POST['id'],$_POST['titre'],$_POST['contenu']);
+             if (!empty($_POST['title']) && !empty($_POST['content'])) {
+                domodifyPost($_POST['id'],$_POST['title'],$_POST['content']);
                 } else {
                  //Call to function to display the form 
                      modifyPost($_GET['id']);

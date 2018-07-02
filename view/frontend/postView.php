@@ -6,12 +6,12 @@
 
 <div class="news">
     <h3>
-        <?= htmlspecialchars($post['titre']) ?>
+        <?= htmlspecialchars($post['title']) ?>
         <em><?= $post['creation_date_fr'] ?></em>
     </h3>
     
     <p>
-        <?= nl2br(htmlspecialchars($post['contenu'])) ?>
+        <?= nl2br(htmlspecialchars($post['content'])) ?>
     </p>
 </div>
 
@@ -19,11 +19,11 @@
 
 <form action="index.php?action=addComment&amp;id=<?= $_GET['id'] ?>" method="post">
     <div>
-        <label for="auteur">Auteur</label><br />
+        <label for="author">Auteur</label><br />
         <input type="text" id="author" name="author" />
     </div>
     <div>
-        <label for="commentaire">Commentaire</label><br />
+        <label for="comment">Commentaire</label><br />
         <textarea id="comment" name="comment"></textarea>
     </div>
     <div>
@@ -34,8 +34,8 @@
 while ($comment = $comments->fetch())
     {
 ?>
-    <p><strong><?= htmlspecialchars($comment['auteur']) ?></strong>  <?= $comment['comment_date_fr'] ?></p>
-    <p><?= nl2br(htmlspecialchars($comment['contenu'])) ?></p>
+    <p><strong><?= htmlspecialchars($comment['author']) ?></strong>  <?= $comment['comment_date_fr'] ?></p>
+    <p><?= nl2br(htmlspecialchars($comment['content'])) ?></p>
 
 <em><a href="index.php?action=signalComment&amp;id=<?= $comment['id'] ?>">Signaler</a></em>
 

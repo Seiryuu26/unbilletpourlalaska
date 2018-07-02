@@ -4,7 +4,8 @@
 
 <div class="container admin add">
     <div class="row ">
-        <h1><strong>Ajouter un chapitre </strong></h1>
+    <h1><strong>Ajouter un chapitre </strong></h1>
+    <div class="col-lg-12">
         <br>
         <form action='index.php?action=addPost' method="post">
             <div class="form-group">
@@ -20,6 +21,7 @@
             <br>
             <div class="form-actions">
                 <input href="" type="submit" class="btn btn-success " value=" Ajouter"><a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left" > Retour</span></a> </div>
+                </div>
             
         </form>
         
@@ -27,7 +29,7 @@
 tinymce.init({
     selector:   "textarea",
     width:      '100%',
-    height:     270,
+    height:     70,
 });
 
 // Prevent bootstrap dialog from blocking focusin
@@ -39,7 +41,7 @@ $(document).on('focusin', function(e) {
 
 $('#open').click(function() {
 	$("#dialog").dialog({
-		width: 800,
+		width: 100,
 		modal: true
 	});
 });
@@ -48,12 +50,14 @@ $('#open').click(function() {
 
         <table>
         <h1><strong>Modifier les commentaires </strong></h1>
+        <div class="col-lg-12">
         <table BORDER="2">
         <tr>
         <th>num&eacute;ros commentaires signal&eacute;s</th>
         <th>liste commentaires signal&eacute;s</th>
         <th>effacer</th>
         </tr>
+        </div>
         <?php
 
         while ($comment = $comments->fetch()){
@@ -72,6 +76,8 @@ $('#open').click(function() {
         
         <table>
         <h1><strong>Modifier les articles </strong></h1>
+        <div class="col-lg-offset-12">
+        <div class="col-md-10">
         <table BORDER="2">
         <tr>
         <th>num&eacute;ros articles </th>
@@ -79,6 +85,8 @@ $('#open').click(function() {
         <th>modifier</th>  
         <th>effacer</th>
         </tr>
+        </div>
+        </div>
         <?php
 
         while ($post = $posts->fetch()){
