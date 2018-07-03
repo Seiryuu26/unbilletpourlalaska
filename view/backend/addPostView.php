@@ -3,9 +3,7 @@
 <?php ob_start(); ?>
 
 <div class="container admin add">
-    <div class="row ">
     <h1><strong>Ajouter un chapitre </strong></h1>
-    <div class="col-lg-12">
         <br>
         <form action='index.php?action=addPost' method="post">
             <div class="form-group">
@@ -21,9 +19,9 @@
             <br>
             <div class="form-actions">
                 <input href="" type="submit" class="btn btn-success " value=" Ajouter"><a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left" > Retour</span></a> </div>
-                </div>
             
         </form>
+</div>
         
         <script>
 tinymce.init({
@@ -47,62 +45,52 @@ $('#open').click(function() {
 });
 </script>
 
-
-        <table>
-        <h1><strong>Modifier les commentaires </strong></h1>
-        <div class="col-lg-12">
-        <table BORDER="2">
-        <tr>
-        <th>num&eacute;ros commentaires signal&eacute;s</th>
-        <th>liste commentaires signal&eacute;s</th>
-        <th>effacer</th>
-        </tr>
-        </div>
+<div class="container">
+<h1>Modifier les commentaires </h1>
+<div class="row">
+        <div class="col">num&eacute;ros commentaires signal&eacute;s</div>
+        <div class="col">liste commentaires signal&eacute;s</div>
+        <div class="col">effacer</div>
+</div>
         <?php
 
         while ($comment = $comments->fetch()){
             
              echo '
-        <tr>
-        <th>'.$comment['id'].'</th>
-        <th>'.htmlspecialchars($comment['contenu']).'</th>
+        <div class="row">
+        <div class="col">'.$comment['id'].'</div>
+        <div class="col">'.htmlspecialchars($comment['contenu']).'</div>
         
-        <td><a class="btn btn-primary" href="index.php?action=eraseComment&id='.$comment['id'].'">effacer</a></td>
-        </tr>
+        <div class="col"><a class="btn btn-primary" href="index.php?action=eraseComment&id='.$comment['id'].'">effacer</a></div>
+        </div>
         ';
          }
         ?>
-        </table>
+</div>
         
-        <table>
-        <h1><strong>Modifier les articles </strong></h1>
-        <div class="col-lg-offset-12">
-        <div class="col-md-10">
-        <table BORDER="2">
-        <tr>
-        <th>num&eacute;ros articles </th>
-        <th>liste  des articles </th>
-        <th>modifier</th>  
-        <th>effacer</th>
-        </tr>
-        </div>
+<div class="container border-article">
+<h1>Modifier les articles</h1>
+<div class="row">
+        <div class="col">num&eacute;ros articles </div>
+        <div class="col">liste  des articles </div>
+        <div class="col">modifier</div>  
+        <div class="col">effacer</div>
         </div>
         <?php
 
         while ($post = $posts->fetch()){
             
              echo  '
-        <tr>
-        <th>'.$post['id'].'</th>
-        <th>'.htmlspecialchars($post['contenu']).'</th>
+        <div class="row">
+        <div class="col">'.$post['id'].'</div>
+        <div class="col">'.htmlspecialchars($post['contenu']).'</div>
         
-        <td><a class="btn btn-primary" href="index.php?action=modifyPost&id='.$post['id'].'">modifier</a></td>
-        <td><a class="btn btn-primary" href="index.php?action=erasePost&id='.$post['id'].'">effacer</a></td>
-        </tr>
+        <div class="col"><a class="btn btn-primary" href="index.php?action=modifyPost&id='.$post['id'].'">modifier</a></div>
+        <div class="col"><a class="btn btn-primary" href="index.php?action=erasePost&id='.$post['id'].'">effacer</a></div>
+      </div>
         ';
          }
         ?>
-        </table>
          
             
                 <?php $error1; ?>
@@ -110,7 +98,6 @@ $('#open').click(function() {
        
     </div>
 
-</div>
 <?php $content = ob_get_clean(); ?>
         
 <?php require('template.php'); ?>
