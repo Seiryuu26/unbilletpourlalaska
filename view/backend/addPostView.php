@@ -45,12 +45,14 @@ $('#open').click(function() {
 });
 </script>
 
-<div class="container">
+<div class="container border">
 <h1>Modifier les commentaires </h1>
 <div class="row">
-        <div class="col">num&eacute;ros commentaires signal&eacute;s</div>
-        <div class="col">liste commentaires signal&eacute;s</div>
-        <div class="col">effacer</div>
+<table class="table table-bordered">
+    <th><div class="col">num&eacute;ros commentaires signal&eacute;s</div></th>
+    <th><div class="col">liste commentaires signal&eacute;s</div></th>
+    <th><div class="col">effacer</div></th>
+</table>
 </div>
         <?php
 
@@ -71,10 +73,12 @@ $('#open').click(function() {
 <div class="container border-article">
 <h1>Modifier les articles</h1>
 <div class="row">
-        <div class="col">num&eacute;ros articles </div>
-        <div class="col">liste  des articles </div>
-        <div class="col">modifier</div>  
-        <div class="col">effacer</div>
+<table class="table table-bordered">
+        <th><div class="col">num&eacute;ros articles </div></th>
+        <th><div class="col">liste  des articles </div></th>
+        <th><div class="col">modifier</div></th>  
+        <th><div class="col">effacer</div></th>
+</table>
         </div>
         <?php
 
