@@ -4,6 +4,7 @@
 require_once('model/PostManager.php');
 require_once('model/CommentManager.php');
 require_once('model/AdminManager.php');
+require_once('tools/Tools.php');
 //use \wwww\p3\model\AdminManager;
 
 function login()
@@ -13,6 +14,9 @@ function login()
 
 function connexion($pseudo,$password)
 {
+        //instantiation of the tools class;
+        $tools = new www\p3\tools\Tools();
+        $recaptchaCheck = $tools->recaptchaCheck($_POST['g-recaptcha-response'],$_SERVER['REMOTE_ADDR']);
         //$postManager = new www\p3\model\PostManager(); // Création d'un objet
         $adminManager = new www\p3\model\AdminManager();
         //$adminManager = new AdminManager();

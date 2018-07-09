@@ -46,6 +46,7 @@ class PostManager extends Manager
         $newLines = $posts->execute(array($titre,$contenu));
         return $newLines;
     }
+    
 
 
  
