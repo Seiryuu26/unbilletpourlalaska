@@ -47,23 +47,20 @@ $('#open').click(function() {
 
 <div class="container border">
 <h1>Modifier les commentaires </h1>
-<div class="row">
-<table class="table table-bordered">
-    <th><div class="col">num&eacute;ros commentaires signal&eacute;s</div></th>
-    <th><div class="col">liste commentaires signal&eacute;s</div></th>
-    <th><div class="col">effacer</div></th>
-</table>
+<div class="row myborder">
+    <div class="col-lg-2">num&eacute;ros commentaires signal&eacute;s</div>
+    <div class="col-lg-8">liste commentaires signal&eacute;s</div>
+    <div class="col-lg-2">effacer</div>
 </div>
         <?php
-
         while ($comment = $comments->fetch()){
             
-             echo '
-        <div class="row">
-        <div class="col">'.$comment['id'].'</div>
-        <div class="col">'.htmlspecialchars($comment['contenu']).'</div>
+         echo '   
+         <div class="row myborder">
+         <div class="col-lg-2">'.$comment['id'].'</div>
+         <div class="col-lg-8">'.htmlspecialchars($comment['contenu']).'</div>
         
-        <div class="col"><a class="btn btn-primary" href="index.php?action=eraseComment&id='.$comment['id'].'">effacer</a></div>
+         <div class="col-lg-2"><a class="btn btn-primary" href="index.php?action=eraseComment&id='.$comment['id'].'">effacer</a></div>
         </div>
         ';
          }
@@ -72,25 +69,25 @@ $('#open').click(function() {
         
 <div class="container border-article">
 <h1>Modifier les articles</h1>
-<div class="row">
-<table class="table table-bordered">
-        <th><div class="col">num&eacute;ros articles </div></th>
-        <th><div class="col">liste  des articles </div></th>
-        <th><div class="col">modifier</div></th>  
-        <th><div class="col">effacer</div></th>
-</table>
+<div class="row myborder">
+
+        <div class="col-2">num&eacute;ros articles </div>
+        <div class="col-lg-6">liste  des articles </div>
+        <div class="col-lg-2">modifier</div>  
+        <div class="col-lg-2">effacer</div>
         </div>
         <?php
 
         while ($post = $posts->fetch()){
             
              echo  '
-        <div class="row">
-        <div class="col">'.$post['id'].'</div>
-        <div class="col">'.htmlspecialchars($post['contenu']).'</div>
+        <div class="row myborder">
+       
+       <div class="col-2">'.$post['id'].'</div>
+       <div class="col-6">'.htmlspecialchars($post['contenu']).'</div>
         
-        <div class="col"><a class="btn btn-primary" href="index.php?action=modifyPost&id='.$post['id'].'">modifier</a></div>
-        <div class="col"><a class="btn btn-primary" href="index.php?action=erasePost&id='.$post['id'].'">effacer</a></div>
+         <div class="col-2"><a class="btn btn-primary" href="index.php?action=modifyPost&id='.$post['id'].'">modifier</a></div>
+        <div class="col-2"><a class="btn btn-primary" href="index.php?action=erasePost&id='.$post['id'].'">effacer</a></div>
       </div>
         ';
          }
