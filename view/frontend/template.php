@@ -40,13 +40,13 @@
 if (!empty($_SESSION['pseudo']) && !empty($_SESSION['id']))
 
 {
-    echo '<p><a href="/p3/?action=logout">Déconnexion</a></p>';
+    echo '<p><a href="/?action=logout">Déconnexion</a></p>';
 
-    echo '<p><a href="/p3/?action=board">Accéder à l\'espace d\'administration</a></p>';
+    echo '<p><a href="/?action=board">Accéder à l\'espace d\'administration</a></p>';
 }
 else
 {
-    echo '<p><a href="/p3/?action=login">Accéder à l\'espace d\'administration</a></p>';
+    echo '<p><a href="/?action=login">Accéder à l\'espace d\'administration</a></p>';
 }
 
 ?>
