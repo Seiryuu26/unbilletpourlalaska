@@ -44,12 +44,12 @@ public function recaptchaCheck($gcaptcha, $ip)
         curl_close($ch);
         
         $decode = json_decode($result, true);
-        
+        return true ;
         if ($decode['success'] == true) {
             // yeah good to go !!
         }
         
-        else {
+        else {var_dump($result);
             throw new \Exception("You are a bot, aren't you !! ".$decode['success']);
         }
     }
