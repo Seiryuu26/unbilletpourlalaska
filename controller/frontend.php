@@ -32,7 +32,7 @@ function addComment($postId, $auteur, $comment)
     $affectedLines = $commentManager->postComment($postId, $auteur, $comment);
 
     if ($affectedLines === false) {
-        throw new Exception('Impossible d\'ajouter le commentaire !');
+        throw new Exception('Impossible to add the comment !');
     }
     else {
         header('Location: index.php?action=post&id=' . $postId);
@@ -47,7 +47,7 @@ function modifyComment($commentId)
     $affectedLines = $commentManager->modify($commentId);
 
     if ($affectedLines === false) {
-        throw new Exception('commentaire déja modifié !');
+        throw new Exception('comment already modify !');
     }
     else {
         header('Location: index.php');
@@ -61,7 +61,7 @@ function deleteComment($commentId)
     $affectedLines = $commentManager->delete($commentId);
 
     if ($affectedLines === false) {
-        throw new Exception('commentaire déja supprimé !');
+        throw new Exception('comment already erased !');
     }
     else {
         header('Location: index.php');
@@ -75,7 +75,7 @@ function signalComment($commentId)
     $affectedLines = $commentManager->signal($commentId);
 
     if ($affectedLines === false) {
-        throw new Exception('commentaire d&eacute;ja signal&eacute; !');
+        throw new Exception('comment already signaled !');
     }
     else {
         header('Location: index.php');

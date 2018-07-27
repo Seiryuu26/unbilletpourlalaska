@@ -26,7 +26,7 @@ function connexion($pseudo,$password)
 
         if (!$resultat)
         {
-             echo  'Mauvais identifiant ou mot de passe !';
+             echo  'Wrong ID or password ! !';
         }
         else
         {
@@ -36,7 +36,7 @@ function connexion($pseudo,$password)
                 $_SESSION['id'] = $resultat->getId();
                 $_SESSION['pseudo'] = $resultat->getPseudo();
                 header('Location: index.php?action=board');
-                echo 'Vous êtes connecté !'; 
+                echo 'You are connected !'; 
 
           
 
@@ -73,7 +73,7 @@ function eraseComment($commentId)
     $affectedLines = $commentManager->erase($commentId);
 
     if ($affectedLines === false) {
-        throw new Exception('commentaire d&eacute;ja effac&eacute; !');
+        throw new Exception('comment already erased  !');
     }
     else {
         header('Location: index.php');
@@ -86,7 +86,7 @@ function moderateComment($commentId)
     $affectedLines = $commentManager->moderate($commentId);
 
     if ($affectedLines === false) {
-        throw new Exception('commentaire d&eacute;ja mod&eacute;r&eacute; !');
+        throw new Exception('comment already moderated  !');
     }
     else {
         header('Location: index.php');
@@ -113,7 +113,7 @@ function addPost($titre, $contenu)
     $affectedLines = $PostManager->addPost($titre, $contenu);
 
     if ($affectedLines === false) {
-        throw new Exception('Impossible d\'ajouter le chapitre !');
+        throw new Exception('Impossible to add the chapter !');
     }
     else {
         header('Location: index.php?action=post&id=' . $postId);
@@ -126,7 +126,7 @@ function erasePost($postId)
     $affectedLines = $postManager->deletePost($postId);
 
     if ($affectedLines === false) {
-        throw new Exception('article d&eacute;ja effac&eacute; !');
+        throw new Exception('post already erased !');
     }
     else {
         header('Location: index.php');
@@ -148,7 +148,7 @@ function domodifyPost($id,$titre,$contenu)
     $affectedLines = $PostManager->modifyPost($id,$titre,$contenu);
 
     if ($affectedLines === false) {
-        throw new Exception('Impossible d\'ajourner le chapitre !');
+        throw new Exception('Impossible to update the chapter !');
     }
     else {
         header('Location: index.php?action=board' );
