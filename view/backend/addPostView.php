@@ -8,17 +8,17 @@
         <form action='index.php?action=addPost' method="post">
             <div class="form-group">
                 <label for="name">Chapitre:</label>
-                <input type="text" class="form-control" name='chapitre' placeholder="Chapitre"> <span class="help-inline"></span> </div>
+                <input type="text" class="form-control" name='chapter' placeholder="Chapter"> <span class="help-inline"></span> </div>
             <div class="form-group">
                 <label for="description">Titre:</label>
-                <input type="text" class="form-control" name='titre' placeholder="Titre"> <span class="help-inline"></span> </div>
+                <input type="text" class="form-control" name='title' placeholder="Title"> <span class="help-inline"></span> </div>
             <div class="form-group">
                 <label for="description">Contenu:</label>
-                <textarea type="text" class="form-control" name='contenu' placeholder="Contenu"></textarea> <span class="help-inline"></span> </div>
+                <textarea type="text" class="form-control" name='content' placeholder="Content"></textarea> <span class="help-inline"></span> </div>
             <br>
             <br>
             <div class="form-actions">
-                <input href="" type="submit" class="btn btn-success " value=" Ajouter"><a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left" > Retour</span></a> </div>
+                <input type="submit" class="btn btn-success " value=" Ajouter"><a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left" > Retour</span></a> </div>
             
         </form>
 </div>
@@ -58,7 +58,7 @@ $('#open').click(function() {
          echo '   
          <div class="row myborder">
          <div class="col-lg-2">'.$comment['id'].'</div>
-         <div class="col-lg-8">'.htmlspecialchars($comment['contenu']).'</div>
+         <div class="col-lg-8">'.htmlspecialchars($comment['content']).'</div>
         
          <div class="col-lg-2"><a class="btn btn-primary" href="index.php?action=eraseComment&id='.$comment['id'].'">effacer</a></div>
         </div>
@@ -84,7 +84,7 @@ $('#open').click(function() {
         <div class="row myborder">
        
        <div class="col-2">'.$post['id'].'</div>
-       <div class="col-6">'.htmlspecialchars($post['contenu']).'</div>
+       <div class="col-6">'.htmlspecialchars($post['content']).'</div>
         
          <div class="col-2"><a class="btn btn-primary" href="index.php?action=modifyPost&id='.$post['id'].'">modifier</a></div>
         <div class="col-2"><a class="btn btn-primary" href="index.php?action=erasePost&id='.$post['id'].'">effacer</a></div>

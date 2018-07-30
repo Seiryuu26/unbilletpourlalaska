@@ -23,7 +23,7 @@ try {
                 if (!empty($_POST['author']) && !empty($_POST['comment'])) {
                     addComment($_GET['id'], $_POST['author'], $_POST['comment']);
                 } else {
-                    throw new Exception (' Tous les champs ne sont pas remplis !');
+                    throw new Exception (' all the fileds are not filled !');
                 }
             } else {
                 throw new Exception (' Aucun identifiant de billet envoyé');
@@ -44,7 +44,7 @@ try {
                     if (!empty($_POST['pseudo']) && !empty($_POST['motdepasse'])) {
                         connexion($_POST['pseudo'], $_POST['motdepasse']);
                     } else {
-                        throw new Exception (' Tous les champs ne sont pas complets !');
+                        throw new Exception (' all the fields are not completed  !');
                     }
                 }
         /**
@@ -76,7 +76,7 @@ try {
                 if (!empty($_POST['title']) && !empty($_POST['content'])) {
                 addPost($_POST['title'],$_POST['content']);   
                 } else {
-                    throw new Exception (' Erreur de soumission !');
+                    throw new Exception (' Error of submission !');
                 }
         }
         elseif ($_GET['action'] == 'erasePost') {  

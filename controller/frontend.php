@@ -25,11 +25,11 @@ function post()
     require('view/frontend/postView.php');
 }
 
-function addComment($postId, $auteur, $comment)
+function addComment($postId, $member, $comment)
 {
     $commentManager = new www\p3\model\CommentManager();
 
-    $affectedLines = $commentManager->postComment($postId, $auteur, $comment);
+    $affectedLines = $commentManager->postComment($postId, $member, $comment);
 
     if ($affectedLines === false) {
         throw new Exception('Impossible to add the comment !');

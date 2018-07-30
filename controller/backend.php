@@ -57,7 +57,7 @@ function connexion($pseudo,$password)
    
 
      $commentManager = new www\p3\model\CommentManager();
-     $comments = $commentManager->commentaireSignal();
+     $comments = $commentManager->commentSignal();
      
      $postManager = new www\p3\model\PostManager();
      $posts = $postManager->getPosts();
@@ -103,14 +103,14 @@ session_destroy();
     }
 /**
 * method in call from the rounting page under action addPost 
-* @param $titre
-* @param $contenu
+* @param $title
+* @param $content
 */
-function addPost($titre, $contenu)
+function addPost($title, $content)
 {
     $PostManager = new www\p3\model\PostManager();
 
-    $affectedLines = $PostManager->addPost($titre, $contenu);
+    $affectedLines = $PostManager->addPost($title, $content);
 
     if ($affectedLines === false) {
         throw new Exception('Impossible to add the chapter !');

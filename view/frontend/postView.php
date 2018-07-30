@@ -4,12 +4,12 @@
 
 <div class="news">
     <h3>
-        <?= htmlspecialchars($post['titre']) ?>
+        <?= htmlspecialchars($post['title']) ?>
         <em><?= $post['creation_date_fr'] ?></em>
     </h3>
     
     <p>
-        <?= nl2br(htmlspecialchars($post['contenu'])) ?>
+        <?= nl2br(htmlspecialchars($post['content'])) ?>
     </p>
 </div>
 
@@ -18,7 +18,7 @@
 <form action="index.php?action=addComment&amp;id=<?= $_GET['id'] ?>" method="post">
     <div>
         <label for="author">Auteur</label><br />
-        <input type="text" id="author" name="author" />
+        <input type="text" id="member" name="member" />
     </div>
     <div>
         <label for="comment">Commentaire</label><br />
@@ -32,7 +32,7 @@
 while ($comment = $comments->fetch())
     {
 ?>
-    <p><strong><?= htmlspecialchars($comment['author']) ?></strong>  <?= $comment['comment_date_fr'] ?></p>
+    <p><strong><?= htmlspecialchars($comment['member']) ?></strong>  <?= $comment['comment_date_fr'] ?></p>
     <p><?= nl2br(htmlspecialchars($comment['content'])) ?></p>
 
 <em><a href="index.php?action=signalComment&amp;id=<?= $comment['id'] ?>">Signaler</a></em>

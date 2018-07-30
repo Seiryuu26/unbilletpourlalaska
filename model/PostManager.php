@@ -9,7 +9,7 @@ class PostManager extends Manager
     public function getPosts()
     {
         $db = $this->dbConnect();
-        $req = $db->query('SELECT id, title, content, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM post ORDER BY date DESC LIMIT 0, 5');
+        $req = $db->query('SELECT id, title, content, DATE_FORMAT(post_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM post ORDER BY post_date DESC LIMIT 0, 5');
 
         return $req;
     }
@@ -17,7 +17,7 @@ class PostManager extends Manager
     public function getPost($articleId)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT id, title, content, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_uk FROM post WHERE id = ?');
+        $req = $db->prepare('SELECT id, title, content, DATE_FORMAT(post_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_uk FROM post WHERE id = ?');
         $req->execute(array($articleId));
         $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, "Post");
         $post = $req->fetch();
@@ -39,17 +39,18 @@ class PostManager extends Manager
         $deleteLines= $req->execute(array($articleId));
         return $deleteLines;
     }
-    public function addPost($titre,$contenu)
-    {
+    public function addPost($title,$content)
+    { try{echo $title,$content;
       $db = $this->dbConnect();
-        $posts = $db->prepare('INSERT INTO post(title, content,date) VALUES(?, ?, NOW())');
-        $newLines = $posts->execute(array($titre,$contenu));
+        $posts = $db->prepare('INSERT INTO post(title, content,post_date) VALUES(?,? , NOW())');
+        $newLines = $posts->execute(array($title,$content));
         return $newLines;
-    }
-    
+    }catch(PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+   }
 
 
  
-   
 
 }
