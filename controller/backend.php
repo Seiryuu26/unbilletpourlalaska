@@ -43,7 +43,7 @@ function connexion($pseudo,$password)
 
 
 
-            }else echo 'Mauvais identifiant ou mot de passe !';
+            }else echo 'Wrong login or password!';
         }  
     
     
@@ -141,11 +141,11 @@ function modifyPost($postId)
     require('view/backend/updatePostView.php');
     
 }
-function domodifyPost($id,$titre,$contenu)
+function doModifyPost($id,$title,$content)
 {
     $PostManager = new www\p3\model\PostManager();
 
-    $affectedLines = $PostManager->modifyPost($id,$titre,$contenu);
+    $affectedLines = $PostManager->modifyPost($post);
 
     if ($affectedLines === false) {
         throw new Exception('Impossible to update the chapter !');

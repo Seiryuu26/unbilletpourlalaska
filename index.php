@@ -16,17 +16,17 @@ try {
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 post();
             } else {
-                throw new Exception ('Aucun identifiant de billet envoyé');
+                throw new Exception ('Any identifiant de billet send');
             }
         } elseif ($_GET['action'] == 'addComment') {
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 if (!empty($_POST['author']) && !empty($_POST['comment'])) {
                     addComment($_GET['id'], $_POST['author'], $_POST['comment']);
                 } else {
-                    throw new Exception (' all the fileds are not filled !');
+                    throw new Exception (' all the fields are not filled !');
                 }
             } else {
-                throw new Exception (' Aucun identifiant de billet envoyé');
+                throw new Exception (' Any identifiant de billet send');
             }
         } 
       elseif ($_GET['action'] == 'login') {
@@ -41,8 +41,8 @@ try {
 
        else if ($_GET['action'] == 'connexion') {
 
-                    if (!empty($_POST['pseudo']) && !empty($_POST['motdepasse'])) {
-                        connexion($_POST['pseudo'], $_POST['motdepasse']);
+                    if (!empty($_POST['pseudo']) && !empty($_POST['password'])) {
+                        connexion($_POST['pseudo'], $_POST['password']);
                     } else {
                         throw new Exception (' all the fields are not completed  !');
                     }

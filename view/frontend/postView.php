@@ -4,12 +4,12 @@
 
 <div class="news">
     <h3>
-        <?= htmlspecialchars($post['title']) ?>
-        <em><?= $post['creation_date_fr'] ?></em>
+        <?= htmlspecialchars($post->getTitle()) ?>
+        <em><?= ($post->getDate()) ?></em>
     </h3>
     
     <p>
-        <?= nl2br(htmlspecialchars($post['content'])) ?>
+        <?= nl2br(htmlspecialchars($post->getContent())) ?>
     </p>
 </div>
 
@@ -32,7 +32,7 @@
 while ($comment = $comments->fetch())
     {
 ?>
-    <p><strong><?= htmlspecialchars($comment['member']) ?></strong>  <?= $comment['comment_date_fr'] ?></p>
+    <p><strong><?= htmlspecialchars($comment['member']) ?></strong>  <?= $comment['date'] ?></p>
     <p><?= nl2br(htmlspecialchars($comment['content'])) ?></p>
 
 <em><a href="index.php?action=signalComment&amp;id=<?= $comment['id'] ?>">Signaler</a></em>

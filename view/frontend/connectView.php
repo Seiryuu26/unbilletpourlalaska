@@ -9,7 +9,7 @@
                 <input type="text" placeholder="Pseudo" name="pseudo" value="" />
                 </p>
                 <p>
-                <input type="password" placeholder="Password" name="motdepasse" value="" required/>
+                <input type="password" placeholder="Password" name="password" value="" required/>
                 </p>
            <div class="g-recaptcha" 
 
