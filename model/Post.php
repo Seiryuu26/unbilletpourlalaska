@@ -1,5 +1,5 @@
 <?php
-
+namespacewwwp3model;
 /**
  * Classe which represents a post
  * @author David P.

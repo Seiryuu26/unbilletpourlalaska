@@ -144,7 +144,8 @@ function modifyPost($postId)
 function doModifyPost($id,$title,$content)
 {
     $PostManager = new www\p3\model\PostManager();
-
+    $post = new Post;
+    $post->etter();
     $affectedLines = $PostManager->modifyPost($post);
 
     if ($affectedLines === false) {

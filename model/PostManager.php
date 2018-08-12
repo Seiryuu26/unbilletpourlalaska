@@ -41,14 +41,14 @@ class PostManager extends Manager
     {
       $db = $this->dbConnect();
         $req = $db->prepare('DELETE FROM post  WHERE id = ?'); 
-        $deleteLines= $req->execute(array($articleId));
+        $deleteLines= $req->execute(array($post->getId()));
         return $deleteLines;
     }
     public function addPost($title,$content)
     { try{echo $title,$content;
       $db = $this->dbConnect();
         $posts = $db->prepare('INSERT INTO post(title, content,post_date) VALUES(?,? , NOW())');
-        $newLines = $posts->execute(array($title,$content));
+        $newLines = $posts->execute(array($post->getTitle(),$post->getContent()));
         return $newLines;
     }catch(PDOException $e) {
             echo "Error: " . $e->getMessage();
