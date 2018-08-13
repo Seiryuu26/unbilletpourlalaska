@@ -1,6 +1,7 @@
 <?php
 
 namespace www\p3\model;
+require_once("model/Comment.php");
 require_once("model/Manager.php");
 
 class CommentManager extends Manager

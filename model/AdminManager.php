@@ -11,7 +11,7 @@ class AdminManager extends Manager
      $db= $this->dbConnect();
      $req = $db->prepare('SELECT id,firstname,lastname,pseudo,password FROM member WHERE pseudo=:pseudo ');
      $req->execute(array('pseudo' => $pseudo ));
-     $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Member::class);
+     $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, "Member");
      $resultat = $req->fetch();
        return $resultat;
    }
