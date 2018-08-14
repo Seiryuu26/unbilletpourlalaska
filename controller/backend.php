@@ -1,6 +1,7 @@
 <?php
 
 // Chargement des classes
+require_once('model/Post.php');
 require_once('model/PostManager.php');
 require_once('model/CommentManager.php');
 require_once('model/AdminManager.php');
@@ -141,11 +142,13 @@ function modifyPost($postId)
     require('view/backend/updatePostView.php');
     
 }
-function doModifyPost($id,$title,$content)
+function doModifyPost($datapost)
 {
     $PostManager = new www\p3\model\PostManager();
-    $post = new Post;
-    $post->etter();
+    $post = new www\p3\model\Post();
+    $post->setId($datapost['id']);
+    $post->setTitle($datapost['title']);
+    $post->setContent($datapost['content']);
     $affectedLines = $PostManager->modifyPost($post);
 
     if ($affectedLines === false) {

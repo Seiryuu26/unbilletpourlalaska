@@ -19,7 +19,7 @@ class PostManager extends Manager
         $db = $this->dbConnect();
         $req = $db->prepare('SELECT id, title, content, DATE_FORMAT(post_date, \'%d/%m/%Y à %Hh%imin%ss\') AS date FROM post WHERE id = ?');
         $req->execute(array($articleId));
-        $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, "Post");
+        $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Post::class);
         $post = $req->fetch();
 
         return $post;
@@ -33,7 +33,7 @@ class PostManager extends Manager
     {
         $db = $this->dbConnect();
         $req = $db->prepare('UPDATE post SET content = ?,title = ?  WHERE id = ?');
-        $reaffectedLines =$req->execute(array($post->getContent(),$post->getTitle(),$post->getId());
+        $reaffectedLines =$req->execute(array($post->getContent(),$post->getTitle(),$post->getId()));
        return $reaffectedLines;
 
     }

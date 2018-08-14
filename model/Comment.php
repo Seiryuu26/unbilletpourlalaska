@@ -1,5 +1,5 @@
 <?php
-namespacewwwp3model;
+namespace www\p3\model;
 /**
  * Classe which represents an comment
  * @author David P.
@@ -79,3 +79,4 @@ class Comment
     {
         return $this->signaled ;
     }
+}

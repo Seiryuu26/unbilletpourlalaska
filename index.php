@@ -89,7 +89,7 @@ try {
         elseif ($_GET['action'] == 'modifyPost') {
             
              if (!empty($_POST['title']) && !empty($_POST['content'])) {
-                domodifyPost($_POST['id'],$_POST['title'],$_POST['content']);
+                domodifyPost($_POST);
                 } else {
                  //Call to function to display the form 
                      modifyPost($_GET['id']);

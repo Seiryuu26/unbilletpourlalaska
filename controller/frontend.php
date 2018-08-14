@@ -20,7 +20,7 @@ function post()
     $commentManager = new www\p3\model\CommentManager();
 
     $post = $postManager->getPost($_GET['id']);
-    $comments = $commentManager->getComments($_GET['id']);
+    $comments = $commentManager->getComments($post);
 
     require('view/frontend/postView.php');
 }
