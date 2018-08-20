@@ -3,7 +3,7 @@
 // Chargement des classes
 require_once('model/PostManager.php');
 require_once('model/CommentManager.php');
-
+require_once('model/Comment.php');
 
 
 function listPosts()
@@ -25,11 +25,15 @@ function post()
     require('view/frontend/postView.php');
 }
 
-function addComment($postId, $member, $comment)
+function addComment($postId, $author, $content)
 {
     $commentManager = new www\p3\model\CommentManager();
-
-    $affectedLines = $commentManager->postComment($postId, $member, $comment);
+    $comment = new www\p3\model\Comment();
+    $comment ->setPostId($postId);
+    $comment ->setAuthor($author);
+    $comment ->setContent($content);
+    $affectedLines = $commentManager->postComment($comment);
+    
 
     if ($affectedLines === false) {
         throw new Exception('Impossible to add the comment !');

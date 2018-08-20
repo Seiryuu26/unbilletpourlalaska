@@ -18,7 +18,7 @@
 <form action="index.php?action=addComment&amp;id=<?= $_GET['id'] ?>" method="post">
     <div>
         <label for="author">Auteur</label><br />
-        <input type="text" id="member" name="member" />
+        <input type="text" id="member" name="author" />
     </div>
     <div>
         <label for="comment">Commentaire</label><br />

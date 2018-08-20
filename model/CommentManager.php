@@ -15,12 +15,12 @@ class CommentManager extends Manager
         return $commentaires;
     }
 
-    public function postComment($postId, $member, $content )
+    public function postComment($comment)
 
     {
         $db = $this->dbConnect();
-        $commentaires = $db->prepare('INSERT INTO comment(post_id, member, content, post_date) VALUES(?, ?, ?, NOW())');
-        $affectedLines = $commentaires->execute(array($comment->getPostId(),$comment->getMember(),$comment->getContent()));
+        $commentaires = $db->prepare('INSERT INTO comment(post_id, author, content, date) VALUES(?, ?, ?, NOW())');
+        $affectedLines = $commentaires->execute(array($comment->getPostId(),$comment->getAuthor(),$comment->getContent()));
 
         return $affectedLines;
     }

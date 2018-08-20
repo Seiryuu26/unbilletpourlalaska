@@ -15,7 +15,7 @@ class Comment
     private $content;
     private $author;
     private $date;
-    private $post_id;
+    private $postId;
     private $signaled;
     // SETTERS
     public function setId($id)
@@ -38,10 +38,10 @@ class Comment
     {
         $this->date = $date;
     }
-    public function setPost_id($post_id)
+    public function setPostId($postId)
 
     {
-        $this->post_id = $post_id;
+        $this->postId = $postId;
     }
     public function setSignales($signaled)
 
@@ -69,10 +69,10 @@ class Comment
     {
         return $this->date ;
     }
-    public function getPost_id()
+    public function getPostId()
 
     {
-        return $this->post_id ;
+        return $this->postId ;
     }
     public function getSignaled()
 
