@@ -21,10 +21,11 @@
         <input type="text" id="member" name="author" />
     </div>
     <div>
-        <label for="comment">Commentaire</label><br />
-        <textarea id="comment" name="comment"></textarea>
+        <label for="content">Commentaire</label><br />
+        <textarea id="content" name="content"></textarea>
     </div>
     <div>
+        <input name="postId" type="hidden" value="<?=$_GET['id'] ?>" />
         <input type="submit" />
     </div>
 </form>

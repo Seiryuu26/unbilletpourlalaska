@@ -25,7 +25,7 @@ function post()
     require('view/frontend/postView.php');
 }
 
-function addComment($postId, $author, $content)
+function addComment($postId,$author,$content)
 {
     $commentManager = new www\p3\model\CommentManager();
     $comment = new www\p3\model\Comment();
