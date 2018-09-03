@@ -21,17 +21,17 @@ function post()
 
     $post = $postManager->getPost($_GET['id']);
     $comments = $commentManager->getComments($post);
-
+     
     require('view/frontend/postView.php');
 }
 
-function addComment($postId,$author,$content)
+function addComment($dataComment)
 {
     $commentManager = new www\p3\model\CommentManager();
     $comment = new www\p3\model\Comment();
-    $comment ->setPostId($postId);
-    $comment ->setAuthor($author);
-    $comment ->setContent($content);
+    $comment ->setPostId($dataComment['postId']);
+    $comment ->setAuthor($dataComment['author']);
+    $comment ->setContent($dataComment['content']);
     $affectedLines = $commentManager->postComment($comment);
     
 
@@ -39,7 +39,7 @@ function addComment($postId,$author,$content)
         throw new Exception('Impossible to add the comment !');
     }
     else {
-        header('Location: index.php?action=post&id=' . $postId);
+        header('Location: index.php?action=post&id=' . $dataComment['postId']);
     }
 }
 

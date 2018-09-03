@@ -20,7 +20,7 @@ try {
             }
         } elseif ($_GET['action'] == 'addComment') {
             if (isset($_GET['id']) && $_GET['id'] > 0) {
-                if (!empty($_POST['author']) && !empty($_POST['comment'])) {
+                if (!empty($_POST['author']) && !empty($_POST['content'])) {
                     addComment($_POST);
                 } else {
                     throw new Exception (' all the fields are not filled !');

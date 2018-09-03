@@ -9,7 +9,7 @@ class CommentManager extends Manager
     public function getComments($post)
     {
         $db = $this->dbConnect();
-        $commentaires = $db->prepare('SELECT id, member, content, DATE_FORMAT(post_date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM comment WHERE post_id = ? ORDER BY date DESC');
+        $commentaires = $db->prepare('SELECT id, author, content, DATE_FORMAT(comment_date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM comment WHERE post_id = ? ORDER BY comment_date DESC');
         $commentaires->execute(array($post->getId()));
 
         return $commentaires;
@@ -19,7 +19,7 @@ class CommentManager extends Manager
 
     {
         $db = $this->dbConnect();
-        $commentaires = $db->prepare('INSERT INTO comment(post_id, author, content, date) VALUES(?, ?, ?, NOW())');
+        $commentaires = $db->prepare('INSERT INTO comment(post_id, author, content, comment_date) VALUES(?, ?, ?, NOW())');
         $affectedLines = $commentaires->execute(array($comment->getPostId(),$comment->getAuthor(),$comment->getContent()));
 
         return $affectedLines;
@@ -54,7 +54,7 @@ class CommentManager extends Manager
     }
     public function commentSignal(){
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT id, author, content, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM comment WHERE signaled=1 ');
+        $req = $db->prepare('SELECT id, author, content, DATE_FORMAT(comment_date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM comment WHERE signaled=1 ');
         $req->execute(array());
        return $req;
     }
