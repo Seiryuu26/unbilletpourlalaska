@@ -107,11 +107,13 @@ session_destroy();
 * @param $title
 * @param $content
 */
-function addPost($title, $content)
+function addPost($title,$content)
 {
     $PostManager = new www\p3\model\PostManager();
-
-    $affectedLines = $PostManager->addPost($title, $content);
+    $post = new www\p3\model\Post();
+    $post->setTitle($title);
+    $post->setContent($content);
+    $affectedLines = $PostManager->addPost($post);
 
     if ($affectedLines === false) {
         throw new Exception('Impossible to add the chapter !');

@@ -37,7 +37,7 @@ class CommentManager extends Manager
      public function signal($commentId){
         $db = $this->dbConnect();
         $req = $db->prepare('UPDATE comment SET signaled = 1 WHERE id = ?');
-         $comment =$req->execute(array($comment->getCommentId()));
+         $comment =$req->execute(array($commentId));
        return $comment;
     }
     public function thisSignal($signal){

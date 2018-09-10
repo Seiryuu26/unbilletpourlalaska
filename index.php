@@ -52,7 +52,14 @@ try {
         *the following part lead to the controller backend backend.php
         look for the method name to match the action (method board)
         */
-         elseif (!empty($_SESSION['pseudo']) && !empty($_SESSION['id'])){
+        elseif ($_GET['action'] == 'signalComment') 
+            {
+            
+                       
+             signalComment($_GET['id']);
+            
+             }
+        elseif (!empty($_SESSION['pseudo']) && !empty($_SESSION['id'])){
              
             if ($_GET['action'] == 'logout') {  
             
@@ -61,14 +68,7 @@ try {
              logout();
             
              }
-         elseif ($_GET['action'] == 'signalComment') 
-            {  
-            
-                       
-            
-             signalComment($_GET['id']);
-            
-             }
+                
         elseif ($_GET['action'] == 'addPost') {  
             
                        

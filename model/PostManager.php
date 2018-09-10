@@ -44,8 +44,8 @@ class PostManager extends Manager
         $deleteLines= $req->execute(array($post->getId()));
         return $deleteLines;
     }
-    public function addPost($title,$content)
-    { try{echo $title,$content;
+    public function addPost($post)
+    { try{
       $db = $this->dbConnect();
         $posts = $db->prepare('INSERT INTO post(title, content,post_date) VALUES(?,? , NOW())');
         $newLines = $posts->execute(array($post->getTitle(),$post->getContent()));

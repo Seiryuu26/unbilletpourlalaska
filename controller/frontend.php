@@ -74,10 +74,10 @@ function deleteComment($commentId)
 
 function signalComment($commentId)
 {
+    
     $commentManager = new www\p3\model\CommentManager();
-
+    
     $affectedLines = $commentManager->signal($commentId);
-
     if ($affectedLines === false) {
         throw new Exception('comment already signaled !');
     }
