@@ -1,7 +1,9 @@
 <?php
  session_start();
-require('controller/frontend.php');
-require('controller/backend.php');
+require('controller/FrontOffice.php');
+require('controller/BackOffice.php');
+use \www\p3\controller\FrontOffice;
+use \www\p3\controller\BackOffice;
 
 
 try {
@@ -9,44 +11,46 @@ try {
     *partfrontend.php
     *
     */
-    if (isset($_GET['action'])) {
-        if ($_GET['action'] == 'listPosts') {
-            listPosts();
-        } elseif ($_GET['action'] == 'post') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
-                post();
-            } else {
-                throw new Exception ('Any identifiant de billet send');
-            }
-        } elseif ($_GET['action'] == 'addComment') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
-                if (!empty($_POST['author']) && !empty($_POST['content'])) {
-                    addComment($_POST);
+    $frontoffice = new FrontOffice();
+        
+        if (isset($_GET['action'])) {
+            if ($_GET['action'] == 'listPosts') {
+                $frontoffice->listPosts();
+            } elseif ($_GET['action'] == 'post') {
+                if (isset($_GET['id']) && $_GET['id'] > 0) {
+                $frontoffice->post();
                 } else {
-                    throw new Exception (' all the fields are not filled !');
+                    throw new Exception ('Any identifiant de billet send');
                 }
-            } else {
-                throw new Exception (' Any identifiant de billet send');
-            }
-        } 
-      elseif ($_GET['action'] == 'login') {
-            
-          if (empty($_SESSION['pseudo']) OR empty($_SESSION['id'])) 
-                login();
-          else header('Location: index.php?action=board');
-
-
-             
-              }
-
-       else if ($_GET['action'] == 'connexion') {
-
-                    if (!empty($_POST['pseudo']) && !empty($_POST['password'])) {
-                        connexion($_POST['pseudo'], $_POST['password']);
+            } elseif ($_GET['action'] == 'addComment') {
+                if (isset($_GET['id']) && $_GET['id'] > 0) {
+                    if (!empty($_POST['author']) && !empty($_POST['content'])) {
+                    $frontoffice->addComment($_POST);
                     } else {
-                        throw new Exception (' all the fields are not completed  !');
+                        throw new Exception (' all the fields are not filled !');
                     }
+                } else {
+                    throw new Exception (' Any identifiant de billet send');
                 }
+            } 
+          elseif ($_GET['action'] == 'login') {
+
+              if (empty($_SESSION['pseudo']) OR empty($_SESSION['id'])) 
+                    login();
+              else header('Location: index.php?action=board');
+
+
+
+                  }
+
+           else if ($_GET['action'] == 'connexion') {
+
+                        if (!empty($_POST['pseudo']) && !empty($_POST['password'])) {
+                            connexion($_POST['pseudo'], $_POST['password']);
+                        } else {
+                            throw new Exception (' all the fields are not completed  !');
+                        }
+                    }
         /**
         *partBackend
         *the following part lead to the controller backend backend.php
@@ -56,7 +60,7 @@ try {
             {
             
                        
-             signalComment($_GET['id']);
+            $frontoffice->signalComment($_GET['id']);
             
              }
         elseif (!empty($_SESSION['pseudo']) && !empty($_SESSION['id'])){
@@ -104,7 +108,7 @@ try {
             
                        
             
-             eraseComment($_GET['id']);
+            eraseComment($_GET['id']);
             
              }
         
@@ -127,14 +131,14 @@ try {
             
                        
             
-             signalComment($_GET['id']);
+            $frontoffice->signalComment($_GET['id']);
             
              }
          elseif ($_GET['action'] == 'eraseComment') {  
             
                        
             
-             eraseComment($_GET['id']);
+            eraseComment($_GET['id']);
             
              }
          }
@@ -148,7 +152,7 @@ try {
 }
 
 else {
-    listPosts();
+        $frontoffice->listPosts();
 }
   }
 catch(Exception $e) { 
