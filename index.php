@@ -11,7 +11,9 @@ try {
     *partfrontend.php
     *
     */
-    $frontoffice = new FrontOffice();
+    $frontoffice = new FrontOffice();// Création d'une instance
+    $backoffice = new BackOffice();// Création d'une instance
+    
         
         if (isset($_GET['action'])) {
             if ($_GET['action'] == 'listPosts') {
@@ -35,8 +37,9 @@ try {
             } 
           elseif ($_GET['action'] == 'login') {
 
-              if (empty($_SESSION['pseudo']) OR empty($_SESSION['id'])) 
-                    login();
+              if (empty($_SESSION['pseudo']) OR empty($_SESSION['id'])) {  
+                  $login= $backoffice->login();// Appel d'une fonction de cet objet
+                }
               else header('Location: index.php?action=board');
 
 
@@ -46,7 +49,7 @@ try {
            else if ($_GET['action'] == 'connexion') {
 
                         if (!empty($_POST['pseudo']) && !empty($_POST['password'])) {
-                            connexion($_POST['pseudo'], $_POST['password']);
+                        $backoffice->connexion($_POST['pseudo'], $_POST['password']);
                         } else {
                             throw new Exception (' all the fields are not completed  !');
                         }
@@ -69,7 +72,7 @@ try {
             
                        
             
-             logout();
+            $backoffice->logout();
             
              }
                 
@@ -78,7 +81,7 @@ try {
                        
             // $postchapitre, $titre, $contenu
                 if (!empty($_POST['title']) && !empty($_POST['content'])) {
-                addPost($_POST['title'],$_POST['content']);   
+               $backoffice->addPost($_POST['title'],$_POST['content']);   
                 } else {
                     throw new Exception (' Error of submission !');
                 }
@@ -87,44 +90,36 @@ try {
             
                        
             
-             erasePost($_GET['id']);
+            $backoffice->erasePost($_GET['id']);
             
              }
         elseif ($_GET['action'] == 'modifyPost') {
             
              if (!empty($_POST['title']) && !empty($_POST['content'])) {
-                domodifyPost($_POST);
+                $backoffice->domodifyPost($_POST);
                 } else {
                  //Call to function to display the form 
-                     modifyPost($_GET['id']);
+                 $backoffice->modifyPost($_GET['id']);
                 }
             
             
                        
             
              }
-             
-        elseif ($_GET['action'] == 'eraseComment') {  
-            
-                       
-            
-            eraseComment($_GET['id']);
-            
-             }
-        
+
              
         elseif ($_GET['action'] == 'board') {  
              
                        
             
-             board();
+             $backoffice->board();
            
              }
          elseif ($_GET['action'] == 'logout') {  
             
                        
             
-             logout();
+              $backoffice->logout();
             
              }
         elseif ($_GET['action'] == 'signalComment') {  
@@ -138,7 +133,7 @@ try {
             
                        
             
-            eraseComment($_GET['id']);
+           $backoffice->eraseComment($_GET['id']);
             
              }
          }
