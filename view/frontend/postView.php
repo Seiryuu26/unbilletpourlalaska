@@ -30,13 +30,13 @@
     </div>
 </form>
 <?php
-while ($comment = $comments->fetch())
+foreach($comments as $comment )
     {
 ?>
-    <p><strong><?= htmlspecialchars($comment['author']) ?></strong>  <?= $comment['comment_date_fr'] ?></p>
-    <p><?= nl2br(htmlspecialchars($comment['content'])) ?></p>
+    <p><strong><?= htmlspecialchars($comment->getAuthor()) ?></strong>  <?= $comment->getDate() ?></p>
+    <p><?= nl2br(htmlspecialchars($comment->getContent())) ?></p>
 
-<em><a href="index.php?action=signalComment&amp;id=<?= $comment['id'] ?>">Signaler</a></em>
+<em><a href="index.php?action=signalComment&amp;id=<?= $comment->getId() ?>">Signaler</a></em>
 
 
 <?php

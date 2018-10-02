@@ -10,9 +10,10 @@ class CommentManager extends Manager
     public function getComments($post)
     {
         $db = $this->dbConnect();
-        $commentaires = $db->prepare('SELECT id, author, content, DATE_FORMAT(comment_date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM comment WHERE post_id = ? ORDER BY comment_date DESC');
-        $commentaires->execute(array($post->getId()));
-
+        $req = $db->prepare('SELECT id, author, content, DATE_FORMAT(comment_date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM comment WHERE post_id = ? ORDER BY comment_date DESC');
+        $req->execute(array($post->getId()));
+        $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Comment::class);
+        $commentaires = $req->fetchAll();
         return $commentaires;
     }
 

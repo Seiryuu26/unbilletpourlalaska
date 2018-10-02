@@ -39,7 +39,7 @@ class FrontOffice
         $comment ->setAuthor($dataComment['author']);
         $comment ->setContent($dataComment['content']);
         $affectedLines = $commentManager->postComment($comment);
-
+        
 
         if ($affectedLines === false) {
             throw new Exception('Impossible to add the comment !');
