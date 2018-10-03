@@ -33,8 +33,8 @@ class FrontOffice
 
     function addComment($dataComment)
     {
-        $commentManager = new CommentManager();
-        $comment = new Comment();
+        $commentManager = new CommentManager();// Création d'une instance 
+        $comment = new Comment();// Appel d'une fonction de cet objet
         $comment ->setPostId($dataComment['postId']);
         $comment ->setAuthor($dataComment['author']);
         $comment ->setContent($dataComment['content']);
