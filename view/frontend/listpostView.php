@@ -5,27 +5,25 @@
 <p>Derniers billets du blog :</p>
 
 <?php
-while ($data = $posts->fetch())
 foreach($posts as $post )
 {
 ?>
     <div class="news">
         
         <h3>
-            <?= htmlspecialchars($data->getTitle()) ?>
-            <em><?= ($data->getDate())?></em>
+            <?= htmlspecialchars($post->getTitle()) ?>
+            <em><?= ($post->getDate())?></em>
         </h3>
         
         <p>
-            <?= nl2br(htmlspecialchars($data->getContent()) ?>
+            <?= nl2br(htmlspecialchars($post->getContent())) ?>
             <br />
-            <em><a href="index.php?action=post&amp;id=<?= ($data->getId()) ?>">Commentaires</a></em>
+            <em><a href="index.php?action=post&amp;id=<?= ($post->getId()) ?>">Commentaires</a></em>
             
         </p>
     </div>
 <?php
 }
-$posts->closeCursor();
 ?>
 <?php $content = ob_get_clean(); ?>
 

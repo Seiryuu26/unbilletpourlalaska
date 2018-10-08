@@ -10,12 +10,10 @@ class PostManager extends Manager
     {
         $db = $this->dbConnect();
         $req = $db->query('SELECT id, title, content, DATE_FORMAT(post_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM post ORDER BY post_date DESC LIMIT 0, 5');
-        $req->execute(array($post->getId()));
+        $req->execute(array());
         $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Post::class);
         $posts = $req->fetchAll();
         return $posts;
-
-        return $req;
     }
      
     public function getPost($articleId)

@@ -78,16 +78,16 @@ $('#open').click(function() {
         </div>
         <?php
 
-        while ($post = $posts->fetch()){
+        foreach ($posts as $post){
             
              echo  '
         <div class="row myborder">
        
-       <div class="col-2">'.$post['id'].'</div>
-       <div class="col-6">'.htmlspecialchars($post['content']).'</div>
+       <div class="col-2">'.$post->getId().'</div>
+       <div class="col-6">'.htmlspecialchars($post->getContent()).'</div>
         
-         <div class="col-2"><a class="btn btn-primary" href="index.php?action=modifyPost&id='.$post['id'].'">modifier</a></div>
-        <div class="col-2"><a class="btn btn-primary" href="index.php?action=erasePost&id='.$post['id'].'">effacer</a></div>
+         <div class="col-2"><a class="btn btn-primary" href="index.php?action=modifyPost&id='                  .$post->getId().'">modifier</a></div>
+        <div class="col-2"><a class="btn btn-primary" href="index.php?action=erasePost&id='              .$post->getId().'">effacer</a></div>
       </div>
         ';
          }
