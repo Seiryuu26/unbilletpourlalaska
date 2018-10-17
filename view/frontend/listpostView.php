@@ -12,7 +12,8 @@ foreach($posts as $post )
         
         <h3>
             <?= htmlspecialchars($post->getTitle()) ?>
-            <em><?= ($post->getDate())?></em>
+            <em><?= ($post->getCreationDate())?></em>
+            <?= ($post->getAuthor())?>
         </h3>
         
         <p>

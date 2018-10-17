@@ -14,7 +14,8 @@ class Post
     private $id;
     private $title;
     private $content;
-    private $date;
+    private $creationDate;
+    private $author;
     // SETTERS
     public function setId($id)
 
@@ -31,10 +32,15 @@ class Post
     {
         $this->content = $content;
     }
-    public function setDate($date)
+    public function setCreationDate($date)
 
     {
-        $this->date = $date;
+        $this->creationDate = $date;
+    }
+    public function setAuthor($author)
+
+    {
+        $this->author = $author;
     }
     
     //GETTERS
@@ -53,9 +59,14 @@ class Post
     {
          return $this->content ;
     }
-    public function getDate()
+    public function getCreationDate()
 
     {
-        return $this->date ;
+        return $this->creationDate ;
+    }
+    public function getAuthor()
+
+    {
+        return $this->author;
     }
  }
