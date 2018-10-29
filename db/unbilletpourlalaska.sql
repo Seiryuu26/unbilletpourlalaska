@@ -98,6 +98,8 @@ CREATE TABLE IF NOT EXISTS `post` (
   `content` varchar(500) NOT NULL,
   `post_date` datetime DEFAULT NULL,
   `member_id` int(11) NOT NULL,
+  `firstname` varchar(255) NOT NULL,
+  `lastname` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_member_id` (`member_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
@@ -106,7 +108,7 @@ CREATE TABLE IF NOT EXISTS `post` (
 -- Déchargement des données de la table `post`
 --
 
-INSERT INTO `post` (`id`, `title`, `content`, `post_date`, `member_id`) VALUES
+INSERT INTO `post` (`id`, `title`, `content`, `post_date`, `member_id`,`member firstname`,`member lastname`) VALUES
 (1, 'un titre ', '    avec du contenu c est mieux                 ', '2018-07-30 21:17:43', 1),
 (2, 'Une foret dangereuse', '                        azzazeez vffdbnhj, ;n,h                     ', '2018-07-30 21:23:16', 1),
 (3, 'Une foret ', '                        <p>Alors que le soleil se levait , je devais partir vers ma prochaine destination</p>                    ', '2018-09-10 21:48:53', 1);
