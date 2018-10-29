@@ -98,8 +98,8 @@ CREATE TABLE IF NOT EXISTS `post` (
   `content` varchar(500) NOT NULL,
   `post_date` datetime DEFAULT NULL,
   `member_id` int(11) NOT NULL,
-  `firstname` varchar(255) NOT NULL,
-  `lastname` varchar(255) NOT NULL,
+  `member firstname` varchar(255) NOT NULL,
+  `member lastname` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_member_id` (`member_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
