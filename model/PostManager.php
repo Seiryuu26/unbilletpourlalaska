@@ -10,10 +10,31 @@ class PostManager extends Manager
     public function getPosts()
     {
         $db = $this->dbConnect();
-        $req = $db->query('SELECT id, title, content, DATE_FORMAT(post_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creationDate FROM post ORDER BY post_date DESC LIMIT 0, 5');
+        $req = $db->query('SELECT post.id, title, content, DATE_FORMAT(post_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creationDate ,member.firstname,member.lastname FROM post,member WHERE member.id= post.member_id  ORDER BY post_date DESC LIMIT 0, 5');
         $req->execute(array());
-        $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Post::class);
-        $posts = $req->fetchAll();
+       // $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Post::class);
+       // $posts = $req->fetchAll();
+        $posts = array();//tableau dobjets post
+        $req->execute(array());
+
+        while($post = $req->fetch())
+        {
+            //var_dump($post);
+            $author= new Author();
+            $author->setFirstname($post['firstname']);
+            $author->setLastname($post['lastname']);
+            $article= new Post();
+            $article->setId($id);
+            $article->setFirstname($firstname);
+            $article->setLastname($lastname);
+            $article->setPseudo($pseudo);
+
+
+                // ajout  setter article posts tableau cree l17
+
+
+
+        }
         return $posts;
     }
      
