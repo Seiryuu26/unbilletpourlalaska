@@ -7,6 +7,9 @@ require_once("model/Author.php");
 
 class PostManager extends Manager
 {
+    /**
+     * @return array
+     */
     public function getPosts()
     {
         $db = $this->dbConnect();
