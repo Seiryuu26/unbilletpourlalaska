@@ -27,12 +27,13 @@ class PostManager extends Manager
             $author->setFirstname($post['firstname']);
             $author->setLastname($post['lastname']);
             $article= new Post();
-            $article->setId($id);
-            $article->setFirstname($firstname);
-            $article->setLastname($lastname);
-            $article->setPseudo($pseudo);
+            $article->setId($post['id']);
+            $article->setTitle($post['title']);
+            $article->setContent($post['content']);
+            $article->setCreationDate($post['creationDate']);
+            $article->setAuthor($author);
 
-
+            array_push($posts,$article);
                 // ajout  setter article posts tableau cree l17
 
 
