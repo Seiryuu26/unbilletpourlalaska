@@ -13,7 +13,7 @@ foreach($posts as $post )
         <h3>
             <?= htmlspecialchars($post->getTitle()) ?>
             <em><?= ($post->getCreationDate())?></em>
-            <?= ($post->getAuthor())?>
+            <?=  "par " . ($post->getAuthor()->getFullname())?>
         </h3>
         
         <p>

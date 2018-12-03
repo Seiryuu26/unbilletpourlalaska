@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39d4234d-3bc2-46de-8e99-48ab10d3e021" name="Default" comment="modification a pdo fetch class with creation Date">
+    <list default="true" id="39d4234d-3bc2-46de-8e99-48ab10d3e021" name="Default" comment="modification a pdo fetch class with object Author and Posts">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/BackOffice.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/BackOffice.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/unbilletpourlalaska.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/unbilletpourlalaska.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/PostManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PostManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/frontend/listpostView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/listpostView.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,69 +34,50 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="493451437">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.104" value="1" />
-          <entry key="project.open.time.106" value="1" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.205" value="1" />
-          <entry key="project.open.time.295" value="1" />
-          <entry key="project.open.time.69" value="1" />
-          <entry key="project.open.time.89" value="1" />
-          <entry key="project.open.time.90" value="1" />
-          <entry key="project.opened" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="php" value="12" />
-          <entry key="sql" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PHP" value="12" />
-          <entry key="SQL" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.php.new.test" />
-      <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.php.composer.command.options" />
-      <usages-collector id="statistics.php.new.class" />
-      <usages-collector id="statistics.php.rename.constructor" />
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="php" value="395" />
-          <entry key="sql" value="19" />
-          <entry key="txt" value="60" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.composer.actions" />
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PHP" value="395" />
-          <entry key="PLAIN_TEXT" value="60" />
-          <entry key="SQL" value="19" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/CommentManager.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/controller/BackOffice.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2006">
+              <caret line="122" column="32" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model/PostManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="78" column="78" selection-start-line="78" selection-start-column="78" selection-end-line="78" selection-end-column="78" />
+              <folding>
+                <marker date="1543785553783" expanded="true" signature="304:521" ph="SELECT post.... post" />
+                <marker date="1543785553783" expanded="true" signature="1524:1632" ph="SELECT id, t... " />
+                <marker date="1543785553783" expanded="true" signature="2024:2075" ph="UPDATE post... " />
+                <marker date="1543785553783" expanded="true" signature="2330:2360" ph="DELETE FROM post... " />
+                <marker date="1543785553783" expanded="true" signature="2569:2643" ph="INSERT INTO post... " />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/PostManager.php">
+        <entry file="file://$PROJECT_DIR$/controller/FrontOffice.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="357">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="e#177#207#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/AdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -98,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="1207">
+              <caret line="71" column="2" selection-start-line="71" selection-start-column="2" selection-end-line="71" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -107,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Author.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="38" />
+            <state relative-caret-position="1292">
+              <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -116,17 +103,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/frontend/listpostView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="255">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/unbilletpourlalaska.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="108" column="115" selection-start-line="108" selection-start-column="115" selection-end-line="108" selection-end-column="115" />
+            <state relative-caret-position="1853">
+              <caret line="109" column="136" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="136" />
             </state>
           </provider>
         </entry>
@@ -139,16 +126,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/model/PostManager.php" />
+        <option value="$PROJECT_DIR$/model/Author.php" />
+        <option value="$PROJECT_DIR$/view/frontend/listpostView.php" />
         <option value="$PROJECT_DIR$/db/unbilletpourlalaska.sql" />
+        <option value="$PROJECT_DIR$/controller/AdminController.php" />
+        <option value="$PROJECT_DIR$/controller/BackOffice.php" />
+        <option value="$PROJECT_DIR$/model/PostManager.php" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
@@ -173,7 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,24 +183,18 @@
             <path>
               <item name="p3" type="b2602c69:ProjectViewProjectNode" />
               <item name="p3" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="p3" type="b2602c69:ProjectViewProjectNode" />
               <item name="p3" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p3" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,7 +232,25 @@
       <workItem from="1541440549932" duration="5213000" />
       <workItem from="1541621528222" duration="1632000" />
       <workItem from="1541845841850" duration="928000" />
-      <workItem from="1542046183061" duration="968000" />
+      <workItem from="1542046183061" duration="3272000" />
+      <workItem from="1542746108544" duration="2324000" />
+      <workItem from="1542824839075" duration="1738000" />
+      <workItem from="1542826847581" duration="1485000" />
+      <workItem from="1543179802380" duration="654000" />
+      <workItem from="1543216412479" duration="519000" />
+      <workItem from="1543256723238" duration="1581000" />
+      <workItem from="1543258675727" duration="1805000" />
+      <workItem from="1543265191643" duration="286000" />
+      <workItem from="1543346756546" duration="601000" />
+      <workItem from="1543349217475" duration="105000" />
+      <workItem from="1543349473158" duration="66000" />
+      <workItem from="1543780240484" duration="25000" />
+      <workItem from="1543780672270" duration="29000" />
+      <workItem from="1543780913828" duration="113000" />
+      <workItem from="1543781991961" duration="263000" />
+      <workItem from="1543782447773" duration="26000" />
+      <workItem from="1543782928395" duration="151000" />
+      <workItem from="1543784716771" duration="1362000" />
     </task>
     <task id="LOCAL-00001" summary="modification a pdo fetch class with creation Date">
       <created>1540238780051</created>
@@ -270,17 +266,46 @@
       <option name="project" value="LOCAL" />
       <updated>1541622683739</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modification a pdo fetch class with object Author and Posts">
+      <created>1542049662496</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542049662496</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21903000" />
+    <option name="totallyTimeSpent" value="37340000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1346" height="688" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25972006" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2978227" />
+      <window_info id="Structure" order="1" weight="0.2496112" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32972974" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49455675" weight="0.32851985" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5054432" side_tool="true" weight="0.32851985" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4984448" weight="0.32851985" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28460342" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -291,8 +316,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4992224" visible="true" weight="0.32851985" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007776" side_tool="true" visible="true" weight="0.32851985" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49455675" visible="true" weight="0.32851985" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5054432" side_tool="true" visible="true" weight="0.32851985" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4984448" weight="0.32851985" />
@@ -300,86 +325,85 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modification a pdo fetch class with creation Date" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification a pdo fetch class with creation Date" />
+    <MESSAGE value="modification a pdo fetch class with object Author and Posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification a pdo fetch class with object Author and Posts" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/model/AdminManager.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/FrontOffice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/BackOffice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/frontend/changePostView.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/frontend/view.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/frontend/addPostView.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/frontend/postView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/CommentManager.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/controller/BackOffice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="122" column="32" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/FrontOffice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#177#207#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="1207">
+          <caret line="71" column="2" selection-start-line="71" selection-start-column="2" selection-end-line="71" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Author.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="38" />
+        <state relative-caret-position="1292">
+          <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/frontend/listpostView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/PostManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="255">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/unbilletpourlalaska.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="108" column="115" selection-start-line="108" selection-start-column="115" selection-end-line="108" selection-end-column="115" />
+        <state relative-caret-position="1853">
+          <caret line="109" column="136" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/PostManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="78" column="78" selection-start-line="78" selection-start-column="78" selection-end-line="78" selection-end-column="78" />
+          <folding>
+            <marker date="1543785553783" expanded="true" signature="304:521" ph="SELECT post.... post" />
+            <marker date="1543785553783" expanded="true" signature="1524:1632" ph="SELECT id, t... " />
+            <marker date="1543785553783" expanded="true" signature="2024:2075" ph="UPDATE post... " />
+            <marker date="1543785553783" expanded="true" signature="2330:2360" ph="DELETE FROM post... " />
+            <marker date="1543785553783" expanded="true" signature="2569:2643" ph="INSERT INTO post... " />
+          </folding>
         </state>
       </provider>
     </entry>

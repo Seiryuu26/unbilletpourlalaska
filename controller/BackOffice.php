@@ -124,7 +124,7 @@ function addPost($title,$content)
     $affectedLines = $PostManager->addPost($post);
 
     if ($affectedLines === false) {
-        throw new Exception('Impossible to add the chapter !');
+        throw new \Exception('Impossible to add the chapter !');
     }
     else {
         header('Location: index.php?action=post&id=' . $postId);

@@ -107,9 +107,9 @@ CREATE TABLE IF NOT EXISTS `post` (
 --
 
 INSERT INTO `post` (`id`, `title`, `content`, `post_date`, `member_id`,`member firstname`,`member lastname`) VALUES
-(1, 'un titre ', '    avec du contenu c est mieux                 ', '2018-07-30 21:17:43', 1),
-(2, 'Une foret dangereuse', '                        azzazeez vffdbnhj, ;n,h                     ', '2018-07-30 21:23:16', 1),
-(3, 'Une foret ', '                        <p>Alors que le soleil se levait , je devais partir vers ma prochaine destination</p>                    ', '2018-09-10 21:48:53', 1);
+(1, 'un chemin improbable ', '    Je venais tout juste de partir d'Anchorage avec mon guide                ', '2018-07-30 21:17:43', 1),
+(2, 'Une louve protectrice', '  Alors que javais passe la foret et etabli mon camp  dans une grotte , jentendis un grondement et des plaintes .Je n'approchais docuement de la source des bruits                  ', '2018-07-30 21:23:16', 1),
+(3, 'Une foret dangereuse ', '                        <p>Alors que le soleil se levait , je devais partir vers ma prochaine destination</p>                    ', '2018-09-10 21:48:53', 1);
 
 --
 -- Contraintes pour les tables déchargées

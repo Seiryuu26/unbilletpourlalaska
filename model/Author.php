@@ -69,5 +69,10 @@ class Author
     {
         return $this->password ;
     }
+    public function getFullname()
+
+     {
+         return $this->firstname. " " .$this->lastname;
+     }
 }
 ?>
