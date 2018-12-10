@@ -20,7 +20,6 @@ if (!$resultat)
 else
 {
 
-        session_start();
         $_SESSION['id'] = $resultat('id');
         $_SESSION['pseudo'] = $pseudo;
        header('Location: index.php?action=board');
@@ -33,7 +32,6 @@ else
        }
 
  public function deleteSession() {
-    session_start();
 
 // Suppression des variables de session et de la session
 $_SESSION = array();

@@ -127,7 +127,9 @@ function addPost($title,$content)
         throw new \Exception('Impossible to add the chapter !');
     }
     else {
-        header('Location: index.php?action=post&id=' . $postId);
+        $_SESSION['message']= 'Vous avez correctement publie cet article';
+
+        header('Location: index.php?action=board' );
     }
 }
 function erasePost($postId)

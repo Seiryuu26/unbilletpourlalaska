@@ -76,9 +76,9 @@ class PostManager extends Manager
     { try{
       $db = $this->dbConnect();
         $posts = $db->prepare('INSERT INTO post(title, content,post_date,member_id) VALUES(?,? , NOW(),?)');
-        $_SESSION['id']  INSERT INTO post(title, content,post_date,member_id);
+        var_dump($_SESSION) ;
         var_dump($post) ;
-        $newLines = $posts->execute(array($post->getTitle(),$post->getContent(),$post->getMember_id()));
+        $newLines = $posts->execute(array($post->getTitle(),$post->getContent(),$_SESSION['id']));
         return $newLines;
     }catch(\PDOException $e) {
             echo "Error: " . $e->getMessage();

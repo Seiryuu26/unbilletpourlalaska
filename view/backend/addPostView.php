@@ -3,6 +3,16 @@
 <?php ob_start(); ?>
 
 <div class="container admin add">
+            <?php
+            if (isset($_SESSION['message']) AND $_SESSION['message']!== NULL ){
+                echo '<div class="alert alert-primary" role="alert">';
+                echo $_SESSION['message'] ;
+                echo '</div>';
+            }
+
+
+            ?>
+
     <h1><strong>Ajouter un chapitre </strong></h1>
         <br>
         <form action='index.php?action=addPost' method="post">
