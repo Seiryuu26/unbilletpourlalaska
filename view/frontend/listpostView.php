@@ -11,7 +11,8 @@ foreach($posts as $post )
     <div class="news">
         
         <h3>
-            <?= htmlspecialchars($post->getTitle()) ?>
+
+            <a href="index.php?action=post&amp;id=<?= ($post->getId())?>"><?= htmlspecialchars($post->getTitle()) ?></a>
             <em><?= ($post->getCreationDate())?></em>
             <?=  "par " . ($post->getAuthor()->getFullname())?>
         </h3>

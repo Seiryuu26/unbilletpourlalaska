@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
     
-    <body>
+<body>
 <?php
-echo'Hello World';
-    
- 
-        
-        
-?>        
-    </body>
+$tab=array("PHP"=>"http://www.php.net","MySQL"=>"http://www.mysql.o
+rg","SQLite"=>"http://www.sqlite.org");
+$site=array_rand($tab);
+echo "Site recommandé : <a href=\"$tab[$site]\" > ",$site,"</a>";
+?>
+</body>

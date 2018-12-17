@@ -1,6 +1,17 @@
 <?php ob_start(); ?>
 
 <div class="container admin add">
+    <div class="container admin add">
+        <?php
+        if (isset($_SESSION['message']) AND $_SESSION['message']!== NULL ){
+            echo '<div class="alert alert-primary" role="alert">';
+            echo $_SESSION['message'] ;
+            echo '</div>';
+        }
+
+
+        ?>
+
     <div class="row ">
         <br>
         <h1>Editions des Commentaires </h1>

@@ -5,7 +5,7 @@
 <div class="news">
     <h3>
         <?= htmlspecialchars($post->getTitle()) ?>
-        <em><?= ($post->getDate()) ?></em>
+        <em><?= ($post->getCreationDate()) ?></em>
     </h3>
     
     <p>
