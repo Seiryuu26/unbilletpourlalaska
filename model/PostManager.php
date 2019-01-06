@@ -13,13 +13,13 @@ class PostManager extends Manager
     public function getPosts()
     {
         $db = $this->dbConnect();
-        $req = $db->query('SELECT post.id, title, content, DATE_FORMAT(post_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creationDate ,member.firstname,member.lastname FROM post,member WHERE member.id= post.member_id  ORDER BY post_date DESC LIMIT 0, 5');
+        $req = $db->query('SELECT post.id, title, content, DATE_FORMAT(post_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creationDate ,member.firstname,member.lastname FROM post,member WHERE member.id= post.member_id  ORDER BY post_date DESC LIMIT 0,3');
         $req->execute(array());
+
        // $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Post::class);
        // $posts = $req->fetchAll();
         $posts = array();//tableau dobjets post
         $req->execute(array());
-
         while($post = $req->fetch())
         {
             //var_dump($post);
@@ -69,7 +69,7 @@ class PostManager extends Manager
     {
       $db = $this->dbConnect();
         $req = $db->prepare('DELETE FROM post  WHERE id = ?'); 
-        $deleteLines= $req->execute(array($post->getId()));
+        $deleteLines= $req->execute(array($articleId));
         return $deleteLines;
     }
     public function addPost($post)
@@ -84,6 +84,20 @@ class PostManager extends Manager
             echo "Error: " . $e->getMessage();
         }
    }
+   public function  nbPosts()
+   {
+       try {
+           $db = $this->dbConnect();
+           $req = $db->prepare('SELECT COUNT(*) FROM post');
+           $req->execute();
+           return $req->fetch();
+       }catch(\PDOException $e) {
+           echo "Error: " . $e->getMessage();
+       }
+
+   }
+
+
 
 
  

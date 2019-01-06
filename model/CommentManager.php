@@ -64,7 +64,7 @@ class CommentManager extends Manager
     public function erase($commentId){
         $db = $this->dbConnect();
         $req = $db->prepare('DELETE FROM comment WHERE id = ?');
-         $comment =$req->execute(array($comment->getCommentId()));
+         $comment =$req->execute(array($commentId));
        return $comment;
     }
     

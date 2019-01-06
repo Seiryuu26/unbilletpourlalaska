@@ -57,3 +57,11 @@ else
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     </body>
 </html>
+
+<div class="pagination">
+    <span class="text-left">Page </span>
+    <span> 1 </span>
+    <a href="?page=2"> 2 </a>
+    <a href="?page=3"> 3 </a>
+
+</div>

@@ -7,7 +7,16 @@
 <?php
 foreach($posts as $post )
 {
-?>
+    $content=htmlspecialchars($post->getContent());
+    if (strlen($content)>100)
+    {
+        $content=substr($content, 0, 100);
+        $dernier_mot=strrpos($content," ");
+        $content=substr($content,0,$dernier_mot);
+        $content.="<a href=\"index.php?action=post&amp;id=".($post->getId())."\"> lire la suite...</a>";
+    }
+    ?>
+
     <div class="news">
         
         <h3>
@@ -18,15 +27,22 @@ foreach($posts as $post )
         </h3>
         
         <p>
-            <?= nl2br(htmlspecialchars($post->getContent())) ?>
+            <?= nl2br($content) ?>
             <br />
             <em><a href="index.php?action=post&amp;id=<?= ($post->getId()) ?>">Commentaires</a></em>
             
         </p>
     </div>
+
+
 <?php
 }
+?>
+<?php
+echo $nbpages[0];
 ?>
 <?php $content = ob_get_clean(); ?>
 
 <?php require('template.php'); ?>
+
+

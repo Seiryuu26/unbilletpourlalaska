@@ -13,8 +13,9 @@ class FrontOffice
     
     function listPosts()
     {
-        $postManager = new PostManager(); // Création d'une instance 
-        $posts = $postManager->getPosts(); // Appel d'une fonction de cet objet
+        $postManager = new PostManager(); // Création d'une instance
+        $nbpages = $postManager->nbPosts();
+        $posts = $postManager->getPosts();// Appel d'une fonction de cet objet
 
         require('view/frontend/listpostView.php');
     }
