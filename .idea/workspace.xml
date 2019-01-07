@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39d4234d-3bc2-46de-8e99-48ab10d3e021" name="Default" comment="add a conditon on addPostView">
+    <list default="true" id="39d4234d-3bc2-46de-8e99-48ab10d3e021" name="Default" comment="add a list of pages per group">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/FrontOffice.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/FrontOffice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/CommentManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/CommentManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/PostManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PostManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/backend/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/backend/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/frontend/listpostView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/listpostView.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,19 +31,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/AdminController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/FrontOffice.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+            <state>
               <folding>
                 <element signature="e#177#207#0#PHP" expanded="true" />
               </folding>
@@ -59,15 +44,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/PostManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
-              <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+            <state relative-caret-position="255">
+              <caret line="15" column="243" selection-start-line="15" selection-start-column="243" selection-end-line="15" selection-end-column="243" />
               <folding>
-                <marker date="1546457093430" expanded="true" signature="304:519" ph="SELECT post.... post" />
-                <marker date="1546457093430" expanded="true" signature="1523:1639" ph="SELECT id, t... " />
-                <marker date="1546457093430" expanded="true" signature="2031:2082" ph="UPDATE post... " />
-                <marker date="1546457093430" expanded="true" signature="2337:2367" ph="DELETE FROM post... " />
-                <marker date="1546457093430" expanded="true" signature="2572:2646" ph="INSERT INTO post... " />
+                <marker date="1546790865212" expanded="true" signature="304:519" ph="SELECT post.... post" />
+                <marker date="1546790865212" expanded="true" signature="1523:1639" ph="SELECT id, t... " />
+                <marker date="1546790865212" expanded="true" signature="2031:2082" ph="UPDATE post... " />
+                <marker date="1546790865212" expanded="true" signature="2337:2367" ph="DELETE FROM post... " />
+                <marker date="1546790865212" expanded="true" signature="2572:2646" ph="INSERT INTO post... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/frontend/postView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -86,20 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/backend/template.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" selection-start-line="60" selection-end-line="66" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/frontend/listpostView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+            <state relative-caret-position="17">
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -126,9 +111,9 @@
         <option value="$PROJECT_DIR$/model/test.php" />
         <option value="$PROJECT_DIR$/view/backend/template.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/model/PostManager.php" />
         <option value="$PROJECT_DIR$/controller/FrontOffice.php" />
         <option value="$PROJECT_DIR$/view/frontend/listpostView.php" />
+        <option value="$PROJECT_DIR$/model/PostManager.php" />
       </list>
     </option>
   </component>
@@ -155,6 +140,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,7 +189,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,7 +273,8 @@
       <workItem from="1546448968463" duration="8241000" />
       <workItem from="1546546478191" duration="677000" />
       <workItem from="1546781131189" duration="587000" />
-      <workItem from="1546787353242" duration="601000" />
+      <workItem from="1546787353242" duration="4190000" />
+      <workItem from="1546848418444" duration="439000" />
     </task>
     <task id="LOCAL-00001" summary="modification a pdo fetch class with creation Date">
       <created>1540238780051</created>
@@ -332,17 +318,24 @@
       <option name="project" value="LOCAL" />
       <updated>1545073573718</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add a list of pages per group">
+      <created>1546788424145</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546788424146</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93740000" />
+    <option name="totallyTimeSpent" value="97768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1346" height="688" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16796267" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17029549" />
       <window_info id="Structure" order="1" weight="0.2496112" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -357,7 +350,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007776" side_tool="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4984448" weight="0.32851985" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4984448" weight="0.32792792" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32972974" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -434,7 +427,8 @@
     <MESSAGE value="modification a pdo fetch class with creation Date" />
     <MESSAGE value="modification a pdo fetch class with object Author and Posts" />
     <MESSAGE value="add a conditon on addPostView" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a conditon on addPostView" />
+    <MESSAGE value="add a list of pages per group" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a list of pages per group" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/view/frontend/addPostView.php" />
@@ -565,10 +559,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/frontend/postView.php">
+    <entry file="file://$PROJECT_DIR$/view/backend/template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="473">
+          <caret line="60" selection-start-line="60" selection-end-line="66" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -581,8 +575,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/FrontOffice.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        <state>
           <folding>
             <element signature="e#177#207#0#PHP" expanded="true" />
           </folding>
@@ -591,15 +584,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/PostManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="15" column="243" selection-start-line="15" selection-start-column="243" selection-end-line="15" selection-end-column="243" />
           <folding>
-            <marker date="1546457093430" expanded="true" signature="304:519" ph="SELECT post.... post" />
-            <marker date="1546457093430" expanded="true" signature="1523:1639" ph="SELECT id, t... " />
-            <marker date="1546457093430" expanded="true" signature="2031:2082" ph="UPDATE post... " />
-            <marker date="1546457093430" expanded="true" signature="2337:2367" ph="DELETE FROM post... " />
-            <marker date="1546457093430" expanded="true" signature="2572:2646" ph="INSERT INTO post... " />
+            <marker date="1546790865212" expanded="true" signature="304:519" ph="SELECT post.... post" />
+            <marker date="1546790865212" expanded="true" signature="1523:1639" ph="SELECT id, t... " />
+            <marker date="1546790865212" expanded="true" signature="2031:2082" ph="UPDATE post... " />
+            <marker date="1546790865212" expanded="true" signature="2337:2367" ph="DELETE FROM post... " />
+            <marker date="1546790865212" expanded="true" signature="2572:2646" ph="INSERT INTO post... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/postView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -613,17 +613,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/backend/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" selection-start-line="60" selection-end-line="66" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/frontend/listpostView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state relative-caret-position="17">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
         </state>
       </provider>
     </entry>
