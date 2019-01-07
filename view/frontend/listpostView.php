@@ -41,8 +41,11 @@ foreach($posts as $post )
 <?php
 echo $nbpages[0];
 ?>
-<?php $content = ob_get_clean(); ?>
+<a href="index.php?action=post "></a> <?php for ($i=1 ; $i <=4 ; $i++)
+    echo "page<a href> " .$i."</a> " ;?>
+<a href="index.php?action=post&amp;$i "></a>
 
+<?php $content = ob_get_clean(); ?>
 <?php require('template.php'); ?>
 
 
