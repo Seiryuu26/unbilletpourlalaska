@@ -15,8 +15,10 @@ class FrontOffice
     {
         $postManager = new PostManager(); // Création d'une instance
         $nbpages = $postManager->nbPosts();
-        $posts = $postManager->getPosts();// Appel d'une fonction de cet objet
-
+        if(isset($_GET['page']))
+            $page =$_GET['page'];
+        else $page = 0;
+        $posts = $postManager->getPosts($page);// Appel d'une fonction de cet objet
         require('view/frontend/listpostView.php');
     }
     
