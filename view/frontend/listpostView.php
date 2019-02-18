@@ -39,7 +39,7 @@ foreach($posts as $post )
 }
 ?>
 <?php
-//echo $nbpages[0]/7;
+echo $nbpages[0]/7;
 ?>
 <a href="index.php?action=post "></a> <?php for ( $i=1 ; $i <=($nbpages[0]/3+1); $i++)
     echo "<a href>page " .$i."</a> " ;?>
