@@ -69,6 +69,7 @@ function connexion($pseudo,$password)
      $comments = $commentManager->commentSignal();
      
      $postManager = new PostManager();
+     $var_dump($post);
     if(isset($_GET['page']))
         $page =$_GET['page'];
     else $page = 0;
