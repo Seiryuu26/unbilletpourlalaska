@@ -20,7 +20,6 @@ class PostManager extends Manager
         $req-> bindValue(':page', $page, \PDO::PARAM_INT);
         $req->execute();
        // $req->debugDumpParams();
-        var_dump($page);
        // $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Post::class);
        // $posts = $req->fetchAll();
         $posts = array();//tableau dobjets post

@@ -41,9 +41,9 @@ foreach($posts as $post )
 <?php
 echo $nbpages[0]/7;
 ?>
-<a href="index.php?action=post "></a> <?php for ( $i=1 ; $i <=($nbpages[0]/3+1); $i++)
-    echo "<a href>page " .$i."</a> " ;?>
-<a href="index.php?action=post&amp;$i "></a>
+ <?php for ( $i=1 ; $i <=($nbpages[0]/3+1); $i++)
+    echo "<a href="index.php?action=post?$nbpages>page " .$i."</a> " ;?>
+
 
 <?php $content = ob_get_clean(); ?>
 <?php require('template.php'); ?>
