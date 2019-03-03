@@ -43,7 +43,6 @@ echo $nbpages[0]/7;
 ?>
  <?php for ( $i=1 ; $i <=($nbpages[0]/3+1); $i++)
      echo"<a href=\"/index.php?page=$i\">page$i</a>";
-     echo"<a href=\"/index.php?page=$i\">page$i</a>";
   ?>
 
 <?php $content = ob_get_clean(); ?>

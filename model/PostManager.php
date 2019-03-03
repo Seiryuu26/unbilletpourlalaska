@@ -13,9 +13,7 @@ class PostManager extends Manager
     public function getPosts($page)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT post.id, title, content, DATE_FORMAT(post_date, \'%d/%m/%Y à %Hh%imin%ss\') 
-  AS creationDate ,member.firstname,member.lastname FROM post,member 
-  WHERE member.id= post.member_id  ORDER BY post_date DESC LIMIT :page,3');
+        $req = $db->prepare('SELECT post.id, title, content, DATE_FORMAT(post_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creationDate ,member.firstname,member.lastname FROM post,member WHERE member.id= post.member_id  ORDER BY post_date DESC LIMIT :page,3');
 
         $req-> bindValue(':page', $page, \PDO::PARAM_INT);
         $req->execute();
