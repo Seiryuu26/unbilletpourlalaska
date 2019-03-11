@@ -74,7 +74,7 @@ function connexion($pseudo,$password)
         $page =$_GET['page'];
     else $page = 0;
      $posts = $postManager->getPosts($page);
-
+    var_dump($page);
 
     // calling  the view
     require('view/backend/addPostView.php');

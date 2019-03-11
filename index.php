@@ -18,6 +18,7 @@ try {
         if (isset($_GET['action'])) {
             if ($_GET['action'] == 'listPosts') {
                 $frontoffice->listPosts();
+                var_dump($page);
             } elseif ($_GET['action'] == 'post') {
                 if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $frontoffice->post();
