@@ -9,6 +9,7 @@ class Post
 
 {
     /**
+     * all the features about a post
      * @var $id
      */
     private $id;

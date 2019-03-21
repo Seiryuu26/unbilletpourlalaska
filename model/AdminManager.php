@@ -3,6 +3,10 @@ namespace www\p3\model;
 require_once("model/Manager.php");
 require_once("model/Author.php");
 
+/**
+ * Class AdminManager who is in charge to manage the administration 
+ * @package www\p3\model
+ */
 class AdminManager extends Manager
  {
  

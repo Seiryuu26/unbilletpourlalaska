@@ -13,6 +13,10 @@ use \www\p3\model\CommentManager;
 use \www\p3\model\AdminManager;
 use \www\p3\tools\Tools;
 
+/**
+ * Class BackOffice who is in charge with all the features post , comment,acces concrete and real
+ * @package www\p3\controller
+ */
 class BackOffice
 {
 

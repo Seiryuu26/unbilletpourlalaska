@@ -23,7 +23,7 @@
 
     <![endif]-->
     </head>
-        
+
     <body>
         
      <div class='container'>
@@ -43,11 +43,11 @@ if (!empty($_SESSION['pseudo']) && !empty($_SESSION['id']))
 {
     echo '<p><a href="/?action=logout">Déconnexion</a></p>';
 
-    echo '<p><a href="/?action=board">Accéder à l\'espace d\'administration</a></p>';
+    echo '<p><a href="/?action=board">Accéder à l\'espace d\'administration </a></p>';
 }
 else
 {
-    echo '<p><a href="/?action=login">Accéder à l\'espace d\'administration</a></p>';
+    echo '<p><a href="/?action=login">Accéder à l\'espace d\'administration  </a></p>';
 }
 
 ?>

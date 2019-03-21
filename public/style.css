@@ -74,3 +74,18 @@ background-color: rgb(0,0,0);
 text-align: justify;
 padding-left: 90px;
 }
+body
+{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #000;
+    background-color: black;
+    color: black;
+    display:flex;
+    color:black;
+    justify-content: space-around;
+}
+
+.flex{
+    display:flex;
+    justify-content:space-around;
+}

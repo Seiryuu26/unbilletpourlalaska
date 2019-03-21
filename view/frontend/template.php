@@ -46,9 +46,11 @@ if (!empty($_SESSION['pseudo']) && !empty($_SESSION['id']))
 }
 else
 {
-    echo '<p><a href="/?action=login">Accéder à l\'espace d\'administration</a></p>';
+    echo '<div class="flex">';
+    echo '<p><a href="CGU.pdf">CGU </a></p>';
+    echo '<p><a href="MentionsLegales.pdf">Mentions Légales </a></p>';
+    echo '<p><a href="/?action=login"> Accéder à l\'espace d\'administration </a></p>';
 }
-
 ?>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

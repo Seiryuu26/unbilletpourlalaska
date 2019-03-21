@@ -5,6 +5,10 @@ require_once("model/Post.php");
 require_once("model/Manager.php");
 require_once("model/Author.php");
 
+/**
+ * Class PostManager who is in charge of all the features for a post in the website
+ * @package www\p3\model
+ */
 class PostManager extends Manager
 {
     /**

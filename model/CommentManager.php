@@ -4,6 +4,10 @@ namespace www\p3\model;
 require_once("model/Comment.php");
 require_once("model/Manager.php");
 
+/**
+ * Class CommentManager who is in charge in dealing with  comments and interacting with database
+ * @package www\p3\model
+ */
 
 class CommentManager extends Manager
 {
