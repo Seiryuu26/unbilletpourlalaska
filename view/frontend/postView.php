@@ -6,9 +6,7 @@
     <h3>
         <?= htmlspecialchars($post->getTitle()) ?>
         <em><?= ($post->getCreationDate()) ?></em>
-        {
-        text-align: left;
-        }
+
     </h3>
     
     <p>
