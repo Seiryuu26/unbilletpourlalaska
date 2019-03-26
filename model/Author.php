@@ -1,7 +1,7 @@
 <?php
 namespace www\p3\model;
 /**
- * Classe which represents an author
+ * Classe which represents all the entities of an  author
  * @author David P.
  * @version 0.1.0
  */

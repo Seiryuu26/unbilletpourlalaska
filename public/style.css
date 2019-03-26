@@ -53,7 +53,7 @@
 a
 {
     text-decoration: none;
-    color: red;
+    color: blue;
 }
 .navbar {
   position: relative;
@@ -77,12 +77,8 @@ padding-left: 90px;
 body
 {
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    color: #000;
-    background-color: black;
+    background-color: white;
     color: black;
-    display:flex;
-    color:black;
-    justify-content: space-around;
 }
 
 .flex{

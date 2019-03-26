@@ -5,7 +5,7 @@ require_once("model/Comment.php");
 require_once("model/Manager.php");
 
 /**
- * Class CommentManager who is in charge in dealing with  comments and interacting with database
+ * Class CommentManager who is in charge in dealing with  comments[get,post,update,signal, erase] and interacting with database
  * @package www\p3\model
  */
 

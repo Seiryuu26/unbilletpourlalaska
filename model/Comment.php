@@ -1,7 +1,7 @@
 <?php
 namespace www\p3\model;
 /**
- * Classe which represents an comment
+ * Classe which represents all the entites of a comment
  * @author David P.
  * @version 0.1.0
  */

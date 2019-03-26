@@ -37,12 +37,9 @@ class AdminController{
     public function deleteSession() {
 
 // Suppression des variables de session et de la session
-        $_SESSION = array();
         session_destroy();
 
 // Suppression des cookies de connexion automatique
-        setcookie('login', '');
-        setcookie('motdepasse', '');
         header('Location: index.php');
     }
 

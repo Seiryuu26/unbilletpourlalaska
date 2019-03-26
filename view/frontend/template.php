@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
         <title><?=$title ?></title>
-        <link href="style.css" rel="stylesheet" /> 
+        <link href="public/style.css" rel="stylesheet" />
         <script src="https://www.google.com/recaptcha/api.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
@@ -46,9 +46,14 @@ if (!empty($_SESSION['pseudo']) && !empty($_SESSION['id']))
 }
 else
 {
-    echo '<p><a href="CGU.pdf">CGU </a></p>';
-    echo '<p><a href="MentionsLegales.pdf">Mentions Légales </a></p>';
-    echo '<p><a href="/?action=login"> Accéder à l\'espace d\'administration </a></p>';
+ ?>
+    <p>
+  <a href="CGU.pdf">CGU </a>
+  <a href="MentionsLegales.pdf">Mentions Légales </a>
+  <a href="/?action=login"> Accéder à l'espace d'administration </a>
+    </p>
+
+ <?php
 }
 ?>
     </div>

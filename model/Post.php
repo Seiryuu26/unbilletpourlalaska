@@ -1,7 +1,7 @@
 <?php
 namespace www\p3\model;
 /**
- * Classe which represents a post
+ * Classe which represents all the entities of a  post
  * @author David P.
  * @version 0.1.0
  */

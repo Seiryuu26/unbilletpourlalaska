@@ -9,7 +9,7 @@ use \www\p3\model\CommentManager;
 use \www\p3\model\Comment;
 
 /**
- * Class FrontOffice who is in charge to make all the features post, comment , access
+ * Class FrontOffice who is in charge to make all the features post, comment[ add , modify ,delete ans signal] , access
  * @package www\p3\controller
  */
 class FrontOffice
