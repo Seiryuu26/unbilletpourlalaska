@@ -98,6 +98,14 @@ class FrontOffice
             header('Location: index.php');
         }
     }
+    function cgu()
+    {
+        require('view\frontend\cguView.php');
+    }
+    function mentionsLegales()
+    {
+        require('view\frontend\mentionsLegalesView.php');
+    }
 }
 
 

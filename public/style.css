@@ -18,14 +18,14 @@
 }
 .post p
 {
-    background-color: #fff;
+    background-color: rgb(0,139,34);
     margin-top: 0px;
     padding-top: 10px;
     padding-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
     border: 2px solid #ccc;
-    background-color:#CCCCCC;
+    background-color:rgb(0,139,34);
     margin-top:3.5px;
 }
 .border-article
@@ -53,7 +53,7 @@
 a
 {
     text-decoration: none;
-    color: blue;
+    color: black;
 }
 .navbar {
   position: relative;
@@ -68,16 +68,16 @@ a
 header
 {
 font-family : TimesNewRoman ;
-color: black ;
+color: black;
 border: 3px black solid ;
-background-color: rgb(0,0,0);
+background-color: rgb(34,139,34);
 text-align: justify;
 padding-left: 90px;
 }
 body
 {
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    background-color: white;
+    background-color: rgb(48,48,48);
     color: black;
 }
 

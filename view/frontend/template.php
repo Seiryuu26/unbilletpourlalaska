@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
         <title><?=$title ?></title>
-        <link href="public/style.css" rel="stylesheet" />
+        <img src="aurora.jpg" />
+        <link href="public\css\style.css" rel="stylesheet" />
         <script src="https://www.google.com/recaptcha/api.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
@@ -21,8 +22,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
     <![endif]-->
+
     </head>
-        
+
     <body>
         
      <div class='container'>
@@ -30,9 +32,9 @@
          
     <h1>Billet simple pour l'Alaska</h1>
 
-        <?=$content
+         <?=$content
 ?>
-    
+
     </div> 
         <div class="alert alert-secondary" role="alert">
         
@@ -48,11 +50,10 @@ else
 {
  ?>
     <p>
-  <a href="CGU.pdf">CGU </a>
-  <a href="MentionsLegales.pdf">Mentions Légales </a>
+        <a href="/?action=cguView.php">CGU </a>
+        <a href="/?action=mentionsLegales">Mentions Légales </a>
   <a href="/?action=login"> Accéder à l'espace d'administration </a>
     </p>
-
  <?php
 }
 ?>

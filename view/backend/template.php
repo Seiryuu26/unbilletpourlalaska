@@ -10,7 +10,7 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
         <title><?=$title ?></title>
         <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
-        <link href="public/style.css" rel="stylesheet" /> 
+        <link href="public\css\style.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,6 +22,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
     <![endif]-->
+
+
     </head>
 
     <body>
