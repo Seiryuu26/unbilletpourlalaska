@@ -18,7 +18,6 @@ try {
         if (isset($_GET['action'])) {
             if ($_GET['action'] == 'listPosts') {
                 $frontoffice->listPosts();
-                var_dump($page);
             } elseif ($_GET['action'] == 'post') {
                 if (isset($_GET['id']) && $_GET['id'] > 0) {
                     $frontoffice->post();
@@ -52,7 +51,15 @@ try {
 
 
 
-            } /**
+
+
+            }
+            else if ($_GET['action'] == 'cgu') {
+                $frontoffice->cgu();}
+            else if ($_GET['action'] == 'mentionsLegales') {
+                    $frontoffice->mentionsLegales();
+            }
+            /**
              *partBackend
              *the following part lead to the controller backend backend.php
              * look for the method name to match the action (method board)

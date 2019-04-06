@@ -49,8 +49,8 @@ else
 {
  ?>
     <p>
-        <a href="/?action=cgu">CGU </a>
-        <a href="/?action=mentionsLegales">Mentions Légales </a>
+        <a href="/index.php?action=cgu">CGU </a>
+        <a href="/index.php?action=mentionsLegales">Mentions Légales </a>
   <a href="/?action=login"> Accéder à l'espace d'administration </a>
     </p>
  <?php
