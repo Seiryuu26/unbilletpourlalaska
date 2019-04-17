@@ -13,7 +13,6 @@ foreach($posts as $post )
         $content=substr($content, 0, 100);
         $dernier_mot=strrpos($content," ");
         $content=substr($content,0,$dernier_mot);
-        $content.="<a href=\"index.php?action=post&amp;id=".($post->getId())."\"> lire la suite...</a>";
     }
     ?>
 
@@ -25,13 +24,22 @@ foreach($posts as $post )
             <em><?= ($post->getCreationDate())?></em>
             <?=  "par " . ($post->getAuthor()->getFullname())?>
         </h3>
-        
-        <p>
-            <?= nl2br($content) ?>
-            <br />
-            <em><a href="index.php?action=post&amp;id=<?= ($post->getId()) ?>">Commentaires</a></em>
-            
-        </p>
+
+        <div class="content">
+            <p>
+                <?= nl2br($content) ?>
+            </p>
+                <div class="link">
+                            <div class="row">
+                                <div class="col-8">
+                                </div>
+                                <div class="col-4">
+                                    <a href="index.php?action=post&amp;id=<?= ($post->getId()) ?>">Commentaires</a>
+                                    <a href="index.php?action=post&amp;id=<?= ($post->getId()) ?>"> lire la suite...</a>
+                                </div>
+                            </div>
+               </div>
+        </div>
     </div>
 
 
