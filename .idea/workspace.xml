@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39d4234d-3bc2-46de-8e99-48ab10d3e021" name="Default" comment="update the design aspects of the website">
+    <list default="true" id="39d4234d-3bc2-46de-8e99-48ab10d3e021" name="Default" comment="update for the most recent version of the website">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Manager.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -413,7 +412,7 @@
       <workItem from="1555774768033" duration="938000" />
       <workItem from="1555916524688" duration="1489000" />
       <workItem from="1555918988794" duration="3356000" />
-      <workItem from="1556087102329" duration="709000" />
+      <workItem from="1556087102329" duration="3459000" />
     </task>
     <task id="LOCAL-00001" summary="modification a pdo fetch class with creation Date">
       <created>1540238780051</created>
@@ -604,14 +603,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555529686917</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="update for the most recent version of the website">
+      <created>1556088165796</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1556088165796</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="339280000" />
+    <option name="totallyTimeSpent" value="342030000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17038691" />
@@ -697,7 +703,8 @@
     <MESSAGE value="update the whole aspects and adding updeted links for parts" />
     <MESSAGE value="update the whole aspects of the website" />
     <MESSAGE value="update the design aspects of the website" />
-    <option name="LAST_COMMIT_MESSAGE" value="update the design aspects of the website" />
+    <MESSAGE value="update for the most recent version of the website" />
+    <option name="LAST_COMMIT_MESSAGE" value="update for the most recent version of the website" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../bootstrap-3.3.7-dist/css/bootstrap-theme.css">
