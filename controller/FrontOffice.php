@@ -100,11 +100,11 @@ class FrontOffice
     }
     function cgu()
     {
-        require('view/frontend/cgu-view.php');
+        require('view\frontend\cguView.php');
     }
     function mentionsLegales()
     {
-        require('view/frontend/mentionsLegalesView.php');
+        require('view\frontend\mentionsLegalesView.php');
     }
 }
 
