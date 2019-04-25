@@ -100,7 +100,7 @@ class FrontOffice
     }
     function cgu()
     {
-        require('view/frontend/cguView.php');
+        require('view/frontend/cgu-view.php');
     }
     function mentionsLegales()
     {
