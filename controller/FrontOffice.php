@@ -1,16 +1,16 @@
 <?php
-namespace www\p3\controller;
+namespace \controller;
 // Chargement des classes
 require_once('model/PostManager.php');
 require_once('model/CommentManager.php');
 require_once('model/Comment.php');
-use \www\p3\model\PostManager;
-use \www\p3\model\CommentManager;
-use \www\p3\model\Comment;
+use \model\PostManager;
+use \model\CommentManager;
+use \model\Comment;
 
 /**
  * Class FrontOffice who is in charge to make all the features post, comment[ add , modify ,delete ans signal] , access
- * @package www\p3\controller
+ * @package www\controller
  */
 class FrontOffice
 {
@@ -100,11 +100,11 @@ class FrontOffice
     }
     function cgu()
     {
-        require('view\frontend\cguView.php');
+        require('view/frontend/cguView.php');
     }
     function mentionsLegales()
     {
-        require('view\frontend\mentionsLegalesView.php');
+        require('view/frontend/mentionsLegalesView.php');
     }
 }
 

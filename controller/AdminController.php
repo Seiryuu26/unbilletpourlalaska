@@ -1,5 +1,5 @@
 <?php
-namespace www\p3;
+namespace \controller;
 // Chargement des classes
 require_once('model/PostManager.php');
 require_once('model/CommentManager.php');
@@ -7,7 +7,7 @@ require_once('model/AdminManager.php');
 
 class AdminController{
     function connexion($pseudo,$motdepasse) {
-        $adminManager = new \www/p3/AdminManager();
+        $adminManager = new \www/AdminManager();
         $resultat = $adminManager->connected($pseudo,$motdepasse);
 
 

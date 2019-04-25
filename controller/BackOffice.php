@@ -1,5 +1,5 @@
 <?php
-namespace www\p3\controller;
+namespace \controller;
 
 // Chargement des classes
 require_once('model/Post.php');
@@ -7,15 +7,15 @@ require_once('model/PostManager.php');
 require_once('model/CommentManager.php');
 require_once('model/AdminManager.php');
 require_once('tools/Tools.php');
-use \www\p3\model\Post;
-use \www\p3\model\PostManager;
-use \www\p3\model\CommentManager;
-use \www\p3\model\AdminManager;
-use \www\p3\tools\Tools;
+use \model\Post;
+use \model\PostManager;
+use \model\CommentManager;
+use \model\AdminManager;
+use \tools\Tools;
 
 /**
  * Class BackOffice who is in charge with all the features post[ add and modify] , acces concrete and real
- * @package www\p3\controller
+ * @package www\controller
  */
 class BackOffice
 {
