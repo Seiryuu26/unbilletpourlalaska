@@ -4,9 +4,9 @@ namespace \controller;
 require_once('model/PostManager.php');
 require_once('model/CommentManager.php');
 require_once('model/Comment.php');
-use \model\PostManager;
-use \model\CommentManager;
-use \model\Comment;
+use \www\model\PostManager;
+use \www\model\CommentManager;
+use \www\model\Comment;
 
 /**
  * Class FrontOffice who is in charge to make all the features post, comment[ add , modify ,delete ans signal] , access

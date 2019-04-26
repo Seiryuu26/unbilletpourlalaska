@@ -7,11 +7,11 @@ require_once('model/PostManager.php');
 require_once('model/CommentManager.php');
 require_once('model/AdminManager.php');
 require_once('tools/Tools.php');
-use \model\Post;
-use \model\PostManager;
-use \model\CommentManager;
-use \model\AdminManager;
-use \tools\Tools;
+use \www\model\Post;
+use \www\model\PostManager;
+use \www\model\CommentManager;
+use \www\model\AdminManager;
+use \www\tools\Tools;
 
 /**
  * Class BackOffice who is in charge with all the features post[ add and modify] , acces concrete and real

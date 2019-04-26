@@ -2,8 +2,8 @@
  session_start();
 require('controller/FrontOffice.php');
 require('controller/BackOffice.php');
-use \controller\FrontOffice;
-use \controller\BackOffice;
+use \www\controller\FrontOffice;
+use \www\controller\BackOffice;
 
 
 try {
