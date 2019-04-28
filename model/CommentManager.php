@@ -1,6 +1,6 @@
 <?php
 
-namespace www\p3\model;
+namespace www\model;
 require_once("model/Comment.php");
 require_once("model/Manager.php");
 
@@ -20,17 +20,13 @@ class CommentManager extends Manager
         $commentaires = $req->fetchAll();
         return $commentaires;
     }
-
     public function postComment($comment)
-
     {
         $db = $this->dbConnect();
         $commentaires = $db->prepare('INSERT INTO comment(post_id, author, content, comment_date) VALUES(?, ?, ?, NOW())');
         $affectedLines = $commentaires->execute(array($comment->getPostId(),$comment->getAuthor(),$comment->getContent()));
-
         return $affectedLines;
     }
-    
     public function updateComment($commentid,$comment)
     {
         $db = $this->dbConnect();
@@ -39,7 +35,6 @@ class CommentManager extends Manager
        return $Lines;
 
     }
-    
      public function signal($commentId){
         $db = $this->dbConnect();
         $req = $db->prepare('UPDATE comment SET signaled = 1 WHERE id = ?');
@@ -64,7 +59,6 @@ class CommentManager extends Manager
         $req->execute(array());
        return $req;
     }
-    
     public function erase($commentId){
         $db = $this->dbConnect();
         $req = $db->prepare('DELETE FROM comment WHERE id = ?');

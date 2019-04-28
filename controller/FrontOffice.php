@@ -1,5 +1,5 @@
 <?php
-namespace \controller;
+namespace www\controller;
 // Chargement des classes
 require_once('model/PostManager.php');
 require_once('model/CommentManager.php');
@@ -14,9 +14,9 @@ use \www\model\Comment;
  */
 class FrontOffice
 {
-    
     function listPosts()
     {
+
         $postManager = new PostManager(); // Création d'une instance
         $nbpages = $postManager->nbPosts();
         if(isset($_GET['page']))
@@ -25,16 +25,13 @@ class FrontOffice
         $posts = $postManager->getPosts($page);// Appel d'une fonction de cet objet
         require('view/frontend/listpostView.php');
     }
-    
 
     function post()
     {
         $postManager = new PostManager();
         $commentManager = new CommentManager();
-
         $post = $postManager->getPost($_GET['id']);
         $comments = $commentManager->getComments($post);
-
         require('view/frontend/postView.php');
     }
 
@@ -46,8 +43,6 @@ class FrontOffice
         $comment ->setAuthor($dataComment['author']);
         $comment ->setContent($dataComment['content']);
         $affectedLines = $commentManager->postComment($comment);
-        
-
         if ($affectedLines === false) {
             throw new Exception('Impossible to add the comment !');
         }
@@ -55,14 +50,10 @@ class FrontOffice
             header('Location: index.php?action=post&id=' . $dataComment['postId']);
         }
     }
-
-
     function modifyComment($commentId)
     {
         $commentManager = new CommentManager();
-
         $affectedLines = $commentManager->modify($commentId);
-
         if ($affectedLines === false) {
             throw new Exception('comment already modify !');
         }
@@ -74,9 +65,7 @@ class FrontOffice
     function deleteComment($commentId)
     {
         $commentManager = new CommentManager();
-
         $affectedLines = $commentManager->delete($commentId);
-
         if ($affectedLines === false) {
             throw new Exception('comment already erased !');
         }
@@ -87,9 +76,7 @@ class FrontOffice
 
     function signalComment($commentId)
     {
-
         $commentManager = new CommentManager();
-
         $affectedLines = $commentManager->signal($commentId);
         if ($affectedLines === false) {
             throw new Exception('comment already signaled !');

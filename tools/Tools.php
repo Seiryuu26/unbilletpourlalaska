@@ -1,6 +1,6 @@
 <?php
 
-namespace www\p3\tools;
+namespace www\tools;
 
 class Tools {
     private $response;

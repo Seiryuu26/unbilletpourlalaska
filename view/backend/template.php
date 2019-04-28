@@ -16,21 +16,14 @@
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
     <!--[if lt IE 9]>
-
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
     <![endif]-->
-
-
     </head>
 
     <body>
         
      <div class='container'>
-        
-         
     <h1>Billet simple pour l'Alaska</h1>
 
         <?=$content
@@ -41,21 +34,17 @@
         
         <?php
 if (!empty($_SESSION['pseudo']) && !empty($_SESSION['id']))
-
 {
     echo '<p><a href="/?action=logout">Déconnexion</a></p>';
-
     echo '<p><a href="/?action=board">Accéder à l\'espace d\'administration </a></p>';
 }
 else
 {
     echo '<p><a href="/?action=login">Accéder à l\'espace d\'administration  </a></p>';
 }
-
 ?>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     </body>
 </html>

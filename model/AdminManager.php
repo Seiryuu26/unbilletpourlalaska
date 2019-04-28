@@ -1,5 +1,5 @@
 <?php
-namespace www\p3\model;
+namespace www\model;
 require_once("model/Manager.php");
 require_once("model/Author.php");
 
@@ -9,7 +9,6 @@ require_once("model/Author.php");
  */
 class AdminManager extends Manager
  {
- 
    public function connected ($pseudo)
    {
      $db= $this->dbConnect();
@@ -21,6 +20,5 @@ class AdminManager extends Manager
       var_dump($resultat);
        return $resultat;
    }
- 
  }
 ?>

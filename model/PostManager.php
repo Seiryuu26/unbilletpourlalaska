@@ -1,13 +1,13 @@
 <?php
 
-namespace www\p3\model;
+namespace www\model;
 require_once("model/Post.php");
 require_once("model/Manager.php");
 require_once("model/Author.php");
 
 /**
  * Class PostManager who is in charge of all the features for a post in the website
- * @package www\p3\model
+ * @package www\model
  */
 class PostManager extends Manager
 {
@@ -17,9 +17,7 @@ class PostManager extends Manager
     public function getPosts($page)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT post.id, title, content,DATE_FORMAT(post_date,\'%d/%m/%Y\')
-         AS creationDate,member.firstname,member.lastname
-         FROM post,member WHERE member.id= post.member_id  ORDER BY post_date DESC LIMIT :page,3');
+        $req = $db->prepare('SELECT post.id, title, content,DATE_FORMAT(post_date,\'%d/%m/%Y\')AS creationDate,member.firstname,member.lastnameFROM post,member WHERE member.id= post.member_id  ORDER BY post_date DESC LIMIT :page,3');
         $req-> bindValue(':page', (int)$page, \PDO::PARAM_INT);
         $req->execute();
        // $req->debugDumpParams();
@@ -41,9 +39,6 @@ class PostManager extends Manager
 
             array_push($posts,$article);
                 // ajout  setter article posts tableau cree l17
-
-
-
         }
         return $posts;
     }
