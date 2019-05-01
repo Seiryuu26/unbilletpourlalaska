@@ -9,6 +9,7 @@ require_once("model/Author.php");
  */
 class AdminManager extends Manager
  {
+
    public function connected ($pseudo)
    {
      $db= $this->dbConnect();

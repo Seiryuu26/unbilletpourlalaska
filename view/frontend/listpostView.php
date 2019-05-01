@@ -1,7 +1,7 @@
 <?php $title = 'Mon blog'; ?>
 
 <?php ob_start(); ?>
-<h1>Par Jean Rocheforte</h1>
+<h1>Par Jean Forteroche</h1>
 <p>Derniers billets du blog :</p>
 
 <?php

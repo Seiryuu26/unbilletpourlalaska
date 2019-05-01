@@ -3,7 +3,7 @@
 namespace www\model;
 /**
  * Class Manager who is in charge of all the features about the db connection and the text in general
- * @package www\p3\model
+ * @package www\model
  */
 class Manager
 {

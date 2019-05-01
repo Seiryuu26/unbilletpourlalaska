@@ -14,6 +14,7 @@ use \www\model\Comment;
  */
 class FrontOffice
 {
+
     function listPosts()
     {
 
@@ -26,13 +27,17 @@ class FrontOffice
         require('view/frontend/listpostView.php');
     }
 
+
     function post()
     {
         $postManager = new PostManager();
         $commentManager = new CommentManager();
+
         $post = $postManager->getPost($_GET['id']);
         $comments = $commentManager->getComments($post);
+
         require('view/frontend/postView.php');
+
     }
 
     function addComment($dataComment)
@@ -43,6 +48,8 @@ class FrontOffice
         $comment ->setAuthor($dataComment['author']);
         $comment ->setContent($dataComment['content']);
         $affectedLines = $commentManager->postComment($comment);
+
+
         if ($affectedLines === false) {
             throw new Exception('Impossible to add the comment !');
         }
@@ -50,13 +57,17 @@ class FrontOffice
             header('Location: index.php?action=post&id=' . $dataComment['postId']);
         }
     }
+
     function modifyComment($commentId)
     {
         $commentManager = new CommentManager();
+
         $affectedLines = $commentManager->modify($commentId);
+
         if ($affectedLines === false) {
             throw new Exception('comment already modify !');
         }
+
         else {
             header('Location: index.php');
         }
@@ -76,7 +87,9 @@ class FrontOffice
 
     function signalComment($commentId)
     {
+
         $commentManager = new CommentManager();
+
         $affectedLines = $commentManager->signal($commentId);
         if ($affectedLines === false) {
             throw new Exception('comment already signaled !');
