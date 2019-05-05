@@ -46,7 +46,7 @@ class PostManager extends Manager
     public function getPost($articleId)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT id, title, content, DATE_FORMAT(post_date, \'%d/%m/%Y \') AS creationDate FROM post WHERE id = ?');
+        $req = $db->prepare('SELECT * AS creationDate FROM post WHERE id = ?');
         $req->execute(array($articleId));
         $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Post::class);
         $post = $req->fetch();
@@ -55,7 +55,6 @@ class PostManager extends Manager
     /**
     * method modify post 
     * @param Post $post
-    * @return reaffected line 
     */
     public function modifyPost($post)
     {
