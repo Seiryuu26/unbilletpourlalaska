@@ -18,7 +18,6 @@ class AdminManager extends Manager
      $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Author::class);
        
      $resultat = $req->fetch();
-      var_dump($resultat);
        return $resultat;
    }
  }

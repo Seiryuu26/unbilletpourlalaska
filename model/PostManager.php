@@ -17,7 +17,7 @@ class PostManager extends Manager
     public function getPosts($page)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT * FROM post LEFT JOIN member ON post.member_id=member.id ORDER BY post_date DESC LIMIT :page,3');
+        $req = $db->prepare('SELECT p.id,p.title,p.content,p.post_date,m.firstname,m.lastname FROM post AS p LEFT JOIN member AS m ON p.member_id=m.id ORDER BY post_date DESC LIMIT :page,3');
         $req-> bindValue(':page', (int)$page, \PDO::PARAM_INT);
         $req->execute();
        // $req->debugDumpParams();
@@ -25,7 +25,7 @@ class PostManager extends Manager
         //$posts = $req->fetchAll();
         $posts = array();//tableau dobjets post
 
-        while($post = $req->fetch())
+        while($post = $req->fetch(\PDO::FETCH_ASSOC))
         {
             $author= new Author();
             $author->setFirstname($post['firstname']);
@@ -46,7 +46,7 @@ class PostManager extends Manager
     public function getPost($articleId)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT * AS creationDate FROM post WHERE id = ?');
+        $req = $db->prepare('SELECT * FROM post WHERE id = ?');
         $req->execute(array($articleId));
         $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Post::class);
         $post = $req->fetch();

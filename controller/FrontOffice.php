@@ -35,7 +35,6 @@ class FrontOffice
 
         $post = $postManager->getPost($_GET['id']);
         $comments = $commentManager->getComments($post);
-
         require('view/frontend/postView.php');
 
     }
