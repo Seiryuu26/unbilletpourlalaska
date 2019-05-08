@@ -33,7 +33,6 @@ class CommentManager extends Manager
         $req = $db->prepare('UPDATE comment SET comment = ? WHERE id = ?');
         $Lines =$req->execute(array($comment->getCommentId(),$comment->getComment()));
        return $Lines;
-
     }
      public function signal($commentId){
         $db = $this->dbConnect();

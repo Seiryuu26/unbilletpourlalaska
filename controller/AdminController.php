@@ -9,8 +9,6 @@ class AdminController{
     function connexion($pseudo,$motdepasse) {
         $adminManager = new \www/AdminManager();
         $resultat = $adminManager->connected($pseudo,$motdepasse);
-
-
         /**
         file who is in charge for login and logout
          *
@@ -22,23 +20,15 @@ class AdminController{
         }
         else
         {
-
             $_SESSION['id'] = $resultat('id');
             $_SESSION['pseudo'] = $pseudo;
             header('Location: index.php?action=board');
             echo ('Vous êtes connecté !');
-
-
-
-
         }
     }
-
     public function deleteSession() {
-
 // Suppression des variables de session et de la session
         session_destroy();
-
 // Suppression des cookies de connexion automatique
         header('Location: index.php');
     }
