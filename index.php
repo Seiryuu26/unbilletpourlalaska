@@ -5,7 +5,6 @@ require('controller/BackOffice.php');
 use \www\controller\FrontOffice;
 use \www\controller\BackOffice;
 
-
 try {
     /**
     *partfrontend.php
