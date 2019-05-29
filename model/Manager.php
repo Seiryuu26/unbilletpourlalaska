@@ -9,7 +9,7 @@ class Manager
 {
     protected function dbConnect()
     {
-        $db = new \PDO('mysql:host=localhost;dbname=unbilletpourlalaska;charset=utf8', 'unbilletcc', 'HMEPEGEytzVh');
+        $db = new \PDO('mysql:host=localhost;dbname=unbilletpourlalaska;charset=utf8', 'unbilletcc123456', '5TkqEKaBSLMp9zR');
         return $db;
     }
     

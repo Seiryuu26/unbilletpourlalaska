@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39d4234d-3bc2-46de-8e99-48ab10d3e021" name="Default" comment="update  for the most recent version of the website">
+    <list default="true" id="39d4234d-3bc2-46de-8e99-48ab10d3e021" name="Default" comment="latest update  for the most recent version of the website">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Manager.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/model/Manager.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="114" selection-start-line="11" selection-start-column="114" selection-end-line="11" selection-end-column="114" />
+              <caret line="11" column="123" selection-start-line="11" selection-start-column="123" selection-end-line="11" selection-end-column="123" />
             </state>
           </provider>
         </entry>
@@ -440,7 +439,8 @@
       <workItem from="1558981546959" duration="2605000" />
       <workItem from="1559025984655" duration="2251000" />
       <workItem from="1559070027188" duration="700000" />
-      <workItem from="1559076616267" duration="59000" />
+      <workItem from="1559076616267" duration="347000" />
+      <workItem from="1559113705299" duration="149000" />
     </task>
     <task id="LOCAL-00001" summary="modification a pdo fetch class with creation Date">
       <created>1540238780051</created>
@@ -743,17 +743,24 @@
       <option name="project" value="LOCAL" />
       <updated>1559029001224</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="latest update  for the most recent version of the website">
+      <created>1559076823217</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1559076823218</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="425763000" />
+    <option name="totallyTimeSpent" value="426200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1346" height="688" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2682737" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27216175" />
       <window_info id="Structure" order="1" weight="0.2496112" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -843,7 +850,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modification a pdo fetch class with creation Date" />
     <MESSAGE value="modification a pdo fetch class with object Author and Posts" />
     <MESSAGE value="add a conditon on addPostView" />
     <MESSAGE value="add a list of pages per group" />
@@ -868,7 +874,8 @@
     <MESSAGE value="patch for the last updated  version of the website" />
     <MESSAGE value="update  for the last version of the website" />
     <MESSAGE value="update  for the most recent version of the website" />
-    <option name="LAST_COMMIT_MESSAGE" value="update  for the most recent version of the website" />
+    <MESSAGE value="latest update  for the most recent version of the website" />
+    <option name="LAST_COMMIT_MESSAGE" value="latest update  for the most recent version of the website" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.php" />
@@ -985,7 +992,7 @@
     <entry file="file://$PROJECT_DIR$/model/Manager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="114" selection-start-line="11" selection-start-column="114" selection-end-line="11" selection-end-column="114" />
+          <caret line="11" column="123" selection-start-line="11" selection-start-column="123" selection-end-line="11" selection-end-column="123" />
         </state>
       </provider>
     </entry>
