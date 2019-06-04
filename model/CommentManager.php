@@ -1,5 +1,4 @@
 <?php
-ini_set('display_errors',1);
 namespace www\model;
 require_once("model/Comment.php");
 require_once("model/Manager.php");
@@ -13,8 +12,6 @@ class CommentManager extends Manager
 {
     public function getComments($post)
     {
-        echo"toto";
-        die;
         $db = $this->dbConnect();
         $req = $db->prepare('SELECT id, author, content, DATE_FORMAT(comment_date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM comment WHERE post_id = ? ORDER BY comment_date DESC');
         $req->execute(array($post->getId()));
