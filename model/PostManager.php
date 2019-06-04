@@ -1,5 +1,4 @@
 <?php
-
 namespace www\model;
 require_once("model/Post.php");
 require_once("model/Manager.php");

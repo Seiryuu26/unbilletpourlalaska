@@ -1,5 +1,4 @@
 <?php
-
 namespace www\model;
 /**
  * Class Manager who is in charge of all the features about the db connection and the text in general
@@ -9,7 +8,8 @@ class Manager
 {
     protected function dbConnect()
     {
-        $db = new \PDO('mysql:host=localhost;dbname=unbilletpourlalaska;charset=utf8', 'unbilletcc123456', '5TkqEKaBSLMp9zR');
+
+        $db = new \PDO('mysql:host=unbilletcc123456.mysql.db;dbname=unbilletcc123456;charset=utf8', 'unbilletcc123456', '5TkqEKaBSLMp9zR');
         return $db;
     }
     
