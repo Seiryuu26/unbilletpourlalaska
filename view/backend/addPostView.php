@@ -1,16 +1,12 @@
 <?php $title = 'Mon blog'; ?>
-
 <?php ob_start(); ?>
-
 <div class="container admin add">
-            <?php
+    <?php
             if (isset($_SESSION['message']) AND $_SESSION['message']!== NULL ){
                 echo '<div class="alert alert-primary" role="alert">';
                 echo $_SESSION['message'] ;
                 echo '</div>';
             }
-
-
             ?>
 
     <h1><strong>Ajouter un chapitre </strong></h1>
@@ -29,24 +25,20 @@
             <br>
             <div class="form-actions">
                 <input type="submit" class="btn btn-success " value=" Ajouter"><a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left" > Retour</span></a> </div>
-            
         </form>
 </div>
-        
         <script>
 tinymce.init({
     selector:   "textarea",
     width:      '100%',
     height:     70,
 });
-
 // Prevent bootstrap dialog from blocking focusin
 $(document).on('focusin', function(e) {
     if ($(e.target).closest(".mce-window").length) {
 		e.stopImmediatePropagation();
 	}
 });
-
 $('#open').click(function() {
 	$("#dialog").dialog({
 		width: 100,
@@ -54,7 +46,6 @@ $('#open').click(function() {
 	});
 });
 </script>
-
 <div class="container border">
 <h1>Modifier les commentaires </h1>
 <div class="row myborder">
@@ -64,7 +55,6 @@ $('#open').click(function() {
 </div>
         <?php
         while ($comment = $comments->fetch()){
-            
          echo '   
          <div class="row myborder">
          <div class="col-lg-2">'.$comment['id'].'</div>
@@ -80,7 +70,6 @@ $('#open').click(function() {
 <div class="container border-article">
 <h1>Modifier les articles</h1>
 <div class="row myborder">
-
         <div class="col-2">num&eacute;ros articles </div>
         <div class="col-lg-6">liste  des articles </div>
         <div class="col-lg-2">modifier</div>  
@@ -92,23 +81,15 @@ $('#open').click(function() {
             
              echo  '
         <div class="row myborder">
-       
        <div class="col-2">'.$post->getId().'</div>
        <div class="col-6">'.htmlspecialchars($post->getContent()).'</div>
-        
          <div class="col-2"><a class="btn btn-primary" href="index.php?action=modifyPost&id='                  .$post->getId().'">modifier</a></div>
         <div class="col-2"><a class="btn btn-primary" href="index.php?action=erasePost&id='              .$post->getId().'">effacer</a></div>
       </div>
         ';
          }
         ?>
-         
-            
-                <?php $error1; ?>
-            
-       
+    <?php $error1; ?>
     </div>
-
 <?php $content = ob_get_clean(); ?>
-        
 <?php require('template.php'); ?>

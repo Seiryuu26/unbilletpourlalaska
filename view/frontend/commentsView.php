@@ -7,10 +7,7 @@
             echo $_SESSION['message'] ;
             echo '</div>';
         }
-
-
         ?>
-
     <div class="row ">
         <br>
         <h1>Editions des Commentaires </h1>
@@ -42,7 +39,5 @@ while ($comment = $comments->fetch())
 </div>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <div class="g-recaptcha" data-sitekey="6Ld32l4UAAAAADM4l879y-fNZ8br4c_I03InyQmH"></div>
-
 <?php $content = ob_get_clean(); ?>
-
 <?php require('template.php'); ?>

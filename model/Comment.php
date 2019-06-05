@@ -67,3 +67,4 @@ class Comment
         return $this->signaled ;
     }
 }
+?>

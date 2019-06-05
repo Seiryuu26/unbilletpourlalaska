@@ -7,14 +7,12 @@ require_once('model/Comment.php');
 use \www\model\PostManager;
 use \www\model\CommentManager;
 use \www\model\Comment;
-
 /**
  * Class FrontOffice who is in charge to make all the features post, comment[ add , modify ,delete ans signal] , access
  * @package www\controller
  */
 class FrontOffice
 {
-
     function listPosts()
     {
         $postManager = new PostManager(); // Création d'une instance
@@ -41,7 +39,6 @@ class FrontOffice
         $comment ->setAuthor($dataComment['author']);
         $comment ->setContent($dataComment['content']);
         $affectedLines = $commentManager->postComment($comment);
-
         if ($affectedLines === false) {
             throw new Exception('Impossible to add the comment !');
         }
@@ -91,5 +88,6 @@ class FrontOffice
         require('view/frontend/mentionsLegalesView.php');
     }
 }
+?>
 
 

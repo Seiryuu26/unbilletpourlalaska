@@ -3,7 +3,6 @@ namespace www\model;
 require_once("model/Post.php");
 require_once("model/Manager.php");
 require_once("model/Author.php");
-
 /**
  * Class PostManager who is in charge of all the features for a post in the website
  * @package www\model
@@ -23,7 +22,6 @@ class PostManager extends Manager
        // $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, Post::class);
         //$posts = $req->fetchAll();
         $posts = array();//tableau dobjets post
-
         while($post = $req->fetch(\PDO::FETCH_ASSOC))
         {
             $author= new Author();
@@ -60,7 +58,6 @@ class PostManager extends Manager
         $req = $db->prepare('UPDATE post SET content = ?,title = ?  WHERE id = ?');
         $reaffectedLines =$req->execute(array($post->getContent(),$post->getTitle(),$post->getId()));
        return $reaffectedLines;
-
     }
     public function deletePost($articleId)
     {
@@ -91,12 +88,6 @@ class PostManager extends Manager
        }catch(\PDOException $e) {
            echo "Error: " . $e->getMessage();
        }
-
    }
-
-
-
-
- 
-
 }
+?>

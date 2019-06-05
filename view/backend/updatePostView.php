@@ -7,7 +7,6 @@
                 <div class="form-group">
                     <label for="description">Titre:</label>
                     <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="<?= htmlspecialchars($post->getTitle()); ?>"> <span class="help-inline"></span> </div>
-                
                 <div class="form-group">
                     <label for="description">Contenu:</label>
                     <textarea type="textarea" class="form-control" id="content" name="content" >
@@ -20,7 +19,5 @@
             </form>
         </div>
     </div>
-
 <?php $content = ob_get_clean(); ?>
-        
 <?php require('template.php'); ?>

@@ -2,12 +2,10 @@
 namespace www\model;
 require_once("model/Comment.php");
 require_once("model/Manager.php");
-
 /**
  * Class CommentManager who is in charge in dealing with  comments[get,post,update,signal, erase] and interacting with database
  * @package www\p3\model
  */
-
 class CommentManager extends Manager
 {
     public function getComments($post)
@@ -62,6 +60,7 @@ class CommentManager extends Manager
          $comment =$req->execute(array($commentId));
        return $comment;
     }
-    
 }
+?>
+
     

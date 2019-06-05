@@ -3,7 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="39d4234d-3bc2-46de-8e99-48ab10d3e021" name="Default" comment="latest update  for the most recent version of the website">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/BackOffice.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/BackOffice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/FrontOffice.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/FrontOffice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/AdminManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/AdminManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/CommentManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/CommentManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/PostManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PostManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/backend/addPostView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/backend/addPostView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/backend/changePostView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/backend/changePostView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/backend/deletePostView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/backend/deletePostView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/backend/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/backend/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/backend/updatePostView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/backend/updatePostView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/frontend/changePostView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/changePostView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/frontend/commentModerateView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/commentModerateView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/frontend/commentsView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/commentsView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/frontend/connectView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/connectView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/frontend/deletePostView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/deletePostView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/frontend/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/insert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/frontend/interface.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/interface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/frontend/listpostView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/listpostView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/frontend/postView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/postView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/frontend/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/frontend/updatePostView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/frontend/updatePostView.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,40 +58,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+        <entry file="file://$PROJECT_DIR$/view/backend/addPostView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding>
-                <element signature="e#7#72#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/PostManager.php">
+        <entry file="file://$PROJECT_DIR$/view/frontend/listpostView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="320">
+              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/frontend/postView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/frontend/template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="43" column="93" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/frontend/updatePostView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model/CommentManager.php">
+        <entry file="file://$PROJECT_DIR$/view/frontend/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Manager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state relative-caret-position="34">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -85,16 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../tests/Volumecone.php" />
-        <option value="$PROJECT_DIR$/../tests/carre.php" />
-        <option value="$PROJECT_DIR$/../tests/maths.php" />
-        <option value="$PROJECT_DIR$/../tests/index.php" />
-        <option value="$PROJECT_DIR$/../ex8/cible.php" />
-        <option value="$PROJECT_DIR$/../ex8/fomulaire.php" />
-        <option value="$PROJECT_DIR$/../tests/index1.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.html" />
-        <option value="$PROJECT_DIR$/../publichtml/scratch.html" />
-        <option value="$PROJECT_DIR$/../publichtml/echo.php" />
         <option value="$PROJECT_DIR$/../publichtml/page1.html" />
         <option value="$PROJECT_DIR$/../publichtml/testConf.php" />
         <option value="$PROJECT_DIR$/../publichtml/testModel.php" />
@@ -111,31 +140,41 @@
         <option value="$PROJECT_DIR$/../publichtml1/controller/routeur.php" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/../bootstrap-3.3.7-dist/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/view/frontend/postView.php" />
         <option value="$PROJECT_DIR$/controller/mentionsLegalesview.php" />
         <option value="$PROJECT_DIR$/view/frontend/cguview.php" />
         <option value="$PROJECT_DIR$/view/frontend/mentionsLegalesView.php" />
         <option value="$PROJECT_DIR$/view/frontend/cguView.php" />
-        <option value="$PROJECT_DIR$/view/frontend/template.php" />
         <option value="$PROJECT_DIR$/public/style.css" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/tools/Tools.php" />
-        <option value="$PROJECT_DIR$/model/Author.php" />
-        <option value="$PROJECT_DIR$/model/Comment.php" />
-        <option value="$PROJECT_DIR$/view/backend/template.php" />
-        <option value="$PROJECT_DIR$/view/frontend/listpostView.php" />
-        <option value="$PROJECT_DIR$/view/backend/addPostView.php" />
-        <option value="$PROJECT_DIR$/controller/BackOffice.php" />
-        <option value="$PROJECT_DIR$/model/Post.php" />
-        <option value="$PROJECT_DIR$/model/AdminManager.php" />
         <option value="$PROJECT_DIR$/controller/AdminController.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/controller/FrontOffice.php" />
         <option value="$PROJECT_DIR$/db/unbilletpourlalaska.sql" />
-        <option value="$PROJECT_DIR$/model/Manager.php" />
-        <option value="$PROJECT_DIR$/view/frontend/commentsView.php" />
-        <option value="$PROJECT_DIR$/model/PostManager.php" />
         <option value="$PROJECT_DIR$/model/CommentManager.php" />
+        <option value="$PROJECT_DIR$/controller/BackOffice.php" />
+        <option value="$PROJECT_DIR$/controller/FrontOffice.php" />
+        <option value="$PROJECT_DIR$/model/AdminManager.php" />
+        <option value="$PROJECT_DIR$/model/Author.php" />
+        <option value="$PROJECT_DIR$/model/Comment.php" />
+        <option value="$PROJECT_DIR$/model/Manager.php" />
+        <option value="$PROJECT_DIR$/model/Post.php" />
+        <option value="$PROJECT_DIR$/model/PostManager.php" />
+        <option value="$PROJECT_DIR$/view/backend/addPostView.php" />
+        <option value="$PROJECT_DIR$/view/backend/changePostView.php" />
+        <option value="$PROJECT_DIR$/view/backend/deletePostView.php" />
+        <option value="$PROJECT_DIR$/view/backend/template.php" />
+        <option value="$PROJECT_DIR$/view/backend/updatePostView.php" />
+        <option value="$PROJECT_DIR$/view/frontend/changePostView.php" />
+        <option value="$PROJECT_DIR$/view/frontend/commentModerateView.php" />
+        <option value="$PROJECT_DIR$/view/frontend/commentsView.php" />
+        <option value="$PROJECT_DIR$/view/frontend/connectView.php" />
+        <option value="$PROJECT_DIR$/view/frontend/deletePostView.php" />
+        <option value="$PROJECT_DIR$/view/frontend/insert.php" />
+        <option value="$PROJECT_DIR$/view/frontend/interface.php" />
+        <option value="$PROJECT_DIR$/view/frontend/listpostView.php" />
+        <option value="$PROJECT_DIR$/view/frontend/postView.php" />
+        <option value="$PROJECT_DIR$/view/frontend/template.php" />
+        <option value="$PROJECT_DIR$/view/frontend/updatePostView.php" />
       </list>
     </option>
   </component>
@@ -161,17 +200,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
@@ -193,11 +228,16 @@
               <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="www" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -208,7 +248,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -447,7 +487,10 @@
       <workItem from="1559586467644" duration="4798000" />
       <workItem from="1559596337923" duration="61000" />
       <workItem from="1559657078896" duration="5366000" />
-      <workItem from="1559673122338" duration="38000" />
+      <workItem from="1559673122338" duration="793000" />
+      <workItem from="1559680058351" duration="4724000" />
+      <workItem from="1559729835260" duration="4700000" />
+      <workItem from="1559741017980" duration="2923000" />
     </task>
     <task id="LOCAL-00001" summary="modification a pdo fetch class with creation Date">
       <created>1540238780051</created>
@@ -778,17 +821,24 @@
       <option name="project" value="LOCAL" />
       <updated>1559663251917</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="latest update  for the most recent version of the website">
+      <created>1559673289614</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1559673289614</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="456096000" />
+    <option name="totallyTimeSpent" value="469198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1346" height="688" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32270607" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33903578" />
       <window_info id="Structure" order="1" weight="0.2496112" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -906,8 +956,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="latest update  for the most recent version of the website" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.php" />
-    <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/../cv site internet/index.css" />
     <entry file="file://$PROJECT_DIR$/../style.css" />
     <entry file="file://$PROJECT_DIR$/../blog_forteroche-master/public/css/style.css" />
@@ -930,16 +978,6 @@
     <entry file="file://$USER_HOME$/Desktop/unbilletpourlalaska-619f2e1cc7e42afb86339edbf613949c1b872859/controller/AdminController.php" />
     <entry file="file://$USER_HOME$/Desktop/unbilletpourlalaska-619f2e1cc7e42afb86339edbf613949c1b872859/model/Manager.php" />
     <entry file="file://$USER_HOME$/Desktop/unbilletpourlalaska-619f2e1cc7e42afb86339edbf613949c1b872859/controller/BackOffice.php" />
-    <entry file="file://$PROJECT_DIR$/view/frontend/listpostView.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/unbilletpourlalaska.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -947,62 +985,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/BackOffice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2230">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/FrontOffice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#174#201#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/frontend/commentsView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Author.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/AdminManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1016,24 +1002,201 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/BackOffice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-241">
+          <caret line="104" column="78" selection-start-line="104" selection-start-column="78" selection-end-line="104" selection-end-column="78" />
+          <folding>
+            <element signature="e#244#264#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/AdminManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Author.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/FrontOffice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="90" column="2" selection-start-line="90" selection-start-column="2" selection-end-line="90" selection-end-column="2" />
+          <folding>
+            <element signature="e#174#201#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/PostManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="391">
+          <caret line="92" column="2" selection-start-line="92" selection-start-column="2" selection-end-line="92" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Manager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="408">
+          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/CommentManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="-564">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/backend/addPostView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/backend/deletePostView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/backend/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/backend/updatePostView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/changePostView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/commentModerateView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/commentsView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="40" column="87" selection-start-line="40" selection-start-column="87" selection-end-line="40" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/backend/changePostView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/connectView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/deletePostView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/interface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/mentionsLegalesView.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/listpostView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/postView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="43" column="93" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/updatePostView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/frontend/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>

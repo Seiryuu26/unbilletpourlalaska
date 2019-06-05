@@ -1,7 +1,5 @@
 <?php $this->title = 'Editer le chapitre' ?>
-
 <?php ob_start(); ?>
-
     <div class="container admin add">
         <div class="row ">
             <h1><strong>Modifier ce chapitre </strong></h1>
@@ -17,7 +15,6 @@
                 <div class="form-group">
                     <label for="description">Contenu:</label>
                     <textarea type="textarea" class="form-control" id="content" name="content" value="
-           
         ">
        <table>
         <h1><strong>Modifier les commentaires </strong></h1>
@@ -34,9 +31,6 @@
         <td>effacer</td>
         <td>mod&eacute;rer</td>
         </tr>
-       
-        
-          
         </table>
                         <?= nl2br(htmlspecialchars($post['content']))?>
                     </textarea> <span class="help-inline"></span> </div>
@@ -46,7 +40,5 @@
             </form>
         </div>
     </div>
-        
 <?php $content = ob_get_clean(); ?>
-              
 <?php require('template.php'); ?>

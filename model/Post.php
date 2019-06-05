@@ -37,7 +37,6 @@ class Post
     {
         $this->author = $author;
     }
-    
     //GETTERS
     public function getId()
     {
@@ -60,3 +59,4 @@ class Post
         return $this->author;
     }
  }
+ ?>

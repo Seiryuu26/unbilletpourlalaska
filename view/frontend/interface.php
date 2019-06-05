@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 ?>
     <div>
         <div class="container admin">
@@ -11,7 +10,6 @@
                             <th>Chapitres</th>
                             <th>Titre</th>
                             <th>Actions</th>
-                            
                         </tr>
                     </thead>
                     <tbody>

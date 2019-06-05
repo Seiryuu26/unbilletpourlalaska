@@ -36,7 +36,6 @@ class Author
     {
         $this->password = $password;
     }
-    
     //GETTERS
     public function getId()
     {

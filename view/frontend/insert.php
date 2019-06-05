@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title></title>
     <meta charset="utf-8" />
@@ -12,7 +11,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="JS/script.js"></script>
 </head>
-
 <body>
     <h1 class="text-logo"><span class="glyphicon glyphicon-cutlery"></span>Burger Code<span class="glyphicon glyphicon-cutlery"></span></h1>
     <div class="container admin">
@@ -38,7 +36,6 @@
                             {
                                echo '<option value="' . $row['id'] . '">' . $row['name'] . '</option>';
                             }
-                         
                             ?>
                     </select> <span class="help-inline"><?php echo $categoryError ;?></span> </div>
                 <div class="form-group">
@@ -51,5 +48,4 @@
         </div>
     </div>
 </body>
-
 </html>

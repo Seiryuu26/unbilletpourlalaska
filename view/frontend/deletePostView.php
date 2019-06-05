@@ -1,6 +1,4 @@
 <?php ob_start(); ?>
-
-
 <div class="container delete">
     <div class="row">
         <div class="clear">
@@ -17,7 +15,5 @@
         </div>
     </div>
 </div>
-
 <?php $content = ob_get_clean(); ?>
-
 <?php require('template.php'); ?>

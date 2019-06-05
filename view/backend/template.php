@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <html lang="fr">
-    
     <head>
         <title>Billet simple pour l'Alaska</title>
         <meta charset="utf-8" />
@@ -12,26 +11,19 @@
         <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
         <link href="public\css\style.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     </head>
-
     <body>
-        
      <div class='container'>
     <h1>Billet simple pour l'Alaska</h1>
-
         <?=$content
 ?>
-    
     </div> 
         <div class="alert alert-secondary" role="alert">
-        
         <?php
 if (!empty($_SESSION['pseudo']) && !empty($_SESSION['id']))
 {
