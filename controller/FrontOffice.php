@@ -88,6 +88,5 @@ class FrontOffice
         require('view/frontend/mentionsLegalesView.php');
     }
 }
-?>
 
 

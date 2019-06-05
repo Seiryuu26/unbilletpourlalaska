@@ -50,9 +50,12 @@ class BackOffice
         $commentManager = new CommentManager();
         $comments = $commentManager->commentSignal();
         $postManager = new PostManager();
-        if(isset($_GET['page']))
+        if(isset($_GET['page'])) {
             $page =$_GET['page'];
-        else $page = 0;
+        }else{
+            $page = 0;
+        }
+
         $posts = $postManager->getPosts($page);
         // calling  the view
         require('view/backend/addPostView.php');

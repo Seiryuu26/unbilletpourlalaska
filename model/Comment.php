@@ -37,7 +37,7 @@ class Comment
     {
         $this->postId = $postId;
     }
-    public function setSignales($signaled)
+    public function setSignaled($signaled)
     {
         $this->signaled = $signaled;
     }
