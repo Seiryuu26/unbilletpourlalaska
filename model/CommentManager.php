@@ -18,8 +18,6 @@ class CommentManager extends Manager
     }
     public function postComment($comment)
     {
-        echo"toto";
-        die;
         $db = $this->dbConnect();
         $commentaires = $db->prepare('INSERT INTO comment(post_id, author, content, comment_date) VALUES(?, ?, ?, NOW())');
         $affectedLines = $commentaires->execute(array($comment->getPostId(),$comment->getAuthor(),$comment->getContent()));
