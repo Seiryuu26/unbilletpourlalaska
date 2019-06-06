@@ -31,7 +31,8 @@ class Post
     }
     public function setCreationDate($date)
     {
-        $this->creationDate = $date;
+        $dateObj = new \DateTime($date);
+        $this->creationDate = $dateObj;
     }
     public function setAuthor($author)
     {
