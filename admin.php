@@ -1,6 +1,9 @@
 <?php
+
+// a supprimer 
 require('controller/AdminController.php');
 
+// logique de controller
 try {
     if (isset($_GET['action'])) {
 
@@ -30,6 +33,7 @@ try {
 
     }
 }
+<!--- de la vue --->
 <html>
 
   <head>
