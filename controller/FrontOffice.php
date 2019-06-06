@@ -13,7 +13,7 @@ use \www\model\Comment;
  */
 class FrontOffice
 {
-    function listPosts()
+    public function listPosts()
     {
         $postManager = new PostManager(); // Création d'une instance
         $nbpages = $postManager->nbPosts();
@@ -23,7 +23,7 @@ class FrontOffice
         $posts = $postManager->getPosts($page);// Appel d'une fonction de cet objet
         require('view/frontend/listpostView.php');
     }
-    function post()
+    public function post()
     {
         $postManager = new PostManager();
         $commentManager = new CommentManager();
@@ -31,7 +31,7 @@ class FrontOffice
         $comments = $commentManager->getComments($post);
         require('view/frontend/postView.php');
     }
-    function addComment($dataComment)
+    public function addComment($dataComment)
     {
         $commentManager = new CommentManager();// Création d'une instance 
         $comment = new Comment();// Appel d'une fonction de cet objet
@@ -46,7 +46,7 @@ class FrontOffice
             header('Location: index.php?action=post&id=' . $dataComment['postId']);
         }
     }
-    function modifyComment($commentId)
+    public function modifyComment($commentId)
     {
         $commentManager = new CommentManager();
         $affectedLines = $commentManager->modify($commentId);
@@ -57,7 +57,7 @@ class FrontOffice
             header('Location: index.php');
         }
     }
-    function deleteComment($commentId)
+    public function deleteComment($commentId)
     {
         $commentManager = new CommentManager();
         $affectedLines = $commentManager->delete($commentId);
@@ -68,7 +68,7 @@ class FrontOffice
             header('Location: index.php');
         }
     }
-    function signalComment($commentId)
+    public function signalComment($commentId)
     {
         $commentManager = new CommentManager();
         $affectedLines = $commentManager->signal($commentId);
@@ -79,11 +79,11 @@ class FrontOffice
             header('Location: index.php');
         }
     }
-    function cgu()
+    public function cgu()
     {
         require('view/frontend/cguView.php');
     }
-    function mentionsLegales()
+    public function mentionsLegales()
     {
         require('view/frontend/mentionsLegalesView.php');
     }
