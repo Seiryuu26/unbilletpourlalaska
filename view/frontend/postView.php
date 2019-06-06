@@ -4,7 +4,7 @@
 <div class="news">
     <h3>
         <?= htmlspecialchars($post->getTitle()) ?>
-        <em><?= ($post->getCreationDate()) ?></em>
+        <em><?= ($post->getCreationDate()->format('d/m/Y') ?></em>
     </h3>
     <p>
         <?= nl2br(htmlspecialchars($post->getContent())) ?>
