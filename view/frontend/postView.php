@@ -10,31 +10,16 @@
         <?= nl2br(htmlspecialchars($post->getContent())) ?>
     </p>
 </div>
-<h2>Commentaires</h2>
-<form action="index.php?action=addComment&amp;id=<?= $_GET['id'] ?>" method="post">
-    <div>
-        <label for="author">Auteur</label><br />
-        <input type="text" id="member" name="author" />
-    </div>
-    <div>
-        <label for="content">Commentaire</label><br />
-        <textarea id="content" name="content"></textarea>
-    </div>
-    <div>
-        <input name="postId" type="hidden" value="<?=$_GET['id'] ?>" />
-        <input type="submit" />
-    </div>
-</form>
 <?php
-foreach($comments as $comment )
-    {
-?>
-    <p><strong><?= htmlspecialchars($comment->getAuthor()) ?></strong>  <?= $comment->getDate() ?></p>
+foreach ($comments as $comment) {
+    ?>
+    <p><strong><?= htmlspecialchars($comment->getAuthor()) ?></strong> <?=$comment->getDate() ?></p>
     <p><?= nl2br(htmlspecialchars($comment->getContent())) ?></p>
 
-<em><a href="index.php?action=signalComment&amp;id=<?= $comment->getId() ?>">Signaler</a></em>
-<?php
-    }
+    <em><a href="index.php?action=signalComment&amp;id=<?= $comment->getId() ?>">Signaler</a></em>
+    <?php
+}
 ?>
 <?php $content = ob_get_clean(); ?>
 <?php require('template.php'); ?>
+

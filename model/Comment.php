@@ -1,4 +1,5 @@
 <?php
+
 namespace www\model;
 /**
  * Classe which represents all the entites of a comment
@@ -16,55 +17,68 @@ class Comment
     private $date;
     private $postId;
     private $signaled;
+
     // SETTERS
     public function setId($id)
     {
         $this->id = (int)$id;
     }
+
     public function setContent($content)
     {
         $this->content = $content;
     }
+
     public function setAuthor($author)
     {
         $this->author = $author;
     }
+
     public function setDate($date)
     {
         $this->date = $date;
     }
+
     public function setPostId($postId)
     {
         $this->postId = $postId;
     }
+
     public function setSignaled($signaled)
     {
         $this->signaled = $signaled;
     }
+
     //GETTERS
     public function getId()
     {
-        return $this->id ;
+        return $this->id;
     }
+
     public function getContent()
     {
-        return $this->content ;
+        return $this->content;
     }
+
     public function getAuthor()
     {
-         return $this->author ;
+        return $this->author;
     }
+
     public function getDate()
     {
-        return $this->date ;
+        return $this->date;
     }
+
     public function getPostId()
     {
-        return $this->postId ;
+        return $this->postId;
     }
+
     public function getSignaled()
     {
-        return $this->signaled ;
+        return $this->signaled;
     }
 }
+
 ?>

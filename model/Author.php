@@ -1,5 +1,6 @@
 <?php
 namespace www\model;
+
 /**
  * Classe which represents all the entities of an  author
  * @author David P.
@@ -15,51 +16,63 @@ class Author
     private $lastname;
     private $pseudo;
     private $password;
+
     // SETTERS
     public function setId($id)
     {
         $this->id = (int)$id;
     }
+
     public function setFirstname($firstname)
     {
         $this->firstname = $firstname;
     }
+
     public function setLastname($lastname)
     {
         $this->lastname = $lastname;
     }
+
     public function setPseudo($pseudo)
     {
         $this->pseudo = $pseudo;
     }
+
     public function setPassword($password)
     {
         $this->password = $password;
     }
+
     //GETTERS
     public function getId()
     {
-        return $this->id ;
+        return $this->id;
     }
+
     public function getFirstname()
     {
-        return $this->firstname ;
+        return $this->firstname;
     }
+
     public function getLastname()
     {
-         return $this->lastname ;
+        return $this->lastname;
     }
+
     public function getPseudo()
     {
-        return $this->pseudo ;
+        return $this->pseudo;
     }
+
     public function getPassword()
     {
-        return $this->password ;
+        return $this->password;
     }
+
     public function getFullname()
-     {
-         return $this->firstname. " " .$this->lastname;
-     }
+    {
+        return $this->firstname . " " . $this->lastname;
+    }
 }
+
 ?>
